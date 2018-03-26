@@ -71,8 +71,12 @@ var mailchimp = function (callback) {
 
 	var showStatus = function (msg, success) {
 
+		console.log(1);
+
 		// Bail if there's no status container
 		if (!status) return;
+
+		console.log(1);
 
 		// Update the status message
 		status.innerHTML = msg;
