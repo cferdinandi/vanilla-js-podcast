@@ -1,9 +1,5 @@
-# Vanilla JS Toolkit
+# Vanilla JS Podcast
 
-A growing collection of vanilla JavaScript code snippets, helper functions, polyfills, plugins, and learning resources.
+A show about JavaScript for people who hate the complexity of modern front‑end web development.
 
-**[View the Toolkit](https://vanillajstoolkit.com)**
-
-## Todo
-
-- [ ] Add [autoexpanding text area](https://gomakethings.com/automatically-expand-a-textarea-as-the-user-types-using-vanilla-javascript/)
+**[Check out the show.](https://vanillajspodcast.com)**
