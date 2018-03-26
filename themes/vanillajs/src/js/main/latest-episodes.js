@@ -30,7 +30,7 @@ var latestEpisodes = function (app) {
 		template += renderEpisodes(data);
 		app.innerHTML =
 			'<ul class="list-unstyled margin-bottom-medium">' + template + '</ul>' +
-			'<p>Listen to full series on <a href="' + urls.itunes + '">iTunes</a> or <a href="' + urls.soundcloud + '">SoundCloud</a>.</p>';
+			'<p><em>Listen to full series on <a href="' + urls.itunes + '">iTunes</a> or <a href="' + urls.soundcloud + '">SoundCloud</a>.</em></p>';
 	};
 
 	var getEpisodes = function () {

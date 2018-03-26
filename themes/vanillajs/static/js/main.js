@@ -19,13 +19,6 @@ if (window.Array && !Array.prototype.forEach) {
 		}
 	};
 }
-/**
- * Element.matches() polyfill (simple version)
- * https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Polyfill
- */
-if (!Element.prototype.matches) {
-	Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
-}
 var latestEpisodes = function (app) {
 
 	'use strict';
@@ -58,7 +51,7 @@ var latestEpisodes = function (app) {
 		template += renderEpisodes(data);
 		app.innerHTML =
 			'<ul class="list-unstyled margin-bottom-medium">' + template + '</ul>' +
-			'<p>Listen to full series on <a href="' + urls.itunes + '">iTunes</a> or <a href="' + urls.soundcloud + '">SoundCloud</a>.</p>';
+			'<p><em>Listen to full series on <a href="' + urls.itunes + '">iTunes</a> or <a href="' + urls.soundcloud + '">SoundCloud</a>.</em></p>';
 	};
 
 	var getEpisodes = function () {
