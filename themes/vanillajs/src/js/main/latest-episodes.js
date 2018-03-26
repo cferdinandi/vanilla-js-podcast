@@ -12,23 +12,14 @@ var latestEpisodes = function (app) {
 		soundcloud: 'https://soundcloud.com/vanillajspodcast/'
 	};
 
-	var convertTime = function (time) {
-		return {
-			minutes: Math.round(parseInt(time, 10) / 1000 / 60),
-			seconds: Math.round((parseInt(time, 10) / 1000) % 60)
-		};
-	};
-
 	var renderEpisodes = function (data) {
 		var episodes = '';
 		data.forEach(function (episode) {
-			var time = convertTime(episode.duration);
 			var title = episode.title.split(' - ');
 			episodes +=
 				'<li class="margin-bottom-small">' +
 					'<strong class="margin-right">' + title[0] + '</strong>' +
 					'<a class="link-no-underline" href="' + urls.soundcloud + episode.permalink + '">' + title[1] + '</a> ' +
-					'<span class="text-muted text-small">(' + time.minutes + ':' + time.seconds + ')</span>' +
 				'</li>';
 		});
 		return episodes;
