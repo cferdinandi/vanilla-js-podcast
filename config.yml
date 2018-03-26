@@ -1,12 +1,12 @@
 # hostname (and path) to the root
-baseURL: "https://podcast.gomakethings.com"
+baseURL: "http://podcast.gomakethings.com"
 
 # Customer parameters
 params:
   description: "A show about JavaScript for people who hate the complexity of modern front‑end web development."
   rssURL: ""
   rssLimit: 7
-  cacheBust: false
+  cacheBust: true
   version: "1.0.0"
 
 # The language code for the site
