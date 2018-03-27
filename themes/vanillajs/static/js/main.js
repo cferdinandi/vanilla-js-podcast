@@ -33,14 +33,33 @@ var latestEpisodes = function (app) {
 		soundcloud: 'https://soundcloud.com/vanillajspodcast/'
 	};
 
+	/**
+	 * Adding a leading zero to single digit times
+	 * @param  {Integer} num The time
+	 * @return {String}      The time with leading zero
+	 */
+	var padStart = function (num) {
+		num = num.toString();
+		return num.length < 2 ? '0' + num : num;
+	};
+
+	var getDuration = function (duration) {
+		return {
+			minutes: Math.floor(duration / 1000 / 60),
+			seconds: padStart(Math.floor((duration / 1000) % 60))
+		};
+	};
+
 	var renderEpisodes = function (data) {
 		var episodes = '';
 		data.forEach((function (episode) {
 			var title = episode.title.split(' - ');
+			var time = getDuration(episode.duration);
 			episodes +=
 				'<li class="margin-bottom-small">' +
 					'<strong class="margin-right">' + title[0] + '</strong>' +
 					'<a class="link-no-underline" href="' + urls.soundcloud + episode.permalink + '">' + title[1] + '</a> ' +
+					'<span class="text-small text-muted">(' + time.minutes + ':' + time.seconds  + ')</span>' +
 				'</li>';
 		}));
 		return episodes;
