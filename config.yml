@@ -4,7 +4,7 @@ baseURL: "http://podcast.gomakethings.com"
 # Customer parameters
 params:
   description: "A show about JavaScript for people who hate the complexity of modern front‑end web development."
-  rssURL: ""
+  rssURL: "https://gomakethings.com/podcast/feed.rss"
   rssLimit: 7
   cacheBust: true
   version: "1.0.0"

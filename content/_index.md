@@ -16,7 +16,7 @@ fullWidth: false
 	<li class="text-large"><strong>Listen on...</strong></li>
 	<li class="text-large"><a href="#">iTunes</a></li>
 	<li class="text-large"><a href="https://soundcloud.com/vanillajspodcast">SoundCloud</a></li>
-	<li class="text-large"><a href="https://vanillajspodcast.com/rss">RSS</a></li>
+	<li class="text-large"><a href="http://gomakethings.com/podcast/feed.rss">RSS</a></li>
 </ul>
 
 {{<mailchimp intro>}}
