@@ -11,6 +11,10 @@
 		<script>
 			if ('querySelector' in document && 'addEventListener' in window) {
 				loadJS('{{ if eq $.Site.Params.cacheBust true }}{{ ( printf "/js/main.min.%s.js" $.Site.Params.version | absURL ) }}{{ else }}{{ "/js/main.js" | absURL }}{{ end }}');
+				window.addEventListener('click', function (event) {
+					if (!event.target.matches('a') || event.target.textContent.toLowerCase() !== 'itunes') return;
+					alert('Coming soon!');
+				}, false);
 			}
 			// Analytics
 			var _paq = _paq || [];
