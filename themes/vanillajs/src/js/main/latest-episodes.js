@@ -8,7 +8,7 @@ var latestEpisodes = function (app) {
 	var user = '422835952';
 	var clientId = 'HDNfsDscL9cEWTl8lfqFKfLPTErC4Qio';
 	var urls = {
-		itunes: '#',
+		itunes: 'https://itunes.apple.com/us/podcast/the-vanilla-js-podcast/id1364574460',
 		soundcloud: 'https://soundcloud.com/vanillajspodcast/'
 	};
 

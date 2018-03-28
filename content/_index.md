@@ -14,7 +14,7 @@ fullWidth: false
 
 <ul class="list-inline">
 	<li class="text-large"><strong>Listen on...</strong></li>
-	<li class="text-large"><a href="#">iTunes</a></li>
+	<li class="text-large"><a href="https://itunes.apple.com/us/podcast/the-vanilla-js-podcast/id1364574460">iTunes</a></li>
 	<li class="text-large"><a href="https://soundcloud.com/vanillajspodcast">SoundCloud</a></li>
 	<li class="text-large"><a href="https://gomakethings.com/podcast/feed.rss">RSS</a></li>
 </ul>
