@@ -74,7 +74,7 @@ var latestEpisodes = function (app) {
 		// Create and send a GET request
 		// The first argument is the post type (GET, POST, PUT, DELETE, etc.)
 		// The second argument is the endpoint URL
-		xhr.open('GET', 'http://api.soundcloud.com/users/' + user + '/tracks?client_id=' + clientId);
+		xhr.open('GET', 'https://api.soundcloud.com/users/' + user + '/tracks?client_id=' + clientId);
 		xhr.send();
 
 	};
