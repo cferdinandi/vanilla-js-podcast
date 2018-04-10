@@ -317,7 +317,7 @@ var mailchimp = function (callback) {
 if (document.querySelector('#mailchimp-form')) {
 	mailchimp((function (data) {
 		if (data.result !== 'error') {
-			window.location.href = 'https://gomakethings.com/newsletter-success';
+			window.location.href = '/newsletter-success';
 		}
 	}));
 }
