@@ -1,8 +1,13 @@
 ---
-title: "Thanks for inviting me into your inbox."
+title: "Success"
 date: 2018-01-11T16:03:33-05:00
 draft: false
+noTitle: true
 ---
+
+[&larr; Back to the Vanilla JavaScript Podcast](/)
+
+# Thanks for inviting me into your inbox.
 
 Can't wait to get started? Check out the [Vanilla JS Toolkit](https://vanillajstoolkit.com) to explore a growing collection of code snippets, helper functions, polyfills, plugins, and learning resources.
 
