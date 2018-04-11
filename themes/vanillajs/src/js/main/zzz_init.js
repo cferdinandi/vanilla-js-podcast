@@ -6,7 +6,7 @@
 if (document.querySelector('#mailchimp-form')) {
 	mailchimp(function (data) {
 		if (data.result !== 'error') {
-			window.location.href = '/newsletter-success';
+			window.location.href = 'https://gomakethings.com/newsletter-success';
 		}
 	});
 }
