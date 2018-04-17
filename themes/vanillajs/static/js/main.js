@@ -1,5 +1,5 @@
 /*!
- * vanillajs v1.2.0: The theme for vanillajspodcast.com
+ * vanillajs v1.3.0: The theme for vanillajspodcast.com
  * (c) 2018 Chris Ferdinandi
  * MIT License
  * http://github.com/cferdinandi/vanilla-js-podcast
