@@ -4,11 +4,7 @@
 
 // Mailchimp form
 if (document.querySelector('#mailchimp-form')) {
-	mailchimp(function (data) {
-		if (data.result !== 'error') {
-			window.location.href = '/newsletter-success';
-		}
-	});
+	mailchimp();
 }
 
 // Latest Episodes
