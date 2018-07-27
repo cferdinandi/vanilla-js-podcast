@@ -21,4 +21,6 @@ fullWidth: false
 
 {{<mailchimp intro>}}
 
+{{<cta for="podcast">}}
+
 <div id="latest-episodes"></div>
