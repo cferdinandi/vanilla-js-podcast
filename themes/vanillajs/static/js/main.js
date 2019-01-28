@@ -1,9 +1,9 @@
 /*!
- * vanillajs v1.3.0: The theme for vanillajspodcast.com
- * (c) 2018 Chris Ferdinandi
+ * vanillajs v1.3.0
+ * The theme for vanillajspodcast.com
+ * (c) 2019 Chris Ferdinandi
  * MIT License
  * http://github.com/cferdinandi/vanilla-js-podcast
- * Open Source Credits: https://github.com/filamentgroup/loadJS/, https://github.com/filamentgroup/loadCSS, https://github.com/bramstein/fontfaceobserver
  */
 
 /**
