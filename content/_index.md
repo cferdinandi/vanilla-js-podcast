@@ -23,4 +23,4 @@ fullWidth: false
 
 {{<cta for="podcast">}}
 
-<div id="latest-episodes"></div>
+{{<episodes>}}
