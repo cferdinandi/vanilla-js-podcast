@@ -4,9 +4,15 @@ baseURL: "https://vanillajspodcast.com"
 # Customer parameters
 params:
   description: "A show about JavaScript for people who hate the complexity of modern front‑end web development."
+  api: "https://gomakethings.com/api/data.json"
   rssURL: "https://gomakethings.com/podcast/feed.rss"
   rssLimit: 7
   minify: true
+
+# Caches
+caches:
+  getjson:
+    maxAge: "10m"
 
 # The language code for the site
 languageCode: "en-us"
