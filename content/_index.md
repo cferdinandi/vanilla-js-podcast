@@ -19,7 +19,7 @@ fullWidth: false
 	<li class="text-large"><a href='{{<param id="rssurl">}}'>RSS</a></li>
 </ul>
 
-{{<mailchimp intro>}}
+{{<mailchimp intro="true">}}
 
 {{<cta for="podcast">}}
 
