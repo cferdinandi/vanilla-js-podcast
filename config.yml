@@ -5,7 +5,7 @@ baseURL: "https://vanillajspodcast.com"
 params:
   description: "A show about JavaScript for people who hate the complexity of modern front‑end web development."
   api: "https://gomakethings.com/api/data.json"
-  episodes: "https://api.soundcloud.com/users/422835952/tracks?client_id=HDNfsDscL9cEWTl8lfqFKfLPTErC4Qio"
+  episodes: "https://api.soundcloud.com/users/422835952/tracks?client_id=9yZSvlXAK7Wmu4xhb0hdMtjP9D2z351X"
   itunes: "https://itunes.apple.com/us/podcast/the-vanilla-js-podcast/id1364574460"
   soundcloud: "https://soundcloud.com/vanillajspodcast/"
   rssURL: "https://gomakethings.com/podcast/feed.rss"
