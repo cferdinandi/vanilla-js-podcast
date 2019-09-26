@@ -18,6 +18,7 @@ body {
 	font-family: $font-primary;
 	font-size: $font-size;
 	line-height: 1.5;
+	overflow-x: hidden;
 
 	.fonts-loaded & {
 		font-family: $font-enhanced;
@@ -25,6 +26,12 @@ body {
 
 	@media (min-width: $bp-medium) {
 		line-height: $spacing;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		background: $color-black;
+		border-top-color: $color-gray-dark;
+		color: $color-white;
 	}
 }
 
@@ -64,6 +71,20 @@ a {
 
 	&:visited {
 		color: $color-accent;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		color: $color-primary-dark;
+
+		&:active,
+		&:focus,
+		&:hover {
+			color: darken( $color-primary-dark, 15% );
+		}
+
+		&:visited {
+			color: $color-accent-dark;
+		}
 	}
 }
 
@@ -106,6 +127,10 @@ a.link-block {
 	color: $color-black;
 	display: block;
 	text-decoration: none;
+
+	@media (prefers-color-scheme: dark) {
+		color: $color-white;
+	}
 }
 
 .link-block-styled {
@@ -196,6 +221,17 @@ dt {
 	}
 }
 
+.list-inline-spaced {
+	margin-left: calc-em(-21px);
+	margin-right: calc-em(-21px);
+
+	li {
+		display: inline-block;
+		margin-left: calc-em(21px);
+		margin-right: calc-em(21px);
+	}
+}
+
 /**
  * @bugfix Prevent webkit from removing list semantics
  * 1. Add a non-breaking space
@@ -203,7 +239,7 @@ dt {
  */
 .list-unstyled,
 .list-inline {
-	& > li:before {
+	li:before {
 		content: "\200B"; /* 1 */
 		position: absolute; /* 2 */
 	}
@@ -269,6 +305,10 @@ hr {
 	box-sizing: content-box; /* 1 */
 	margin: calc-em(32px) auto;
 	overflow: visible; /* 2 */
+
+	@media (prefers-color-scheme: dark) {
+		border-top-color: $color-gray-dark;
+	}
 }
 
 .line-secondary {
@@ -277,6 +317,41 @@ hr {
 
 .line-clear {
 	border-top-color: transparent;
+}
+
+.line-heading {
+	position: relative;
+
+	&:after {
+		background-color: $color-white;
+		content: attr(data-heading);
+		font-weight: bold;
+		left: 50%;
+		padding: 0 1em;
+		position: absolute;
+		top: -1em;
+		text-align: center;
+		transform: translate(-50%, 0);
+		width: 70%;
+	}
+
+	@media (min-width: $bp-small) {
+		&[data-heading-small]:after {
+			content: attr(data-heading-small);
+		}
+	}
+
+	@media (min-width: $bp-medium) {
+		&[data-heading-medium]:after {
+			content: attr(data-heading-medium);
+		}
+	}
+
+	@media (min-width: $bp-large) {
+		&[data-heading-large]:after {
+			content: attr(data-heading-large);
+		}
+	}
 }
 
 /**
@@ -315,12 +390,15 @@ dfn {
 /**
  * Address styling not present in IE 8/9.
  */
- mark {
- 	// background: #fffcb8;
- 	// background-image: linear-gradient(to right, #fffcb8 0%, #fbf9c9 100%);
- 	background: #fbf9c9;
- 	color: $color-black;
- }
+mark {
+	background: #fbf9c9;
+	color: $color-black;
+
+	@media (prefers-color-scheme: dark) {
+		background: transparent;
+		color: $color-white;
+	}
+}
 
 /**
  * Address inconsistent and variable font size in all browsers.
@@ -365,6 +443,10 @@ blockquote {
 		color: $color-gray-dark;
 		font-size: calc-em(15px);
 		padding-top: calc-em(16px);
+	}
+
+	pre {
+		font-style: normal;
 	}
 }
 

@@ -42,11 +42,11 @@
 		</script>
 	</head>
 
-	<body class="padding-top-large type-{{ .Type }} {{ if .IsPage }}page-single{{ else }}page-list{{ end }}{{ if .Params.anchors }} js-anchors{{ end }}" id="page-{{ .UniqueID }}">
+	<body class="type-{{ .Type }} {{ if .IsPage }}page-single{{ else }}page-list{{ end }}{{ if .Params.anchors }} js-anchors{{ end }}" id="page-{{ .UniqueID }}">
 
 		{{ partial "nav-a11y.html" }}
 
-		{{ if false }}{{ partial "nav-main.html" . }}{{ end }}
+		{{ partial "nav-main.html" . }}
 
 		<main id="main" tabindex="-1">
 

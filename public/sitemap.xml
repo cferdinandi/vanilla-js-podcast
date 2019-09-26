@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://vanillajspodcast.com/</loc>
+    <lastmod>2018-01-14T21:38:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vanillajspodcast.com/mit/</loc>
+    <lastmod>2018-01-11T16:03:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vanillajspodcast.com/404/</loc>
+    <lastmod>2018-01-11T16:03:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vanillajspodcast.com/newsletter-success/</loc>
+    <lastmod>2018-01-11T16:03:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vanillajspodcast.com/episodes/</loc>
+    <lastmod>2018-01-11T09:40:48-05:00</lastmod>
+  </url>
+  
+</urlset>

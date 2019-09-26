@@ -14,17 +14,6 @@
 
 
 /**
- * Font weights
- */
-
-.text-normal {
-	font-weight: normal;
-	font-style: normal;
-	// line-height: 1.4;
-}
-
-
-/**
  * Text sizes
  */
 
@@ -57,6 +46,10 @@
 
 .text-muted {
 	color: $color-gray-dark;
+
+	@media (prefers-color-scheme: dark) {
+		color: $color-gray-light;
+	}
 }
 
 .text-muted-light {
@@ -82,11 +75,11 @@
 	text-align: center;
 }
 
-// .text-right {
-// 	text-align: right;
-// }
+.text-right {
+	text-align: right;
+}
 
-@media (min-width: $bp-medium) {
+@media (min-width: $bp-large) {
 	.text-right-large {
 		text-align: right;
 	}
@@ -140,16 +133,16 @@
 	margin-bottom: calc-em(8px);
 }
 
-.margin-bottom-medium {
-	margin-bottom: calc-em(16px);
-}
-
 .margin-bottom-large {
 	margin-bottom: calc-em(32px);
 }
 
+.margin-bottom-negative {
+	margin-bottom: calc-em(-28px);
+}
+
 .margin-right {
-	margin-right: calc-em(8px);
+	margin-right: calc-em(4px);
 }
 
 
@@ -167,6 +160,10 @@
 
 .padding-top {
 	padding-top: $spacing;
+}
+
+.padding-top-xsmall {
+	padding-top: calc-em(4px);
 }
 
 .padding-top-small {
