@@ -23,7 +23,7 @@
 		<p>{{ .Description | markdownify }}</p>
 
 		<aside>
-			{{ partial "subscribe.html" }}
+			{{ partial "subscribe.html" . }}
 
 			{{- $data := getJSON $.Site.Params.api -}}
 			{{- $ctas := index $data "ctas" -}}
