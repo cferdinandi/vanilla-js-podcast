@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+
+{{ partial "content-page.html" . }}
+
+{{- $.Scratch.Set "pagecount" 0 -}}
+
+{{ $paginate := .Paginate .Pages }}
+{{ range $paginate.Pages }}
+
+	{{- $.Scratch.Set "pagecount" (add ($.Scratch.Get "pagecount") 1) -}}
+
+	{{ partial "episode.html" . }}
+
+{{ end }}
+
+{{ if gt $paginate.TotalPages 1  }}
+	<nav class="text-center">
+		<p class="padding-top-large margin-bottom-small">
+			{{ if $paginate.HasPrev }}<a href="{{ $paginate.Prev.URL }}">&larr; Newer</a>{{ end }}
+			{{ if and $paginate.HasPrev $paginate.HasNext }}&nbsp;/&nbsp;{{ end }}
+			{{ if $paginate.HasNext }}<a href="{{ $paginate.Next.URL }}">Older &rarr;</a>{{ end }}
+		</p>
+	</nav>
+{{ end }}
+
+{{ partial "footer.html" . }}

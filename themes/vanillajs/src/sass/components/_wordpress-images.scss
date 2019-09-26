@@ -1,6 +1,6 @@
 /**
- * @section Image Classes
- * Styling for images.
+ * @section WordPress Image Classes
+ * Styling for the classes WordPress automatically applies to images.
  */
 
 /**
@@ -39,4 +39,15 @@
 		margin-left: 0;
 		margin-right: 0;
 	}
+}
+
+/**
+ * Image Caption Styling
+ */
+.wp-caption-text {
+	font-size: calc-em(15px);
+	font-style: italic;
+	color: $color-gray-dark;
+	padding-top: calc-em(8px);
+	text-align: center;
 }

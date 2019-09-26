@@ -1,0 +1,40 @@
+{{ partial "header.html" . }}
+
+	<article>
+
+		<header>
+
+			<ul class="list-inline no-margin-bottom">
+				<li><strong>Episode {{ .Params.episode }}</strong></li>
+				<li><time class="text-muted" datetime="{{ .PublishDate }}" pubdate>{{ .PublishDate.Format "January 2, 2006" }}</time></li>
+			</ul>
+
+			<h1 class="no-padding-top">
+				{{ .Title }}
+			</h1>
+
+		</header>
+
+		<audio controls="controls">
+			<source src="{{ .Params.file }}" type="audio/mpeg">
+			<a href="{{ .Params.file }}" download>Download this episode’s audio file (MP3).</a>
+		</audio>
+
+		<p>{{ .Description | markdownify }}</p>
+
+		<aside>
+			{{ partial "subscribe.html" }}
+
+			{{- $data := getJSON $.Site.Params.api -}}
+			{{- $ctas := index $data "ctas" -}}
+			{{- if isset $ctas "podcast" -}}
+			{{ index $ctas "podcast" | safeHTML }}
+			{{- end -}}
+		</aside>
+
+		{{ .Content }}
+
+	</article>
+
+
+{{ partial "footer.html" . }}

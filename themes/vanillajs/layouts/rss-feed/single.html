@@ -1,0 +1,46 @@
+{{ `<?` | safeHTML }}xml version="1.0" encoding="UTF-8"{{ `?>` | safeHTML }}
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<atom:link href="{{$.Site.Params.rssurl}}" rel="self" type="application/rss+xml"/>
+		<title>{{ .Site.Title }}</title>
+		<link>{{ .Site.BaseURL }}</link>
+		<pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0500" | safeHTML }}</pubDate>
+		<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0500" | safeHTML }}</lastBuildDate>
+		<ttl>60</ttl>
+		{{ with .Site.LanguageCode }}<language>{{.}}</language>{{end}}
+		<copyright>All rights reserved</copyright>
+		<webMaster>{{ $.Site.Params.email }}</webMaster>
+		<description>{{ $.Site.Params.description }}</description>
+		<itunes:subtitle>{{ $.Site.Params.description }}</itunes:subtitle>
+		<itunes:summary>{{ $.Site.Params.description }}</itunes:summary>
+		<itunes:owner>
+			<itunes:name>{{ .Site.Title }}</itunes:name>
+			<itunes:email>{{ $.Site.Params.email }}</itunes:email>
+		</itunes:owner>
+		<itunes:author>{{ $.Site.Params.owner }}</itunes:author>
+		<itunes:explicit>{{ $.Site.Params.explicit }}</itunes:explicit>
+		<itunes:image href="{{ $.Site.Params.image }}"/>
+		<image>
+		  <url>{{ $.Site.Params.image }}</url>
+		  <title>{{ .Site.Title }}</title>
+		  <link>{{ .Site.BaseURL }}</link>
+		</image>
+		<itunes:category text="Technology"/>
+		{{- range (where (where (where .Site.Pages "Type" "episodes") ".Kind" "!=" "section") ".Params.draft" "==" false) -}}
+		<item>
+			<guid>{{ .URL | absURL }}</guid>
+		    <title>Episode {{ .Params.episode }} - {{ .Title }}</title>
+		    <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+		    <link>{{ .URL | absURL }}</link>
+		    <itunes:duration>{{ .Params.duration }}</itunes:duration>
+		    <itunes:author>{{ $.Site.Params.owner }}</itunes:author>
+		    <itunes:explicit>{{ $.Site.Params.explicit }}</itunes:explicit>
+		    <itunes:summary>{{ `<![CDATA[ ` | safeHTML }}{{ if isset .Params "description" }}{{ .Description | markdownify | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}]]></itunes:summary>
+			<itunes:subtitle>{{ `<![CDATA[ ` | safeHTML }}{{ if isset .Params "description" }}{{ .Description | markdownify | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}]]></itunes:subtitle>
+		    <description>{{ `<![CDATA[ ` | safeHTML }}{{ if isset .Params "description" }}{{ .Description | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}{{ .Content }}]]></description>
+			<enclosure url="{{ .Params.file }}" length="{{ .Params.legth }}" type="audio/mpeg" />
+			<itunes:image href="{{ $.Site.Params.image }}"/>
+		</item>
+		{{ end }}
+	</channel>
+</rss>

@@ -1,1 +1,1 @@
-<li><a href="#">iTunes</a></li><li><a href="https://soundcloud.com/vanillajspodcast">SoundCloud</a></li><li><a href="http://feeds.feedburner.com/vanillajspodcast">RSS</a></li>
+<li{{ if eq .URL "/" }} class="active"{{ end }}><a href="{{ "/" | absURL }}">About</a></li><li{{ if eq .Type "episodes" }} class="active"{{ end }}><a href="{{ "/episodes" | absURL }}">All Episodes</a></li>
