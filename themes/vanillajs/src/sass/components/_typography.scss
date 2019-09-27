@@ -221,6 +221,17 @@ dt {
 	}
 }
 
+.list-inline-compact {
+	margin-left: calc-em(-4px);
+	margin-right: calc-em(-4px);
+
+	li {
+		display: inline-block;
+		margin-left: calc-em(4px);
+		margin-right: calc-em(4px);
+	}
+}
+
 .list-inline-spaced {
 	margin-left: calc-em(-21px);
 	margin-right: calc-em(-21px);
