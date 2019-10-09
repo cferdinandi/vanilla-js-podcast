@@ -4,7 +4,7 @@ date: 2018-03-27T10:30:00-04:00
 draft: false
 description: "Polyfills, why they're awesome, and how to use them."
 episode: "2"
-file: "https://cdn.gomakethings.com/episode2-polyfills-are-awesome.mp3"
+file: "https://cdn.gomakethings.com/podcast/episode2-polyfills-are-awesome.mp3"
 duration: "00:05:54"
 length: "4425674"
 ---

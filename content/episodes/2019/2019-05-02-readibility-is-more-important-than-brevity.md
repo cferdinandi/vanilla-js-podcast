@@ -4,7 +4,7 @@ date: 2019-05-02T10:30:00-04:00
 draft: false
 description: In this episode, I talk about why readibility matters more than brevity.
 episode: "19"
-file: "https://cdn.gomakethings.com/episode19-code-readability-is-more-important-than-brevity.mp3"
+file: "https://cdn.gomakethings.com/podcast/episode19-code-readability-is-more-important-than-brevity.mp3"
 duration: "00:04:28"
 length: "3394665"
 ---

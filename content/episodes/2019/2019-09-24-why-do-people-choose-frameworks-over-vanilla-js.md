@@ -4,7 +4,7 @@ date: 2019-09-24T10:30:00-04:00
 draft: false
 description: In this episode, I talk about why people choose frameworks over vanilla JS (and debunk some common myths).
 episode: "24"
-file: "https://cdn.gomakethings.com/episode24-why-do-people-choose-frameworks-over-vanilla-js.mp3"
+file: "https://cdn.gomakethings.com/podcast/episode24-why-do-people-choose-frameworks-over-vanilla-js.mp3"
 duration: "00:08:52"
 length: "6563858"
 ---

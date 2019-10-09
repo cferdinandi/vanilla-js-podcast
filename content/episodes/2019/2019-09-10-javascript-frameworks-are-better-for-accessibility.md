@@ -4,7 +4,7 @@ date: 2019-09-10T10:30:00-04:00
 draft: false
 description: In this episode, I talk about the idea that frameworks are better for accessibility (and other framework myths).
 episode: "22"
-file: "https://cdn.gomakethings.com/episode22-javascript-frameworks-are-better-for-accessibility-and-other-myths.mp3"
+file: "https://cdn.gomakethings.com/podcast/episode22-javascript-frameworks-are-better-for-accessibility-and-other-myths.mp3"
 duration: "00:03:14"
 length: "2509465"
 ---

@@ -4,7 +4,7 @@ date: 2019-10-01T10:30:00-04:00
 draft: false
 description: In this episode, I talk about the ethics of the tools we use, and who we let use the things we make.
 episode: 26
-file: https://cdn.gomakethings.com/episode26-the-ethics-of-the-tools-we-use.mp3
+file: https://cdn.gomakethings.com/podcast/episode26-the-ethics-of-the-tools-we-use.mp3
 duration: 00:08:55
 length: 6497641
 ---

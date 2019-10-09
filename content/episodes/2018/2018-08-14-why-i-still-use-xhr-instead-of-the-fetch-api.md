@@ -4,7 +4,7 @@ date: 2018-08-14T10:30:00-04:00
 draft: false
 description: In this episode, I discuss why I still use XHR instead of the Fetch API.
 episode: "13"
-file: "https://cdn.gomakethings.com/episode13-why-i-still-use-xhr-instead-of-fetch.mp3"
+file: "https://cdn.gomakethings.com/podcast/episode13-why-i-still-use-xhr-instead-of-fetch.mp3"
 duration: "00:13:25"
 length: "9839922"
 ---

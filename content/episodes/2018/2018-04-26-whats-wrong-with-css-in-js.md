@@ -4,7 +4,7 @@ date: 2018-04-26T10:30:00-04:00
 draft: false
 description: In this episode, I talk about CSS-in-JS, why I think its bad for the web, and how to address some of the legitimate problems it's trying to solve.
 episode: "10"
-file: "https://cdn.gomakethings.com/episode10-whats-wrong-with-css-in-js.mp3"
+file: "https://cdn.gomakethings.com/podcast/episode10-whats-wrong-with-css-in-js.mp3"
 duration: "00:14:29"
 length: "10599756"
 ---

@@ -4,7 +4,7 @@ date: 2019-08-29T10:30:00-04:00
 draft: false
 description: In this episode, I talk about JavaScript and file size.
 episode: "20"
-file: "https://cdn.gomakethings.com/episode20-30k-of-javascript-isnt-that-much.mp3"
+file: "https://cdn.gomakethings.com/podcast/episode20-30k-of-javascript-isnt-that-much.mp3"
 duration: "00:02:48"
 length: "2189378"
 ---

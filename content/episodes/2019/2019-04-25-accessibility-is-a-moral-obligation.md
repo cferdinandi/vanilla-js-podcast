@@ -4,7 +4,7 @@ date: 2019-04-25T10:30:00-04:00
 draft: false
 description: Today, I'm talking about web accessibility as a moral obligation.
 episode: "17"
-file: "https://cdn.gomakethings.com/episode17-accessibility-is-a-moral-obligation.mp3"
+file: "https://cdn.gomakethings.com/podcast/episode17-accessibility-is-a-moral-obligation.mp3"
 duration: "00:08:46"
 length: "6488299"
 ---
