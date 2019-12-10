@@ -1,6 +1,6 @@
 ---
 title: James Williamson and a web for everyone
-date: 2019-12-10T10:30:00-05:00
+date: 2019-12-17T10:30:00-05:00
 draft: false
 description: In today's episode, I talk about James Williamson's vision for the future of the web, and how close to it (or far away from it) we've come in the last five years.
 episode: 37
