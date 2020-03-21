@@ -12,6 +12,6 @@ fullWidth: false
 
 {{<subscribe>}}
 
-{{<cta for="podcast">}}
+{{<cta for="funnel">}}
 
 {{<episodes>}}

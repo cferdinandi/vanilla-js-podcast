@@ -27,8 +27,8 @@
 
 			{{- $data := getJSON $.Site.Params.api -}}
 			{{- $ctas := index $data "ctas" -}}
-			{{- if isset $ctas "podcast" -}}
-			{{ index $ctas "podcast" | safeHTML }}
+			{{- if isset $ctas "funnel" -}}
+			{{ index $ctas "funnel" | safeHTML }}
 			{{- end -}}
 		</aside>
 

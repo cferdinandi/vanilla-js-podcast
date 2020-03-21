@@ -6,4 +6,4 @@ draft: false
 
 {{<subscribe>}}
 
-{{<cta for="podcast">}}
+{{<cta for="funnel">}}
