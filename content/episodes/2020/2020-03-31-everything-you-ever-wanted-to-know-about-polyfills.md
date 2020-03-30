@@ -2,7 +2,7 @@
 title: Everything you ever wanted to know about polyfills
 date: 2020-03-31T10:30:00-04:00
 draft: false
-description: In today’s episode, I talk about
+description: "In today’s episode, I talk about polyfills: what they are, why I love them, and how to write your own."
 episode: 48
 file: https://cdn.gomakethings.com/podcast/episode48-everything-you-ever-wanted-to-know-about-polyfills.mp3
 duration: 00:17:42
