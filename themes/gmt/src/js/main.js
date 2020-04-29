@@ -1,3 +1,4 @@
+import './main-components/_matches-polyfill.js';
 import mailchimp from './main-components/mailchimp.js';
 
 // Mailchimp form
