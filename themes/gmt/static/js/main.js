@@ -10,6 +10,10 @@
 		Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
 	}
 
+	/**
+	 *
+	 * @param {Function} callback
+	 */
 	var mailchimp = function (callback) {
 
 
