@@ -9,7 +9,6 @@ params:
   explicit: "yes"
   image: "https://vanillajspodcast.com/img/vanilla-js-podcast.jpg"
   api: "https://gomakethings.com/api/data.json"
-  font: "https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap"
   episodes: "https://api.soundcloud.com/users/422835952/tracks?client_id=9yZSvlXAK7Wmu4xhb0hdMtjP9D2z351X"
   itunes: "https://itunes.apple.com/us/podcast/the-vanilla-js-podcast/id1364574460"
   spotify: "https://open.spotify.com/show/2jfWVEgKGZMazgou1hXH1R?si=ZDcXluvvScWFMSfbaLgEwg"
