@@ -1,0 +1,1 @@
+git add . && git commit -a -m "New episode" && git push origin master
