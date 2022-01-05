@@ -42,10 +42,14 @@
 		{{- $.Scratch.Set "mcPre" "" -}}
 		{{- if and (eq .Params.ctas "mailchimp") (isset $ctas "mc-pre") -}}
 			{{- $.Scratch.Set "mcPre" (index $ctas "mc-pre") -}}
+		{{- else if and (eq .Params.ctas "convertkit") (isset $ctas "ck-pre") -}}
+			{{- $.Scratch.Set "mcPre" (index $ctas "ck-pre") -}}
 		{{- end -}}
 		{{- $.Scratch.Set "mcPost" "" -}}
 		{{- if and (eq .Params.ctas "mailchimp") (isset $ctas "mc-post") -}}
 			{{- $.Scratch.Set "mcPost" (index $ctas "mc-post") -}}
+		{{- else if and (eq .Params.ctas "convertkit") (isset $ctas "ck-post") -}}
+			{{- $.Scratch.Set "mcPost" (index $ctas "ck-post") -}}
 		{{- end -}}
 		{{- range (where (where (where .Site.Pages "Type" "episodes") ".Kind" "!=" "section") ".Params.draft" "==" false) -}}
 		<item>
