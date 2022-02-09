@@ -39,17 +39,13 @@
 		<itunes:category text="Technology"/>
 		{{- $data := getJSON $.Site.Params.api -}}
 		{{- $ctas := index $data "ctas" -}}
-		{{- $.Scratch.Set "mcPre" "" -}}
-		{{- if and (eq .Params.ctas "mailchimp") (isset $ctas "mc-pre") -}}
-			{{- $.Scratch.Set "mcPre" (index $ctas "mc-pre") -}}
-		{{- else if and (eq .Params.ctas "convertkit") (isset $ctas "ck-pre") -}}
-			{{- $.Scratch.Set "mcPre" (index $ctas "ck-pre") -}}
+		{{- $.Scratch.Set "podcastPre" "" -}}
+		{{- if isset $ctas "podcast-pre" -}}
+			{{- $.Scratch.Set "podcastPre" (index $ctas "podcast-pre") -}}
 		{{- end -}}
-		{{- $.Scratch.Set "mcPost" "" -}}
-		{{- if and (eq .Params.ctas "mailchimp") (isset $ctas "mc-post") -}}
-			{{- $.Scratch.Set "mcPost" (index $ctas "mc-post") -}}
-		{{- else if and (eq .Params.ctas "convertkit") (isset $ctas "ck-post") -}}
-			{{- $.Scratch.Set "mcPost" (index $ctas "ck-post") -}}
+		{{- $.Scratch.Set "podcastPost" "" -}}
+		{{- if isset $ctas "podcast-post" -}}
+			{{- $.Scratch.Set "podcastPost" (index $ctas "podcast-post") -}}
 		{{- end -}}
 		{{- range (where (where (where .Site.Pages "Type" "episodes") ".Kind" "!=" "section") ".Params.draft" "==" false) -}}
 		<item>
@@ -62,7 +58,7 @@
 		    <itunes:explicit>{{ $.Site.Params.explicit }}</itunes:explicit>
 		    <itunes:summary>{{ `<![CDATA[ ` | safeHTML }}{{ if isset .Params "description" }}{{ .Description | markdownify | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}]]></itunes:summary>
 			<itunes:subtitle>{{ `<![CDATA[ ` | safeHTML }}{{ if isset .Params "description" }}{{ .Description | markdownify | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}]]></itunes:subtitle>
-		    <description>{{ `<![CDATA[ ` | safeHTML }}{{ $.Scratch.Get "mcPre" | safeHTML }}{{ if isset .Params "description" }}{{ .Description | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}{{ .Content }}{{ $.Scratch.Get "mcPost" | safeHTML }}]]></description>
+		    <description>{{ `<![CDATA[ ` | safeHTML }}{{ $.Scratch.Get "podcastPre" | safeHTML }}{{ if isset .Params "description" }}{{ .Description | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}{{ .Content }}{{ $.Scratch.Get "podcastPost" | safeHTML }}]]></description>
 			<enclosure url="{{ .Params.file }}" length="{{ .Params.legth }}" type="audio/mpeg" />
 			<itunes:image href="{{ $.Site.Params.image }}"/>
 		</item>
