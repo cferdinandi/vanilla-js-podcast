@@ -39,13 +39,15 @@
 		<itunes:category text="Technology"/>
 		{{- $data := getJSON $.Site.Params.api -}}
 		{{- $ctas := index $data "ctas" -}}
-		{{- $.Scratch.Set "podcastPre" "" -}}
-		{{- if isset $ctas "podcast-pre" -}}
-			{{- $.Scratch.Set "podcastPre" (index $ctas "podcast-pre") -}}
+		{{- $.Scratch.Set "newsletterPre" "" -}}
+		{{- if and (eq .Params.ctas "convertkit") (isset $ctas "ck-pre") -}}
+			{{- $.Scratch.Set "newsletterPre" (index $ctas "ck-pre") -}}
 		{{- end -}}
-		{{- $.Scratch.Set "podcastPost" "" -}}
-		{{- if isset $ctas "podcast-post" -}}
-			{{- $.Scratch.Set "podcastPost" (index $ctas "podcast-post") -}}
+		{{- $.Scratch.Set "newsletterPost" "" -}}
+		{{- if and (eq .Params.ctas "convertkit") (isset $ctas "ck-post") -}}
+			{{- $.Scratch.Set "newsletterPost" (index $ctas "ck-post") -}}
+		{{- else if and (eq .Params.ctas "rss") (isset $ctas "rss") -}}
+			{{- $.Scratch.Set "newsletterPost" (index $ctas "rss") -}}
 		{{- end -}}
 		{{- range (where (where (where .Site.Pages "Type" "episodes") ".Kind" "!=" "section") ".Params.draft" "==" false) -}}
 		<item>
@@ -58,7 +60,7 @@
 		    <itunes:explicit>{{ $.Site.Params.explicit }}</itunes:explicit>
 		    <itunes:summary>{{ `<![CDATA[ ` | safeHTML }}{{ if isset .Params "description" }}{{ .Description | markdownify | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}]]></itunes:summary>
 			<itunes:subtitle>{{ `<![CDATA[ ` | safeHTML }}{{ if isset .Params "description" }}{{ .Description | markdownify | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}]]></itunes:subtitle>
-		    <description>{{ `<![CDATA[ ` | safeHTML }}{{ $.Scratch.Get "podcastPre" | safeHTML }}{{ if isset .Params "description" }}{{ .Description | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}{{ .Content }}{{ $.Scratch.Get "podcastPost" | safeHTML }}]]></description>
+		    <description>{{ `<![CDATA[ ` | safeHTML }}{{ $.Scratch.Get "newsletterPre" | safeHTML }}{{ if isset .Params "description" }}{{ .Description | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}{{ .Content }}{{ $.Scratch.Get "newsletterPost" | safeHTML }}]]></description>
 			<enclosure url="{{ .Params.file }}" length="{{ .Params.legth }}" type="audio/mpeg" />
 			<itunes:image href="{{ $.Site.Params.image }}"/>
 		</item>
