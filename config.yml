@@ -12,7 +12,7 @@ params:
   episodes: "https://api.soundcloud.com/users/422835952/tracks?client_id=9yZSvlXAK7Wmu4xhb0hdMtjP9D2z351X"
   itunes: "https://itunes.apple.com/us/podcast/the-vanilla-js-podcast/id1364574460"
   spotify: "https://open.spotify.com/show/2jfWVEgKGZMazgou1hXH1R?si=ZDcXluvvScWFMSfbaLgEwg"
-  google: "https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&apn=com.google.android.music&link=https://play.google.com/music/m/Isiassbvywbxtvw7vg6sbyjfnge?t%3DThe_Vanilla_JS_Podcast%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16"
+  google: "https://podcasts.google.com/feed/aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL3BvZGNhc3QvZmVlZC5yc3M"
   rssURL: "https://gomakethings.com/podcast/feed.rss"
   rssLimit: 7
   minify: true
