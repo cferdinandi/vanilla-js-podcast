@@ -1,0 +1,33 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me today.
+
+I'm talking about what you need to know to be a good programmer or more specifically how you don't actually need to know everything to be a good programmer.
+
+So really quick, just before we start next week, Monday, March 3rd, 2023 registration opens up for the next session of my vanilla JS Academy workshop. And if that sounds interesting, stick around to the end because I'll be sharing a little bit more information about it, including a special promo code for 40% off registration.
+
+Let's dig in.
+
+So a common challenge that I hear from people who are learning to code is how hard it is to remember all the things.
+
+One thing you'll learn as you get deeper into programming is that even senior developers look stuff up all the time. It's important to remember concepts and high level approaches, but don't worry about remembering the details. You can literally always look that stuff up when you need it.
+
+I actually built an entire website, the vanilla JS toolkit of stuff that I regularly use code snippets, common functions, helper libraries, things like that, just to make it easier for me to copy and paste stuff that I was constantly Googling.
+
+I know this doesn't always seem true because so much of the developer interview process is based on you remembering random and esoteric shit that you're never actually going to need to remember or know in your day job. It's way more important to remember high level concepts and approaches and be effective at problem solving than it is to remember the specific minutia of how to run an array sort.
+
+Like you can literally just Google that, look it up on MDN or the vanilla JS toolkit and just kind of be off and on with your day. You remembering it doesn't really benefit you, but understanding that you need to use a sort or when you should use a sort in a specific task you're trying to achieve.
+
+That's where the real skill of being a programmer comes from and what being a good programmer is really about. It's about problem solving, not remembering details.
+
+And so I guess the transition here is that's a really big part of what my vanilla JS Academy workshop is all about.
+
+You are definitely going to learn some specific methods and approaches and skills and JavaScript, but the bigger takeaway is around learning how to solve problems and when to apply those specific approaches and methods to get stuff done.
+
+So if that at all sounds interesting to you, on Monday, registration for a new session of my vanilla JS Academy workshop opens up. They are kicking off on April 3rd and it is an absolutely fantastic program.
+
+There are three workshops now for you to choose from. JS Essentials, Structure and Scale and Building Web Apps. You should not take all three at once. Pick one and do it.
+
+The program runs three times a year. They all run concurrently. So if you take one now, you can take another one in the summer or the fall and then again in the winter and you can knock the whole suite of them out before the year is up.
+
+But if that at all sounds interesting, head over to vanillajsacademy.com to learn more. And if you use the code EARLYBIRD at checkout again starting Monday, March 13th, 2023, you can get 40% off of registration on the upcoming session. So hope to see you there.
+
+Anyways, that's it for today. See you next time. Cheers.

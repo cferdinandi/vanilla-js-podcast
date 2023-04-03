@@ -1,0 +1,33 @@
+Hello, hello, hello. This is the Vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me.
+
+Today, I'm talking about putting HTML first. Let's dig in.
+
+So back in January on Twitter, someone posted a question and I'll link to that original tweet down in the notes for today's show. So the tweet said, in two words, what's your best advice to a new web dev?
+
+And my advice was HTML first. HTML is the foundation of every website.
+
+Everything else is optional. CSS, JavaScript, they're nice to have, but you generally don't need them. If you know HTML well and choose the appropriate elements for the job, they can do a lot of heavy lifting for you and negate the need for JavaScript at all in some cases.
+
+This is an idea that Salma, AKA White Panther, writes about in more detail in her great article, HTML is all you need to make a website. And I will also link to that down in the show notes because it's really, really good and I highly recommend you go read the whole thing.
+
+But in her article, she writes,
+
+> Websites are natively fast and at the heart of every website is pure, unassuming, unadulterated HTML. At the dawn of web 1.0, there was only HTML. The first website ever is still online and yes, it's just HTML. It's fast and it just works.
+>
+> On a quiet Sunday afternoon, I threw out a tweet in support of this. In a world full of JavaScript frameworks, SPAs, cutting edge CSS animations, powerful devices and fast internet connections, I wanted to celebrate the perfect validity of HTML only websites and see what people were building.
+
+Now, one thing she pointed out in here that I really wanted to hone in on was this idea that it's just HTML, it's fast and it just works.
+
+So the beauty of leaning heavily on HTML and layering and that other stuff later is that it is fast and it just works.
+
+If the CSS fails, if the JavaScript fails, trusty old HTML just keeps on trucking and because of how browsers work, it is so fast to display mostly HTML websites.
+
+One of the things I get commented on quite a bit is how fast most of my websites are, even though I'm running like two dozen of them on a single $5 shared hosting instance. And the reason that is, is because they are primarily just pre-rendered HTML that gets sent down the pipe and hits your device and then is almost immediately rendered.
+
+There's not all this back and forth and parsing and processing that needs to happen.
+
+HTML is just a beautiful, resilient, easy to work with programming language and I really think it should be the foundation of a much bigger part of the foundation, I should say, of all the things that we build instead of kind of this afterthought or this thing that gets handled mostly by other parts of the stack.
+
+So anyways, that's it for today.
+
+If you're ready to make this the year that you master JavaScript, I can help. Head over to gomakethings.com to access a ton of learning resources, including free projects and lessons, books, courses, workshops, and my daily developer tips newsletter. That's it for today. See you next time. Cheers.

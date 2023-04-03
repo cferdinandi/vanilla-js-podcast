@@ -7,6 +7,7 @@ episode: 100
 file: https://cdn.gomakethings.com/podcast%2Fepisode100_you-dont-need-to-know-everything-to-be-a-good-developer.mp3
 duration: 00:003:43
 length: 2760102
+transcript: true
 ---
 
 ## Links

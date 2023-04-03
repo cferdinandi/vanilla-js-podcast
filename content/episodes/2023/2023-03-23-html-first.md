@@ -7,6 +7,7 @@ episode: 104
 file: https://cdn.gomakethings.com/podcast%2Fepisode104_html-first.mp3
 duration: 00:03:25
 length: 2545225
+transcript: true
 ---
 
 ## Links

@@ -7,6 +7,7 @@ episode: 102
 file: https://cdn.gomakethings.com/podcast%2Fepisode102_you-are-not-your-tools.mp3
 duration: 00:03:14
 length: 2406358
+transcript: true
 ---
 
 ## Links

@@ -1,0 +1,31 @@
+Hello hello hello this is the vanilla JavaScript podcast I'm Chris Ferdinandi thanks so much for joining me today I'm talking about how you are not your tools.
+
+Really quick before we start, this week the week of Monday march 3rd registration is open for the next session of the Vanilla JS Academy workshop so if you're interested in doing that head over to VanillaJSAcademy.com to learn more. Right now this week there is a 40% off discount on registration so if you're thinking about taking the workshop you are not going to want to miss out on that amazing discount.
+
+All right, let's dig in.
+
+So a few months ago I was on the JSParty podcast chatting about the rise and fall of JavaScript libraries, and I'll make sure I link to my appearance on that down in the show notes.
+
+I had a really great chat with host Kevin Ball about the ebb and flow of tools, and how the tools we use today likely won't be the tools that we're using to build the web in another five to ten years. I personally see a shift away from heavy client-side JavaScript and back to pre-rendered HTML with a sprinkling of JavaScript for interactivity.
+
+There were a lot of interesting conversations that happened around the episode, but one of the strangest things has been how defensive a subset of people get about the notion that the tools they use today won't be the tools that we use a decade from now as if that's some sort of personal attack.
+
+You are not the tools that you use to build for the web.
+
+If you've been doing this long enough you know that the tools that we use come and go, but fundamental skills stick around forever. That doesn't mean that learning tools is a bad thing. They can help you work faster and easier.
+
+But a strong foundation of core skills is going to help you ride through those waves with ease and comfort, and I think that's where a lot of the the argumentativeness comes from.
+
+If you've invested a lot of time in learning a tool, the idea that maybe it won't be relevant five or ten years from now invalidates some of your knowledge or makes it feel like the things you know aren't important, and that's not what I'm trying to say.
+
+So anyways that's it for today.
+
+Just real quick reminder if you wanted to register for the Vanilla JS Academy head over to VanillaJSAcademy.com use the code EARLYBIRD at checkout to get 40% off on your registration.
+
+There are location-based discounts automatically applied if you live in somewhere where the cost is very unfair compared to what someone in the US might pay. There's also payment plans available if you can't pay the registration fee all at once, and you want to spread that out over three months.
+
+But this program is hands-on. It's immersive. It is one of the best investments you can make in yourself as a developer.
+
+I'd really love to see you there as a student this session. I've helped over a thousand students feel way more comfortable with their JavaScript skills and I'd love to make you one of them.
+
+Anyways that's it. See you next time. Thanks so much for listening, and cheers.

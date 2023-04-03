@@ -1,0 +1,19 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinand. Thanks so much for joining me.
+
+Today, I'm talking about how most of what programming is, it's actually pretty mundane. Let's dig in.
+
+So one of the most reassuring and surprising things that I learned early in my career is that a majority of the people that you look up to in this industry are self-taught and don't have a CS degree.
+
+And I found that really surprising because so much of the conference talks that happen are around people who seem to know a lot of really deep stuff about how computers work and a lot of the interview process is around things like algorithms and solving these really weirdly complex problems.
+
+So the thing that really struck me was that just because a vocal minority of developers at those big tech companies all have PhDs in computer science doesn't actually mean that the typical developer does.
+
+And to be honest, most tech interviews evaluate people on things that have absolutely nothing to do with what we actually do every day. Most front-end work is really just solving common and repeatable problems using fundamental skills. And so from my perspective, what that means is that the skills that really matter for a developer aren't being able to memorize all these complex algorithms or have this deep computer science modeling thing going on in your head.
+
+It's being able to break problems down into smaller parts and look up solutions to those smaller problems effectively. Anything else is just noise.
+
+And any interview process that focuses more on the algorithmic stuff and less on the actual tasks of your job is a fundamentally flawed interview process.
+
+So anyways, that's it for today.
+
+If you're ready to make this the year that you master JavaScript, I can help. Head over to gomakethings.com to access a ton of learning resources, including free projects and lessons, books, courses, workshops, and my daily developer tips newsletter. See you next time, cheers.

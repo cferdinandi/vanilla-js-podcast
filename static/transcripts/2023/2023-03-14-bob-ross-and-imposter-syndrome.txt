@@ -1,0 +1,53 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me today. I'm talking about Bob Ross and imposter syndrome.
+
+And I think you're really going to love this episode, but really quick before we start this week, the week of Monday, March 3rd, 2023 registration is open for the next session of my vanilla JS Academy workshop.
+
+If that sounds interesting, stick around to the end. Cause I'm going to be sharing more information about it, including a special promo code that will get you 40% off registration. So at any rate, let's go ahead and dig in.
+
+I grew up watching Bob Ross, the prolific painting instructor, who was a staple of American public access television in the eighties and nineties.
+
+And if you have never seen an episode of Bob Ross, you were really missing out. I'm going to drop a link to one of my favorite episodes down in the show notes for this episode.
+
+Bob was the ultimate anti-imposter syndrome advocate. His trademark line in every show was, we don't make mistakes. We make happy little accidents. Bob firmly believed that anyone can learn to paint.
+
+And I've recently started realizing just how much his style of teaching and do whatever works for you influenced how I teach my own students.
+
+Season one, episode one of his joy of painting series is available on YouTube. And one of the most surprising things about it is just how bad it is. The audio is bad. The video is bad.
+
+Bob is kind of clumsy and clunky in front of the camera and he hand waves over some kind of pretty fundamental stuff to his technique that a first time viewer.
+
+And at that point, everybody was a first time viewer simply wouldn't know or understand. There are clear roots of what the show would become, but they're not really fully developed or worked out just yet.
+
+And the thing is the only way Bob got to this smooth, relaxed, effortless delivery that you'll see in later seasons and that awesome episode that I'm linking to in the show notes, that's from season 29. I'll also link to the season one, episode one episode for you just for comparison. And the only way he got to that amazing, just effortless delivery that he became known for is by putting out a handful of really crappy episodes where he experimented and found his groove.
+
+And the point with all this is that it's okay to feel like you're not a hundred percent sure what you're doing after 10 years of web development.
+
+I still look stuff up every single day. That doesn't make you an imposter. It makes you a beginner. It makes you a learner. It makes you someone who gets to experience that joy of looking at this amazing work that we do with fresh eyes and new perspectives to quote, Bob, you don't make mistakes. You make happy little accidents.
+
+So that's it for today. But if you want to learn more about my vanilla JS Academy, stick around for just a minute.
+
+So the vanilla JS Academy is a project based workshop where you follow a structured learning path, work on lots of fun projects and get the support that you need to work through challenges, not feel like you're stuck and don't know how to move forward. The way it works is that over the course of six weeks, you're going to get 70 plus lessons and work on over 18 different projects.
+
+Every other day, I release a project one to three short lessons that go with it and a template for you to get started with. And then on the in-between days, I share how I approached that same project.
+
+This is not the right way. It's just the way I approached it. There are so many different ways to approach any challenge. They're not necessarily better or worse. They're just different.
+
+And then I cover some common challenges and gotchas that students often run into. If you get stuck, there's a 24 seven private Slack channel where you can ask questions, share your work in progress and get help.
+
+And then every other week, I host a video office hours where we come together live in real time and we can talk through things, look at code, that sort of thing. It's really, really useful for helping folks get unstuck.
+
+The program has evolved to be three workshops. So Vanilla JS Essentials covers things like DOM manipulation, working with APIs, managing data, browser storage, structure and scale is for a slightly more advanced or intermediate developer. And this looks at how to structure your code and organize it as it gets bigger.
+
+So we'll cover things like JavaScript classes, object-oriented programming, web components, ES modules. And then finally, there's the web apps workshop, which as the name implies, covers how to build web apps from scratch with Vanilla JS.
+
+And you'll learn things like state-based UIs, routing, data reactivity, serverless, and writing your own APIs. And you'll build an e-commerce platform, start to finish from scratch.
+
+If all this sounds interesting, I have a new session starting on April 3rd. You can register for it this week and this week and this week only. If you use the code early bird at checkout, you'll get 40% off.
+
+The program costs $995. There are location-based discounts that are automatically applied if you live in a country where compared to what someone in America might pay, that's an unfairly expensive amount.
+
+And I also have payment plans. So if you want to spread that out over three months instead of paying it all at once, you could do that as well. So if this all sounds interesting to you, head over to vanillajsacademy.com where you can register, learn more about the different workshops and which one might be a good fit for you.
+
+This is, I promise you, one of the best investments that you can make in your career as a developer. I've helped over a thousand students really become deeply comfortable with JavaScript in a way that they weren't before. And I'd love if you were one of them.
+
+That's it for today. Thank you so much for listening and I will see you next time. Cheers.

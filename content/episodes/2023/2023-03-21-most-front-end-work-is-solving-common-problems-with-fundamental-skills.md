@@ -7,5 +7,6 @@ episode: 103
 file: https://cdn.gomakethings.com/podcast%2Fepisode103_most-front-end-work-is-solving-common-problems-with-fundamental-skills.mp3
 duration: 00:02:07
 length: 1608265
+transcript: true
 ---
 

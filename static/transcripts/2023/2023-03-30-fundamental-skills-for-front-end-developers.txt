@@ -1,0 +1,49 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me today. I'm talking about fundamental skills for front end developers.
+
+Just real quick before we start, I wanted to let you know that if you were interested in the next session of my vanilla JS Academy workshops, starting on April 3rd, this is the last week to register. And today through Sunday, you can get 30% off registration, head on over to vanillajsacademy.com to learn more.
+
+All right, cool. Let's dig in.
+
+So one of the things that I learned really early in my career that was incredibly reassuring and surprising was that a majority of the people that I looked up to in this industry are self taught and don't have a CS degree. Before that, I was really convinced that I didn't belong as a self taught developer.
+
+I felt really uncomfortable like I did not have the appropriate skills to be in this industry. And that all of these people that I looked up to had, you know, fancy degrees and tons of knowledge that I didn't. And it turns out that that's not true. A majority of our industry is self taught. Just because of vocal minority of developers at those big tech companies all have PhDs in computer science doesn't mean that the typical developer does. And to be honest, most tech interviews evaluate people on things that have absolutely nothing to do with what we actually do every day.
+
+Most front end work is just solving common and repeatable problems using fundamental skills.
+
+I wrote about this back in January for my newsletter over at go make things calm. And in response, I had a few folks right back to ask me what I thought fundamental skills actually were for a front end developer. And so I wanted to talk about that a little bit more today. I don't think there's necessarily a finite fixed list.
+
+There was a time when command line was an essential tool for using a computer, then the mouse and GUIs were invented. And platform level abstractions just generally tend to make certain skills less essential over time.
+
+For example, there was a period where knowing how to write code differently for different browsers so that they all worked the same way was an essential skill for a JavaScript developer, or where making writing CSS so that an element looked exactly the same in Internet Explorer versus Chromium versus Firefox was kind of an essential skill.
+
+And the platform has made that largely not a thing we need to worry about anymore. So skills change over time. But if we're talking about today, I think here's my list. So first, just right out the gate HTML, and specifically how to choose the right element for the job. So many of the things that we throw lots of JavaScript at could be, you know, just non issues if we did a better job choosing the right element for the job.
+
+For example, I often see JavaScript developers style divs into buttons and then write a bunch of JavaScript to handle clicks and taps and capturing focus and all the things that if they had used a button would just be handled for them automatically by the browser. Similarly, how and why HTML semantics matter.
+
+So many of the issues that we have on the web, not all of them, but a lot of them come from not choosing the correct element for the job. Similarly, I think CSS basics, how to style with different selectors. So IDs versus classes versus element selectors and specificity and how that affects what's styled. And finally, the cascade and how that affects what's styled.
+
+I think a lot of folks who come from a JavaScript background and then try to learn CSS, often try to fight the cascade because it's kind of counterintuitive to what we do in JavaScript where we want to tightly scope everything. But if you know how the cascade works, you can use it to dramatically reduce the amount of CSS you write and produce these really lightweight front ends that look really beautiful.
+
+So knowing CSS basics, not necessarily being an expert, like I still have to look up, you know, the appropriate code for creating CSS grids or working with Flexbox. I definitely don't have that committed to memory. But I have a good understanding of the basics. And I think that's kind of a fundamental skill. CSS, I would say, is very much a specialty in and of itself.
+
+But I think it hurts a lot of JavaScript developers to not know the basics of how it works. And then finally, accessibility and inclusion. So how do folks with a wide range of abilities or disabilities and backgrounds access and use the web?
+
+Not enough developers understand how disabled folks or people with slow internet connections and old devices use the things we build. And I think there's also a tendency sometimes to think about the disabled community as a monolith. So it's just people who use screen readers. But it's not just that. It's people with cognition issues, people with neuromuscular conditions.
+
+I think, you know, in the age of COVID, we're going to see cognitive issues and kind of the side effects of people getting repeatedly infected with a virus that affects the way our brains work.
+
+We're going to see more and more kind of cognition issues impact the way we build things for the web. So understanding accessibility and inclusion at kind of a high level and what that means beyond just the mechanics of working with a screen reader is, I think, an increasingly important skill to have. I think it's always been important.
+
+I don't think we pay enough attention to it. But I think we're going to see it kind of start to affect the population more and more broadly. So what about JavaScript? In my opinion, honestly, and this sounds silly since I teach JavaScript, I think it's nice to have but not essential.
+
+Once we start talking about JavaScript, though, I think there's another list of essentials just for JavaScript developers.
+
+So that includes DOM manipulation, how to get DOM elements, manipulate them, create and inject them, and listen for events in the browser. Working with data. So how do you work with arrays, objects, strings, numbers, and the various ways to store and manipulate those things? Variables, functions, and scope.
+
+So in CSS, global scope and the cascade are your friend, but with JavaScript, they can result in dangerous collisions. So how do you manage that?
+
+And then finally APIs and asynchronous JavaScript. So how do you get data from APIs and run asynchronous tasks in the background?
+
+There's a whole bigger list of things you can do with JavaScript and some of them might even be essential for certain roles. So state-based UI comes to mind depending on what you do and where you work.
+
+So anyways, that's it for today. Just a quick reminder, if you were interested in the next session of the Vanilla JS Academy, head on over to VanillaJSacademy.com to register for that. This is the last week to do so. And today through Sunday, you can get 30% off at checkout. See you next time. Cheers.

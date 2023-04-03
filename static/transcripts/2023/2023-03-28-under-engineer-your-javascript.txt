@@ -1,0 +1,29 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me.
+
+Last week I talked about HTML first and why it's the most important part of the web stack. Today I wanted to talk about simplicity and the joy of under engineering your code and they're related. So let's go ahead and dig in.
+
+So related to last week's episode on HTML first, I really enjoyed this tweet that my friend Sarah Soueidan shared on under engineering and I'm going to link to it down in the show notes.
+
+She wrote under engineer that's almost always better for usability and accessibility. Simple solutions are almost always more robust. And for me, every complex thing I've ever built, I've later gone on to refactor it into something simpler.
+
+And the same is true with team code, simpler, less clever solutions are nearly always better in almost every way. They're easier to implement. They're easier to maintain. They're less likely to break. They're less confusing to users because they're expected rather than novel. We kind of have this obsession in our industry around doing things that are different just for the sake of being different, being clever and trying to delight our users.
+
+And those aren't bad goals per se, but a lot of times they result in a user experience that's worse, that's actually less functional for the user. Under engineering is a noble goal for a web developer.
+
+This is something I wrote about on my newsletter a few months back. And one of the responses I got back from reader Caleb Stauffer, which he let me share with permission was this.
+
+This is the same thing we talk about with dev experience.
+
+Fewer building and tooling is nearly always better, easier to implement, easier to maintain, less likely to break and less confusing to future developers.
+
+And I absolutely agree. The thing that I think people get hung up with when I talk about this sometimes is they think that I'm advocating for a no tools, always create everything by hand from scratch kind of approach. And I very much not that.
+
+I'm not saying use no tools at all. I'm saying that the right mix of tools can be incredibly helpful at automating complex and repetitive tasks. But I also think that we have a tendency as an industry to approach development with and if some tools are good, more tools are better kind of mindset that doesn't actually play out that way in reality.
+
+Typically more tools means more work to get started, more things to break and so on. And it reminds me of this often attributed to Einstein quote, everything should be made as simple as possible, but no simpler.
+
+And so that's really my philosophy around development. There's kind of this point where you go to the realm of so simple that you've actually made your life a little bit harder.
+
+And I think what we tend to do just generally as an industry more broadly is we just keep throwing more complexity at things to the point that the benefits just aren't there. So make things as simple as possible, but no simpler.
+
+Anyways, that's it for today. Just real quick before we go. If you were interested in signing up for my next session of the vanilla JS Academy, which starts on April 3rd, this is the last week to do so. And if you register today, you can take 30% off at registration, head on over to vanilla.jsacademy.com to learn more. And I'll see you next time. Cheers.

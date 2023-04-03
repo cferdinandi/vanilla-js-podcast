@@ -7,6 +7,7 @@ episode: 105
 file: https://cdn.gomakethings.com/podcast%2Fepisode105_under-engineer.mp3
 duration: 00:03:37
 length: 2687227
+transcript: true
 ---
 
 ## Links

@@ -7,6 +7,7 @@ episode: 101
 file: https://cdn.gomakethings.com/podcast%2Fepisode101_bob-ross-and-imposter-syndrome.mp3
 duration: 00:05:47
 length: 4245483
+transcript: true
 ---
 
 ## Links
