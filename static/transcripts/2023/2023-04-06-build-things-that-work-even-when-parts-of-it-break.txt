@@ -1,0 +1,23 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me. Today, we're talking about how web development can literally kill people.
+
+So one of the common tropes that I sometimes hear web developers share when talking about our work is something to the effect of, I'm not a doctor, no one is going to die if I make a mistake. But that's not always true. Sometimes our work literally is life or death.
+
+A month or two ago, my friend Eric Bailey wrote about his experience with a mental health website. And I'm going to link to that down in the show notes. Eric was trying to access the site, but he encountered a loading spinner that wouldn't go away. And he wrote in his article, quote,
+
+> If you're familiar with how the web is built, what happened is pretty obvious. A website that over relies on JavaScript to power its experience had its logic collide with one or more other errant pieces of logic that it summons and this created a deadlock.
+
+So that was Eric.
+
+This is a direct byproduct of modern web development and our over-reliance on JavaScript, large libraries, and mountains of third party scripts. And for a mental health website, a mistake made by a web developer can literally be a matter of life and death, even though you're not a doctor.
+
+I'm going to quote Eric again.
+
+> I also need to point out that people are visiting sites like this because they are not in a good place. Depression and stress lower your executive function. Furthermore, people internalize technology's failures as their own. What if I was suicidal? A person seeking help in a time of crisis does not care about TypeScript, tree shaking, hot module replacement, A-B tests, burn down charts, NPS, OKRs, KPIs, or other startup jargon. Developer experience does not count for shit if the person using the thing they built can't actually get what they need.
+
+I'm really, I cannot stress enough how much you should go read Eric's whole article, which again, I will link to in the show notes.
+
+But if your organization builds bloated over engineered software, share his article with them as well. I'd encourage them to stop. As I talked about a week or two ago, build with HTML first, under engineer, build things that work even when parts of it break.
+
+And if you want to learn more about how you do that, building things that work even when parts break, I'm going to talk about that in the next episode.
+
+So that's it for today. If you're ready to make this year the year that you master JavaScript, I can help. Head over to GoMakeThings.com to access a ton of learning resources, including free projects and lessons, books, courses, workshops, and of course, my daily developer newsletter. See you next time. Cheers.

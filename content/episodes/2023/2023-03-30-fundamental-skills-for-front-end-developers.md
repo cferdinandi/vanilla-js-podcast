@@ -7,4 +7,5 @@ episode: 106
 file: https://cdn.gomakethings.com/podcast%2Fepisode106_essential-skills.mp3
 duration: 00:07:19
 length: 5342313
+transcript: true
 ---

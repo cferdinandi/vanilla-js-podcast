@@ -34,6 +34,14 @@
 
 		{{ .Content }}
 
+		{{- if isset .Params "transcript" -}}
+		{{- $transcript := (replace (replace .File.Path "episodes/" "/static/transcripts/") ".md" ".txt") -}}
+		{{- if fileExists $transcript -}}
+		<h2 id="transcript">Transcript</h2>
+		{{ readFile $transcript | markdownify }}
+		{{- end -}}
+		{{- end -}}
+
 	</article>
 
 

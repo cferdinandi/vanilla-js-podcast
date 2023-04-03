@@ -4,3 +4,4 @@ Disallow: /automate/*
 Disallow: /css/*
 Disallow: /js/*
 Disallow: /svg/*
+Disallow: /transcripts/*
