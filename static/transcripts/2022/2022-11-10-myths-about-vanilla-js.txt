@@ -1,0 +1,31 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today.
+
+I'm talking about myths about vanilla JavaScript. Let's dig in.
+
+So over the years, I have seen a lot of the same myths about vanilla JS pop up over and over again. And today I wanted to debunk them.
+
+So myth number one is that vanilla JS doesn't scale. Oh, no, it powers every single library and framework that allegedly does scale. Often people who say this don't mean can't handle a lot of requests or operations, but actually mean it's harder to use on teams because it's so open ended. And that's fair.
+
+But that doesn't mean that it doesn't scale.
+
+It means that you need to establish some conventions, which brings us to myth number two. Libraries provide structure that vanilla JS lacks. JavaScript is a very flexible language. You can run it in the browser and on the server for any task you want to accomplish.
+
+There are usually at least two or three approaches that you can use often more with no one obvious choice, but that's also why coding conventions and style guides exist. Those are important even if you use a library because libraries also often have multiple ways to do things with view. You can use the options or compositions API with react. You have to decide between hooks and classes.
+
+There are big decisions with either about where the state should live. Libraries absolutely add some structure, but they also introduce numerous other decisions that you need to make. Myth number three, vanilla JS is slow. This one is frankly befuddling.
+
+The vanilla JS isn't just not slow. It's actually orders of magnitude faster than using a library, and I will drop a link in the show notes with the data to back that up. I've seen this myth appear in a few different ways. I once had someone argue passionately that react is faster than vanilla JS because it uses a virtual DOM and quote the real DOM is slow. Thing is, after figuring out what needs to change via the virtual DOM, react still needs to modify the actual DOM.
+
+The other day I saw someone arguing that vanilla JS is slow because quote loading lots of UMDs is slow. A UMD, if you've never heard of this before, is a wrapper that you can put around your JavaScript to make it compatible with module loaders like common JS while still letting it run directly in the browser. But nothing about UMDs are inherently slow. Loading lots of scripts with a module loader can be slow, but that's a library problem, not a vanilla JS problem.
+
+Myth number four, vanilla JS means writing everything from scratch. Nope, just no. I use helper functions and small libraries all the time. A lot of very talented people have done a lot of great work to make the web faster, safer, and easier to build. Stand on their shoulders. Vanilla JS is an ethos, more about avoiding big lock-in ecosystems that become a core dependency for everything else you do.
+
+A lot of the more popular tools on the web do a few really great things that you need and a bunch of stuff you don't, and we make users pay a tax for our ease of development in the form of more data usage and slower sites. Vanilla JS means using just enough code, nothing more, nothing less. It doesn't mean that you are literally hand coding everything you build every single time from scratch.
+
+There are tons of great dependency-free libraries that, in my mind, still qualify as vanilla JS. So why do these myths persist? I honestly think a lot of it has to do with marketing nonsense from big libraries.
+
+It may start off as a conference talk about some specific situation where, situation rather, where using a library for a task is faster, better, or easier than using vanilla JS. That happens. Then that gets distilled into more general marketing copy, and then that marketing copy gets repeated as a simple truism enough times that people start parroting it without context. So yes, vanilla JS scales. Yes, vanilla JS can have the same structure that a library has.
+
+No, vanilla JS is not slow, and no, it does not mean writing everything from scratch. That's it for today. If you are ready to make this the year that you master JavaScript, I want to help. Head over to GoMakeThings.com, where you can access a ton of learning resources, including free projects, books, courses, workshops, and my daily developer newsletter.
+
+See you next time. Cheers.

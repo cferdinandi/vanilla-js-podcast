@@ -1,0 +1,25 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today I am talking about when to optimize for performance. Let's dig in.
+
+So last month Wyzen shared a great thread on how he breaks his coding tasks into smaller parts and Pushes a bunch of small commits with iterative changes instead of one big commit with a bunch of stuff And I'm gonna drop a link to his Twitter thread on this down in the show notes.
+
+I like this approach a lot Wyzen notes quote smaller commits help retain my flow state Therefore improving my productivity to have smaller commits. You have to be able to slice your task into nano slices I have found adopting angular's commit format to be helpful in the slicing activity This whole thread is excellent.
+
+I highly recommend reading it One part of Wyzen's process jumped out at me though He articulated a workflow that aims to prevent premature optimization, which is a valid concern. And so he wrote features slash fix Then refactor then performance following Kent Beck's mantra of make it work make it right make it fast Notice that performance is a separate commit type.
+
+I like performance improvement to be done as a separate effort which encourages less premature optimization now I agree with this at a high level but just like with accessibility work It's often faster cheaper and easier to bake performance in than to apply it retroactively and as Ethan Gardner points out fix it later often turns into fix it never and I will drop a link to Ethan's comments down in the show notes as well So when do you optimize for performance?
+
+Wyzen presented an interesting scenario Writing if I tell you that a while loop is faster than a for loop Would you fix and use a while loop for all of your future code now for the sake of argument Let's pretend that the performance difference of looping methods is significant and would make a big difference in Site or app performance because it doesn't.
+
+Now I have to track down and update every loop instance in my code evaluate it and update it it would have been faster to do it right the first time and Loops are generally easy to swap out real performance changes typically involve bigger changes than that in many instances it means approaching a problem a different way or Refactoring a pretty big chunk of code Refactoring working code is always a risky proposition.
+
+It takes time and costs money It means you need to run additional tests to make sure that your changes don't break things And in many businesses you often see PMs or companies deciding not to fix obvious bugs Performance issues and accessibility issues because it works most of the time for most people or this is an edge case You know that loop is slower.
+
+Well, it only affects people on slow connections. Our best paying customers have fast machines We'll address that later.
+
+Maybe this sort of thing happens all the time in businesses because their priority is not Accessibility and performance it's making money and as long as the app is working well enough to continue to do that They don't necessarily care about these things that really do affect your users And the thing for me is that performance is built-in not bolt-on your first pass at something is often sloppy A refactor is one of the first things I do after I get my code working But I think pushing performance optimizations to the end of the process Ignores the reality of both how businesses work and how web performance works.
+
+It's not a bolt-on feature It's a built-in thing. So, um, you know Wisen's thread is about git flows more than web performance specifically and it's really good I don't want to take away from from that with this discussion and I Really really strongly recommend you go read the whole thing if you want to dig more into kind of efficient git flows I think it's an amazing resource. So I'll make sure there's a link to that Down in the show notes at any rate, that's it for today If you're ready to make this the year that you master JavaScript I want to help head over to go make things comm where you can access tons of learning resources including free projects Books courses workshops and my daily developer newsletter.
+
+See you next time. Cheers

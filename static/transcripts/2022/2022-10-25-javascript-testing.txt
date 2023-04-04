@@ -1,0 +1,47 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about testing JavaScript.
+
+Just really quick before we start though, I want to let you know that today through Monday, October 31st, I am running a sale on all of my books in courses, including a new one I just launched on testing JavaScript. And you can use the code spooky30 at checkout to get 30% off.
+
+So with that out of the way, let's dig in.
+
+So for years, one of the most frequent requests that I've gotten from my students is resources around testing JavaScript. There are a lot of tutorials and tools for testing JS, but they almost all focus on integrating with front-end frameworks like React and all of the heavy tooling that comes along with it. There's not a lot out there on how you test vanilla JavaScript.
+
+And so I recently released a new video course and ebook specifically around that. And today I wanted to talk about testing JavaScript at a high level, because a lot of kind of the details involve a lot of nitty gritty code that doesn't necessarily make sense in a podcast format. But some of the high level concepts are really important to wrap your head around before you dive into testing. So with that out of the way, let's kind of dig into this.
+
+So there are a few different types of tests that you can run on your code. And they all have different goals and objectives. So on one end, you've got linting or static testing. And the purpose of this is to identify typos, syntax errors, and anti-patterns in your code and call them out.
+
+Your text editor can be configured to run a linter as you type, which allows you to catch errors very early in the process. And this is kind of like a low-hanging fruit type thing. So maybe you misspelled the function keyword, while trying to define a function, or you are trying to use a variable that you haven't defined.
+
+A linter is going to catch those things literally as you're typing and help you kind of fix those things before they even become problems. Unit tests look at small chunks of code and verify that they do what they're supposed to do. They can be used to test individual functions in a library or component or smaller parts of a bigger application.
+
+So for example, let's say you had a function that you passed in a name as a string and it returned out a string that had a greeting for that name. So if you passed in, say Merlin, it would return out a string that said, hi Merlin, how are you today?
+
+A unit test might verify that the function returns a string, that it includes the name that you provided as an argument, and maybe that if no name was provided, it still works, maybe with some sort of fallback or something. And then on the extreme other end, you've got end-to-end tests, or E to E as they're sometimes called.
+
+And these verify that all of the different pieces of your app or website work together. End-to-end testing tools typically open up your site in a real browser and complete a series of tasks that an actual user might. And end-to-end tests are things that can actually just be run manually. So if you would sit down in front of your computer and work through an app, you can also automate a lot of that with an end-to-end testing tool.
+
+So for example, an E2E test might open up your app, click on the login link, enter a username and password into the form, click the submit button, and then verify that the login was successful and you got redirected to some sort of authentication only type page. And then there's this other type of testing that you'll hear about a lot called integration testing.
+
+And it's a phrase that's used differently by different people. And so as a result, it can be kind of confusing. Some people use it to mean testing a few units together, but not the whole app in a real browser. Other people use it to mean testing individual units of code that call third-party services like APIs.
+
+Martin Fowler has a really great article on the history behind this that I will make sure to drop a link to down in the show notes. But regardless of the definition that you use, the tools for running these types of tests are the same ones that you use to run a unit test. And functionally, they're the same thing.
+
+So I tend to refer to both types as unit tests because I find it more simple and clear. It's one of those things where the distinction is kind of meaningless. It means so many different things to so many different people.
+
+And it's really easy to get hung up on the type of test that you're running rather than what it is you're actually trying to test. So for me, integration testing is a phrase I just don't even bother concerning myself with. I just think it creates more confusion than clarity. So the other big thing with testing JavaScript is keeping your focus on what the actual goal is. And this kind of sort of relates to what I was just talking about with integration testing.
+
+So regardless of which testing approaches you use, the goal is always the same. To give yourself confidence that any changes you make and any code you ship will continue to work as expected. And within our industry, there's a lot of opinions on what the right mix of testing approaches actually is.
+
+Should you write mostly unit tests, more end-to-end tests, an equal mix of both? Many testing tools include coverage reports that tell you what percentage of your code base has been tested. There are a lot of opinions on what percentage of your code should be tested. On the extreme end, you've got some folks that are always aiming for 100% code coverage all the time.
+
+But as testing specialist Justin Searle's notes, and I'll drop a link to his Twitter thread on this and on the show notes as well, those questions miss the point of testing. Justin notes, quote, "'People love debating what percentage "'of which type of test to write, but it's a distraction. "'Nearly zero teams write expressive tests "'that establish clear boundaries, run quickly and reliably, "'and only fail for useful reasons. "'Focus on that instead.'"
+
+And so, yeah, I really agree with that.
+
+The goal of testing is to catch errors before they ship. We want to write tests that cover common use cases for whatever it is that we're building and that fail quickly when the code we've written won't behave correctly for the user.
+
+So if you wanna dive deeper into this, you can head on over to vanillajsguides.com where you can find a book and a video course or both on this topic that goes into how to write unit tests, end-to-end tests, linting tools you can use, and a whole bunch of nitty-gritty specifics around doing all of that for vanilla JavaScript. And today through Monday, October 31st, you can get 30% off that course with the code SPOOKY30 at checkout. So that's it for today.
+
+Thanks so much for listening. Cheers.

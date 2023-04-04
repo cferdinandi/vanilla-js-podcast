@@ -1,0 +1,27 @@
+Hello, hello, hello! This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about how to write good alt text.
+
+Really quick before we start, next week, I will be running my biggest sale of the year. And I'll be sharing all of the details about it on Tuesday. So keep an eye out for that. Trust me, though, you don't want to miss this one. If you were interested in any of my courses, books, or workshops, this sale is the time to buy them. Alright, let's dig in.
+
+So the alt attribute is used with image elements to provide descriptive text that can be read aloud by screen readers and other assistive technology. Today, I wanted to dig into what good alt text looked like and some common mistakes that I see people make.
+
+So imagine we had a photo of a crab. So you have an image element with a source that points to slash images slash edgar the crab dot jpeg. By default, a screen reader would announce slash images slash edgar the crab dot jpeg for this image. If we add an alt attribute with a description of the crab, that is what gets read aloud instead.
+
+So on your image element, if you add alt equals, and then you have some text that says a crab standing in wet packed sand, waving as the tide gently laps the shore behind him, a screen reader would announce a crab standing in wet packed sand waving as the tide gently laps the shores behind him. This allows visually impaired users to get the same information from the image that someone who doesn't need assistive technology would. When writing alt text, try to describe the details of the image rather than simply stating what it is. Using this photo of edgar the crab as an example, the crab I met on my vacation would be bad alt text. While it's descriptive, it doesn't actually describe the content of the image itself.
+
+It's more like a kind of a lead in to the image, more like a caption below it.
+
+So what about the title attribute? This is another kind of common mistake that I see folks make. The title attribute is often is also often read aloud by screen readers, and many people incorrectly assume that you can use title and alt interchangeably.
+
+You can't. They do different things. And similarly, you shouldn't use the same text for both the title and alt attributes, as it will be read aloud twice by many screen readers.
+
+So if you had alt and a title that both said a crab standing in wet pack sand, et cetera, et cetera, that would get read aloud twice by many screen readers. The title attribute is supposed to provide the kind of information that you might find in a caption. So for example, the crab I met on my vacation would be more appropriate for a title than for alt. And you could use those in combinations.
+
+You could have title the crab I met on my vacation and alt a crab standing in wet pack sand waving as the tide gently laps the shore behind him. That said, in most situations, wrapping an image in a figure element and then adding that text as a fig caption element below the image and not including a title attribute is actually the better option, since it's both exposed visually and read aloud by screen readers. Every now and then, you might have an image that's purely decorative in nature.
+
+And just as an aside, images that are just decorative happen far less often than you might think. When that's the case, though, it's better to use an empty string for your alt text rather than omit the attribute entirely. So without the attribute, the screen reader reads the file name of the image. With an empty string as your alt attribute, the screen reader won't announce the screen reader won't announce anything, which is more appropriate for an image that's purely decorative.
+
+That's it for today. If you're ready to make this the year that you master JavaScript, I can help head on over to go make things dot com, where you can access a ton of learning resources, including free projects, lessons, books, courses, workshops, and my daily developer newsletter. And don't forget to keep an eye out next week for my biggest sale of the year.
+
+See you next time. Cheers.

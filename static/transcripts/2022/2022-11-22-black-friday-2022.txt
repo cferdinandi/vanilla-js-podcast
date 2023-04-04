@@ -1,0 +1,13 @@
+Hello, hello, hello. This is Chris Ferdinand from the Vanilla JS podcast.
+
+And in this special episode, I wanted to let you know about my not quite Black Friday sale, which is running right now through Cyber Monday, November 28th. And it is my biggest sales event of the year. You can take 50% off every book, video course, and enrollment in the next session of Vanilla JS Academy.
+
+This includes all of my pocket guide bundles, as well as a brand new web apps Academy workshop that's launching in January. If you were holding off on learning JavaScript, now is the time to do it. And if you buy a pocket guide bundle in any format or register for an Academy workshop, you'll also get $673 in free bonuses.
+
+This includes some awesome things like the Vanilla JS live code series, where I work through a bunch of Vanilla JS projects in real time. You can either follow along with me or try to actually complete it on your own because it includes all of the project source code. You'll also get some additional hands-on learning with a project bundle.
+
+There is a course that I wrote a little while ago on building wicked fast websites. You'll also get my web developer career guide that teaches you how to write resumes that get seen by an actual human, navigate the interview process and more.
+
+You'll get my webinar on my favorite Vanilla JS methods and browser APIs and access to eight bonus projects that are normally only available for Vanilla JS Academy alumni. My not quite Black Friday sale is running right now. It ends on Monday at midnight. And if you were interested in getting any of my courses or joining any of my workshops, now is the best time to do it, so don't miss out.
+
+Head over to gomakethings.com to get all of the details.

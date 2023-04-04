@@ -1,0 +1,92 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today.
+
+I'm talking about how to keep your JavaScript organized real quick before we start though: next week, Monday, March 3rd, 2023, registration opens up for the next session of my vanilla JS Academy workshop.
+
+And if that sounds interesting to you, I'll be sharing more about it, including a special promo code for 40% off registration at the end of the show. So make sure you stick around for that.
+
+All right, cool. Let's dig in.
+
+So one of the more common questions that I get from students is something like, how do I keep my code more organized as things grow? Almost everything that I'll be talking about today is actually explored in greater detail in my structure and scale workshop, which is part of Academy.
+
+Um, so first I tend to just personally follow a pattern in my JavaScript files where variables go at the top functions go in the middle and event listeners and functions that get executed go at the end.
+
+Um, so, uh, for example, if you had, um, maybe a script that listened for form, submit events and sent them to a server with Ajax, I would have, um, a few variables maybe for the form element and the form status element where you kind of display messages like submitting and submitted successfully and stuff.
+
+I'd have those variables up at the top, uh, maybe with some query selector methods to get them, maybe a variable for the end point to my API. Then in the middle, I might have something like my submit handler function, the code that actually, uh, takes that form data, sends it to the API with a fetch method and gets back the response and renders it into the UI. And then down at the very bottom is where I would add my event listener to listen for submit events and run that submit handler function.
+
+Now on bigger scripts, I include heading comments for each section. So I will literally have a giant comment block that says variables, functions, and, and it's an event listeners on smaller scripts though. And especially as I've started to use ES modules more, I tend to skip them. Um, they make a lot of sense in kind of a, an old school world where you maybe have one file with hundreds of lines of code, but when you have a bunch of smaller modular files, it's just not as necessary, um, to have those big kind of section headings.
+
+Uh, the other thing is good in code documentation. So I document my code thoroughly.
+
+The common explanation for why to do this is so that other people can more easily work with your code. The selfish reason though is that if I don't look at code for a month or two, and then I come back to it, it's a lot easier to jump right in and start working again if the code is well documented.
+
+So I document for very selfish reasons.
+It helps me as much or more than it helps other developers who are looking at my code.
+
+I'm a big fan of JS doc for documentation, and I will drop a link to that in the notes for the show. If you want to learn a little bit more about what that is and how it works and how I tend to use it.
+
+But JS doc just real quick is an industry convention based on the doc blocker format. It provides information about what a function does, the parameters it accepts, and the data that it returns back out.
+
+Many modern text editors will also automatically use JS doc headings to show you hints when you go to type a function or hover over it later in your code. A little time spent writing in context documentation now is a lot of time saved later. So this one's really huge. It's just such a useful thing to do.
+
+Also library wrappers.
+
+So for code that might be reused across project or that contains some specific functionality, I often create a tiny library.
+
+I used to be a really big fan of the revealing module pattern, and I'll drop a link to what that is down in the notes. More recently, I've found that the constructor pattern or JavaScript classes, my new favorite, better meet my needs. Either way, the goal is to provide a self-contained wrapper for some specific piece of functionality that makes it easier to use in other places.
+
+The idea being I can take that code and just drop it as is somewhere else. And the way I kind of initialize it or pass some arguments in allows me to customize it a little bit for the use without having to touch that underlying code at all.
+
+DOM manipulation and data manipulation tasks are really good candidates for this approach. You might create a library for things like form validation or an accordion or a dropdown component.
+
+This allows you to load the script on the page and then use it with just one or two lines of code. For many DOM manipulation scripts, a native web component might actually be a better choice as well. They allow you to include custom elements in your HTML with all of your JavaScript tucked away in a nice little wrapper class.
+
+And this is something that we dive deep into in the structure and scale JavaScript course or workshop as well. And I also have, if this is something you wanted to dig into in your own time, I also have an ebook and a self-paced course on this as well over at vanillajsguides.com.
+
+Finally, modularizing your code base.
+
+So within a site or app, I might have lots of functions that are reused in various places but not needed on every page. ES modules provide you with a way to break your code into smaller modular parts and keep variables and functions scoped to just where they're needed. Conceptually, ES modules work like this.
+
+In a file, you declare certain functions or variables as exportable, which means that they can be used outside of that file. In another file, you import the functions and variables that you need from the first file using the import keyword. So for example, if I had a math.js file with add and subtract functions in it, I might have another function, calculator.js, where I need to run those functions in response to some user actions.
+
+Maybe I need to run that add function and pass a couple of numbers in.
+
+In math.js, I can export using the export operator or keyword an object of functions that are able to be used in other files. In this case, let's say add and subtract.
+
+And then in my calculator.js file, I can import the functions I need and use them. So I can say import add from math.js. ES modules allow me to create a code base with a handful of smaller, more focused files.
+
+They also help me reuse specific functions without having to copy and paste things or have one giant file for the entire site. So they've resulted for me in builds that are a lot smaller and pages that load a lot faster. And if you want to learn the ins and outs of ES modules, you're not ready to dive into a workshop. I have a course and an ebook on that as well. Also over at vanilla.jsguides.com.
+
+So that's it for today's episode. But if you want to talk about Vanilla JS Academy for a minute, I'd love to just tell you about what that is and how that's all going to work.
+
+So the next workshop runs on April 3rd. Registration opens up on Monday, March 13th, 2023. And so the way the workshop works is you get 70 lessons and 18 projects spread out over six weeks.
+
+Every other day, you get a project to work on. So every Monday, Wednesday, and Friday, that project comes with one to three short lessons that provide some background and a template to help you get started. On the in-between days, I share my approach to the project and some common challenges and gotchas that I often see students run into.
+
+If you get stuck, there's a 24-7 private Slack channel exclusively for students. So you're going to be interacting with other people who are going through this program at the exact same time as you. And there's also video office hours every other week. So if you have a question that would really benefit from some direct involvement with me and some of the other students, we can get on a video call and talk about it.
+
+One of the common questions I get about this is what time do I have to log in every day to do the lessons and when do I have to turn them in by?
+
+So there's no homework. This is not a thing. You're not getting graded. You don't fail if you don't do all the projects by a certain time. And I call it semi-asynchronous. So I'm dripping out the projects and lessons every other day. That helps keep people focused, keep them on task, keep them from getting too ahead of themselves and getting burnt out. But you can do those whenever.
+
+So if you are in a very different time zone than I am, you can do them later in the day. You can do them the next day. If you're someone who wakes up crazy early because they come out at 12 midnight, US Eastern every day, you can jump on super, super early my time and get them done before a lot of the US-based students even wake up. I've also had students who their day job gets busy and they would just kind of batch them and do them all over the weekend.
+
+I've had people who take vacations or life comes up and they end up a week or so behind and then they catch up. So it's a really flexible program.
+
+The most important part of it is just being able to participate in that Slack channel and join the office hours because that's where I think a lot of the benefit really comes from is interacting with other students and having that accountability and that feedback and that help. So the other piece of this is it used to just be one workshop focused on JS fundamentals and over time it's expanded into three programs that cover a wider range of things.
+
+So the first workshop is on vanilla JS essentials. This is where you learn things like DOM manipulation, working with APIs, managing data, browser storage, stuff like that.
+
+We also have structuring scale, which today's episode covered a lot of the kind of the high level concepts and we dig way deeper into them. So how to manage your code and your projects as they grow and scale. And we look at things like utility libraries, object oriented programming, JavaScript classes, web components, ES modules, service workers.
+
+And finally, the newest workshop that just went through its first running back in January and got really, really good feedback from the students is around web apps. And this is where you're going to learn how to build a dynamic web app with JavaScript.
+
+In this one, we actually build an e-commerce platform from scratch, start to finish, and you're going to learn advanced topics like state-based UI, routing, data reactivity, serverless, how to create your own APIs and token based authentication.
+
+So the thing with these workshops, they're all pretty intense. So I'm going to recommend that you do not take them all at once. You're going to want to take just one per session.
+
+I have a lot of students who, you know, runs the workshops run three or four times a year. So they'll, you know, they'll just kind of knock them out one after the other over the course of a year. And if you go through the program, I promise you, you're going to come out a much better developer than when you went in.
+
+So if this at all sounds interesting, you can use the code EARLYBIRD next week, Monday, March 13th through that Sunday to get 40% off registration in this session of Academy. This is one of the best investments you can make into yourself and your future as a developer. So I really hope to see you there. Thanks so much for listening.
+
+That's it for today's episode and I will see you next time. Cheers.

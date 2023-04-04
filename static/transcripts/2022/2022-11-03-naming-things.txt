@@ -1,0 +1,43 @@
+Hello, hello, hello, this is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I am talking about naming things in JavaScript.
+
+Just a heads up, in a few weeks, I'm going to be running my biggest sale of the year, and I'll be sharing the details about that in a future episode, so keep an eye out. With that out of the way, let's dig in.
+
+So there is an oft-repeated quote in programming from Phil Carlton.
+
+> There are only two hard things in computer science, cache invalidation and naming things.
+
+Now, sometimes naming things is hard, but it doesn't have to be. Often, when a function is hard to name, it's trying to do too much. Last month, my friend, Chris Beechler, shared one of the best tech tweets I've ever read, writing,
+
+> doing code review and doling out a simple thing I wish someone had told me when I was a junior dev. So in case anyone needs to hear it, variables that starts with is should be booleans, and function names should usually start with verbs, get, handle, check, render, et cetera.
+
+Today, I wanted to expand a little bit on what Chris wrote.
+
+So with that out of the way, let's dig in.
+
+So for purposes of this episode, let's imagine that you have some sort of cart object. Each property is a product ID, and its value is the quantity of that item in the cart.
+
+So you have a variable, let cart equal, it's an object, and you might have things like anchor with a value of one, buoy with a value of four, rope with a value of two. We're gonna be building out a nautical e-commerce site, and we want to write some variables and functions to help us out. So first, starting with is.
+
+Functions and variables that start with is should be or return a boolean, true or false. So let's imagine we have a function called isInCart that accepts a product ID as an argument.
+
+That should return a boolean, either true, if the item is in the cart, or false if it's not.
+
+A similar alternative to this would be has. So maybe we have a function hasItemsInCart, and it checks to see if the cart has any items in it.
+
+And so for that, we would use maybe the object keys function or method on some sort of cart to check that there's actually items in the cart, we can get the length, and if it's greater than zero, we return true, if not, we return false. One of the other suggestions that Chris made is to start most function names with a verb.
+
+Functions do things, and starting their name with a verb makes it a lot more clear what they actually do. So if you had a function that was going to tell you the amount of items in the cart, you might start that with get, so get cart quantity, for example.
+
+And in that one, you would pass the cart object into the object keys method to get an array of keys, and then check the length property on that array and return that out. If you had a function that adds items to the cart or removes items from the cart, you could call that addItemToCart and removeItemFromCart.
+
+And it becomes very clear when you name things like this, what the functions do.
+
+It also makes functions and variables a lot easier to name because you're literally just naming them based on what they do. And so, as an addition to this, I really like the phrase clarity over brevity.
+
+As an industry, we tend to make a big deal out of terse and clever names for things. And I think that's probably where a lot of the challenge in naming things comes from. Be verbose, use big names for things. It's much better to have a slightly longer name that's clear and easy to reason about than something short and clever that you can't actually remember what it does. So anyways, that's it for today.
+
+If you are ready to make this the year that you mastered JavaScript, I can help. Head over to gomakethings.com to access a ton of learning resources, including free projects and lessons, books, courses, workshops, and my daily developer newsletter.
+
+See you next time. Cheers.

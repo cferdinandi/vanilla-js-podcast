@@ -1,0 +1,31 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I am talking about reinventing the wheel for fun and profit.
+
+Just a heads up, in a few weeks, I am going to be running my biggest sale of the year. I will be sharing all of the details in a future episode. So keep an eye out for that. Cool. Let's dig in.
+
+So as a group, JavaScript developers seem to love to reinvent the wheel and then claim it's some cool new original feature. When Next.js let people create HTML on the server, people got really excited about how game changing it was.
+
+My dude, that's PHP. It's been around for ages.
+
+When the folks at Basecamp confidently declared that HTML was an exciting new alternative to sending JSON and called it HTML over the wire, JS devs fawned over their brilliance.
+
+This was before their big downfall for being racists and losing a bunch of their developers. Sending HTML over the wire, that's just how websites work. And so, of course, I found Rach Smith's article on islands from a few months back really, really interesting. And I'm going to drop a link to that down on the show notes so you can read it.
+
+But in the article, Rach notes, the newest website frameworks keep referencing this thing called islands architecture, which had me asking what is an island and how is it architected? When I first read about how islands architecture works, the HTML for a page is rendered by the server and then sections of that page are made interactive via JavaScript. I was confused. Isn't that just describing how we built web pages back in 2011 with jQuery?
+
+That's Rach's quote.
+
+Yeah, it is. Rach has a much more nuanced opinion on this than I do, writing, front-end developers tried to do the client-side JavaScript framework thing.
+
+They tried the both sides JavaScript framework thing, and now they're back to server rendered HTML with JavaScript on top. An ungenerous take would be to call this an idiotic circle where we've ended up back in the beginning, but that's not what's actually happening. And that's why people are talking about islands architecture now.
+
+So that was Rach's quote. I personally see this as an endless hype circle that front-end developers seem trapped in.
+
+Rach seems to view this as an evolution of the platform. And I wouldn't be surprised if we're both right in one sense or another. Either way, I'd encourage you to go give her full article a read. It's really good.
+
+I'm going to make sure I drop a link to that down on the show notes. But yeah, I just, for me, it just, it feels like we, as an industry, just kind of keep repeating ourselves and we inch forward. Like there are definitely kind of, you know, big, big shifts that happen. And then we rediscover these things that we figured out years ago over and over again.
+
+So I think it probably is a little bit of both. Anyways, that's it for today. If you are ready to make this year the year that you master JavaScript, I can help. Head over to gomakethings.com to access a ton of learning resources, including free projects and lessons, books, courses, workshops, and my daily newsletter.
+
+See you next time. Cheers.

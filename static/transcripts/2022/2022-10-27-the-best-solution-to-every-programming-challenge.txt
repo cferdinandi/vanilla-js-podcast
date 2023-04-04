@@ -1,0 +1,31 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I am talking about the best solution for every programming challenge that you come across. And yes, that is absolutely clickbait nonsense.
+
+Real quick, before we get started, I wanted to let you know that today through Monday, October 31st, I am running a sale on all of my books and courses. If you head over to VanillaJSGuides.com and use the code SPOOKY30 at checkout, you can get 30% off every book, course, and bundle. Now with that out of the way, let's dig in.
+
+So, our industry has a lot of debates over what the best approach or technology is for any particular task.
+
+Object-oriented programming versus functional programming, utility classes versus BEM versus component styles, JavaScript versus CSS, Node versus PHP. There is always going to be a thought leader telling you that their favorite tool or approach is the best.
+
+And to be fair, I have at times been guilty of this myself with vanilla JavaScript versus libraries and frameworks. But in reality, lots of tools are great and perfectly suited for certain challenges, but absolutely terrible for others. And you become a much better programmer when you recognize that personal preferences are not facts and the best tool for most situations isn't the best tool for all of them.
+
+This is one of these things that probably took me a little bit longer than it should have. And when you're a younger programmer and you have a thing you found that works really well for you, it's really easy to get kind of hung up on the idea that that thing is the best. And it may be for many situations, but there are going to be times where it's not.
+
+I see this a lot in my VanillaJS Academy workshop program where there's a lot of, why would you use functional programming when you can use OOP? Or why didn't you use object oriented programming or inheritance for this?
+
+Or conversely, why would you ever use OOP when you can just use functional programming? And the reality is all of these different kind of tools and approaches, they're trying to accomplish different things.
+
+So just looking at OOP versus functional programming for a minute. I generally prefer functional programming. I just like having a bunch of small, narrowly focused functions that do just one thing and do it well, and you can kind of mix and match them like Legos in your project. But for certain types of libraries or certain types of tasks, object oriented programming is actually a better choice.
+
+So for example, if you're creating a library where you want to have multiple instances of it, each with their own settings and properties and configurations, object oriented programming is the right choice for that particular objective. If your library doesn't need to do that, it might not be. It all depends on goals and what it is you're trying to accomplish.
+
+If this is something you'd wanna learn a little bit more about or dig into some of the different approaches with how you structure your code, there are a few different kind of ways or things I have that might help you get there.
+
+The first, I have a book and course on writing JavaScript libraries over at vanillajsguides.com that might be worth checking out. And don't forget, today through Monday, you can get 30% off that with the code spooky30.
+
+And then I also have a new workshop I put together that I have some students actively going through right now. I have another session running in January for that, but it's over at vanillajsacademy.com, the structure and scale workshop. Takes a look at all sorts of different patterns for structuring code, when you might use different ones, pros and cons of each.
+
+Really, I think interesting program, once you've moved beyond the basics and you're looking on how to kind of level up and take that next step. So anyways, that's it for today. If you are ready to make this year, the year that you mastered JavaScript, I am happy to help. Head over to gomakethings.com and you can access a ton of learning resources, including free projects, lessons, books, courses, workshops, and my daily newsletter.
+
+I will see you next time, cheers.
