@@ -1,4 +1,4 @@
-Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinand. Thanks so much for joining me.
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
 
 Today, I'm talking about how most of what programming is, it's actually pretty mundane. Let's dig in.
 

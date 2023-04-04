@@ -1,4 +1,4 @@
-Hello, hello, hello. This is the Vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me.
+Hello, hello, hello. This is the Vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
 
 Today, I'm talking about putting HTML first. Let's dig in.
 

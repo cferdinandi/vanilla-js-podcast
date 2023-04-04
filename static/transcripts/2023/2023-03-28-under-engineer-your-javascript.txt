@@ -1,4 +1,4 @@
-Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me.
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
 
 Last week I talked about HTML first and why it's the most important part of the web stack. Today I wanted to talk about simplicity and the joy of under engineering your code and they're related. So let's go ahead and dig in.
 

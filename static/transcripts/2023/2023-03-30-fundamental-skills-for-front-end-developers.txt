@@ -1,4 +1,4 @@
-Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me today. I'm talking about fundamental skills for front end developers.
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm talking about fundamental skills for front end developers.
 
 Just real quick before we start, I wanted to let you know that if you were interested in the next session of my vanilla JS Academy workshops, starting on April 3rd, this is the last week to register. And today through Sunday, you can get 30% off registration, head on over to vanillajsacademy.com to learn more.
 

@@ -1,4 +1,4 @@
-Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me today.
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today.
 
 I'm talking about what you need to know to be a good programmer or more specifically how you don't actually need to know everything to be a good programmer.
 

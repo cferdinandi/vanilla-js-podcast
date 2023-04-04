@@ -1,4 +1,4 @@
-Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me today. I'm talking about Bob Ross and imposter syndrome.
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm talking about Bob Ross and imposter syndrome.
 
 And I think you're really going to love this episode, but really quick before we start this week, the week of Monday, March 3rd, 2023 registration is open for the next session of my vanilla JS Academy workshop.
 

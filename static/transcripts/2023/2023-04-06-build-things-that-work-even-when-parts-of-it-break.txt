@@ -1,4 +1,4 @@
-Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me. Today, we're talking about how web development can literally kill people.
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Today, we're talking about how web development can literally kill people.
 
 So one of the common tropes that I sometimes hear web developers share when talking about our work is something to the effect of, I'm not a doctor, no one is going to die if I make a mistake. But that's not always true. Sometimes our work literally is life or death.
 
