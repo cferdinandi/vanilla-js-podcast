@@ -7,6 +7,7 @@ episode:
 file:
 duration: 00:00:00
 length:
+transcript: true
 ---
 
 ## Links

@@ -7,6 +7,7 @@ episode: 90
 file: https://cdn.gomakethings.com/podcast/episode-90_javascript-testing.mp3
 duration: 00:07:34
 length: 5528977
+transcript: true
 ---
 
 ## Links

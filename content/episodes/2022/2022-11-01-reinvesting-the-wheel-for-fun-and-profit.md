@@ -7,6 +7,7 @@ episode: 92
 file: https://cdn.gomakethings.com/podcast/episode-92_reinventing-the-wheel-for-fun-and-profit.mp3
 duration: 00:03:27
 length: 2568259
+transcript: true
 ---
 
 ## Links

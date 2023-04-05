@@ -7,5 +7,6 @@ episode: 91
 file: https://cdn.gomakethings.com/podcast/episode-91_the-best-solution.mp3
 duration: 00:04:36
 length: 3394564
+transcript: true
 ---
 

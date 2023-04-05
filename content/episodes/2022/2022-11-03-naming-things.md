@@ -7,6 +7,7 @@ episode: 93
 file: https://cdn.gomakethings.com/podcast/episode-93_naming-things.mp3
 duration: 00:04:44
 length: 3488605
+transcript: true
 ---
 
 ## Links

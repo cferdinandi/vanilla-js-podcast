@@ -7,6 +7,7 @@ episode: 96
 file: https://cdn.gomakethings.com/podcast/episode-96_how-to-write-good-alt-text.mp3
 duration: 00:04:39
 length: 3428419
+transcript: true
 ---
 
 ## Links

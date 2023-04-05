@@ -6,7 +6,8 @@ description: In today’s episode, I talk about common myths about vanilla JS (a
 episode: 95
 file: https://cdn.gomakethings.com/podcast/episode-95_myths-about-vanilla-js.mp3
 duration: 00:04:52
-length: 3586721 
+length: 3586721
+transcript: true
 ---
 
 ## Links

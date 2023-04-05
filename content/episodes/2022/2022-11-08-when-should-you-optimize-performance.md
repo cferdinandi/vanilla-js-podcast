@@ -7,6 +7,7 @@ episode: 94
 file: https://cdn.gomakethings.com/podcast/episode-94_when-should-you-optimize-performance.mp3
 duration: 00:04:46
 length: 3513996
+transcript: true
 ---
 
 ## Links

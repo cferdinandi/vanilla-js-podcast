@@ -7,6 +7,7 @@ episode: 99
 file: https://cdn.gomakethings.com/podcast%2Fepisode99_how-to-structure-your-javascript.mp3
 duration: 00:12:10
 length: 8843289
+transcript: true
 ---
 
 ## Links

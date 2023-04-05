@@ -6,7 +6,8 @@ description: In today’s episode, I look at an example of alt text in the wild,
 episode: 97
 file: https://cdn.gomakethings.com/podcast/episode-97_a-case-study-in-alt-text.mp3
 duration: 00:04:58
-length: 3666655 
+length: 3666655
+transcript: true
 ---
 
 ## Links
