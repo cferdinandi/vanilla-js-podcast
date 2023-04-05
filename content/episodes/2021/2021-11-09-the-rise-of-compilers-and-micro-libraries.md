@@ -3,7 +3,7 @@ title: The rise of JavaScript compilers and micro-libraries
 date: 2021-11-09T10:30:00-04:00
 draft: false
 description: In today’s episode, I talk about compilers and micor-libraries, and how they're helper improve web performance.
-episode: 73
+episode: 79
 file: https://cdn.gomakethings.com/podcast/episode73-the-rise-of-compilers-and-micro-libraries.mp3
 duration: 00:05:56
 length: 4353934

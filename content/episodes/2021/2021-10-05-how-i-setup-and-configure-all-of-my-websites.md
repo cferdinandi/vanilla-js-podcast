@@ -3,7 +3,7 @@ title: How I setup and configure all of my websites
 date: 2021-10-05T10:30:00-04:00
 draft: false
 description: In today’s episode, I talk about how I setup and configure the dozens of website I manage.
-episode: 79
+episode: 74
 file: https://cdn.gomakethings.com/podcast/episode79-how-i-setup-and-configure-all-of-my-websites.mp3
 duration: 00:08:56
 length: 6505901
