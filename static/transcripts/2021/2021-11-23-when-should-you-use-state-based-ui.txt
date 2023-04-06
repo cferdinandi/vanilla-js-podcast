@@ -1,0 +1,146 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me today.
+
+I'm talking about when you should use a state-based UI library and when you might just stick with vanilla JavaScript.
+
+so.
+
+What is state just you know to get started if you've never heard of the concept one of the primary concepts behind?.
+
+JavaScript web apps is state.
+
+State is just data. So why do they call it state instead of data?.
+
+Well, there's a time-bound aspect to it. State is data at a particular moment in time.
+
+It's the present state of your data today many web apps use state to generate their UI.
+
+With a state-based UI approach you store all of the data for your user interface and a JavaScript object and then.
+
+You use JavaScript to build the DOM.
+
+Based on the current state of the data.
+
+so for example, let's say my data is an object with a wizards property and.
+
+That wizards property is an array with three wizard names in it. I.
+
+also have a.
+
+Template function that takes that data and returns an HTML string.
+
+Inside that function. I'm going to check to make sure that my wizards property.
+
+Has a length. So if it's an empty array or a value of null.
+
+I want to return a paragraph that says there aren't any wizards yet.
+
+Otherwise, I want to show an unordered list. So I'm going to return.
+
+UL element an unordered list and then I'm going to loop through each of the wizards in my wizards array and.
+
+Wrap a list item around each one and pop the wizard name right in the middle.
+
+And then I can take whatever string gets spit out from that template function and I can inject it into.
+
+the UI.
+
+Anytime my data changes like let's say I delete a couple of items out of the array.
+
+I can repeat this process run my template function to get back the string.
+
+Inject it into the UI. I.
+
+Don't have to think about what the UI currently looks like.
+
+All I have to think about is what my data should look like and then the template function figures out the UI for me.
+
+So, how do you decide when you should use state-based UI and when to use traditional DOM manipulation instead?.
+
+And if you do choose state-based UI should you roll your own or use an existing third-party library? I.
+
+Personally don't think every project or even most projects need state-based UI.
+
+It's an overused approach to building you eyes that definitely has its place.
+
+But isn't the right tool for every project.
+
+state-based UI is a good choice when you have a user interface that's updated dynamically and.
+
+Changes based on different conditions.
+
+For example a list of items that are shown or hidden based on some filters is a good candidate for state-based UI.
+
+Any commerce store where text on an add to cart button changes if the item is already in your cart.
+
+And then there's also maybe a checkout link that contains the number of items in your cart.
+
+That's another great candidate for a state-based UI a lot of moving pieces some of them interrelated and tied to the same piece of data.
+
+Interfaces that are rendered once and never get updated again are probably better suited to more traditional approaches.
+
+Similarly dynamic UI is without many moving parts such as a show and hide component are often simpler to implement with vanilla DOM manipulation.
+
+Third-party libraries do have a few benefits despite advocating heavily for vanilla JS.
+
+If you need state-based UI on a project.
+
+I think that using an established third-party tool brings a few benefits that make it a better choice than creating your own first.
+
+They've been tested and used by a wide range of developers and have addressed many of the bugs and edge cases.
+
+You're likely to encounter.
+
+They also provide access to plugins existing components and design patterns that you can take advantage of and if you're working with a team.
+
+Third-party libraries provide access to an existing pool of developers and generally pretty good documentation.
+
+Now that you understand how state-based UI works. You may find third-party libraries a little bit easier to learn.
+
+and.
+
+Feel like you can make a more informed choice about which one to use.
+
+I don't think state-based UI is the right tool for every project.
+
+But when it is a third-party library is often a good choice.
+
+All that said micro libraries and compilers are often better than full-fledged libraries.
+
+There are a handful of state-based UI options that I think are better choices than large client-side libraries like react and view.
+
+For example if you're looking for a really simple string-based syntax.
+
+You might enjoy reef my three kilobyte state-based UI library that has similar conventions to.
+
+View for example or react but has some additional features.
+
+If you or your team like react preact is a three kilobyte alternative that has the same API.
+
+But is orders of magnitude more performant if you like view even you the guy who built it also built petite view a.
+
+small alternative distribution.
+
+designed for progressively enhancing you eyes.
+
+Svelte is a compiler that lets you author state-based UI.
+
+But compiles it into vanilla JS and old-school DOM manipulation for better performance and really small JS files and I.
+
+Think the most exciting one on this list Astro.
+
+Similar to Svelte another compiler that builds on the approach used by Svelte.
+
+It allows you to mix and match Svelte react view and more compiling it all into vanilla JS.
+
+These alternatives provide you with the benefits of using an established library.
+
+But result in less JavaScript shipped to users and better performance for the things that you build.
+
+Anyways, that's it for today.
+
+if you want to finally master JavaScript head over to vanilla JS guides comm.
+
+And check out my pocket guides and video courses as a listener of the show.
+
+You can take 30% off with the code podcast at checkout. See you next time. Cheers.
+

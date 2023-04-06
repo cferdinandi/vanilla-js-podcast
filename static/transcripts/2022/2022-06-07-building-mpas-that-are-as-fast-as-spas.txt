@@ -1,0 +1,47 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Today I'm talking about how to make multi-page apps or as you may prefer to call them websites that are as fast as SPAs or single-page apps. Let's dig in.
+
+So I write and talk often about how I think single-page apps were a mistake. I think they break so much of the web, they result in so much of the fragility that we have in the modern web experience. That's not what I'm here to talk about today though. Today I want to talk about how you can build multi-page apps, regular websites with separate HTML files for each page, that are as fast as SPAs. So just quick summary here.
+
+The sites and apps I build are absurdly fast.
+
+I know that sounds like an obnoxious brag but the truth is they load nearly instantly. Even on spotty 3G connections on the other side of the world where many of my students live, things still load really quickly like three seconds or less fast and I do it from cheap shared five dollar a month hosting.
+
+So here's a quick high level summary of what I do.
+
+I serve pre-rendered mostly static HTML. I inline everything including my CSS and JavaScript. I use mostly platform native JavaScript and as little of it as possible. I minify and gzip everything and I lean heavily on service workers. And for the rest of today's episode I want to take a closer look at what each of those involves.
+
+So first serving pre-rendered mostly static HTML. All of my sites are powered by Hugo which is a static site generator that I will drop a link to down in the show notes. Specifically a tutorial I have on how I have everything set up. When you request any page from any of my sites or from the courses portal that students have access to, my cheap shared five dollar a month server grabs an already rendered HTML file and immediately sends it back.
+
+With the exception of the course portal, all of the content is already there hard coded into the page and ready to get displayed by your browser. This reduces the server response time dramatically because the server barely has to do any work at all. It's part of what allows me to run my entire business off of this one absurdly comically inexpensive shared server.
+
+With dynamically generated sites powered by WordPress, PHP, Node and so on, content from a database gets mashed together with template files in real time. Caching can help a lot with this but flat HTML files are just so absurdly fast and take advantage of how servers and browsers were originally designed to work. The second thing I do is inline everything including my CSS and JavaScript. So servers respond to HTTP requests in 14 kilobyte chunks.
+
+If you have for example a 250 kilobyte image, 18 small packets of data will be sent one at a time for it. 17 packets about 14 kilobytes in size plus one not quite 12 kilobyte one and that's just me doing some back of the napkin math. Each HTTP request adds a bit of latency to the rendering process as browsers and servers do a little handshake dance with each other. Because my HTML, CSS and JavaScript are also small, more on that in just a little bit, their combined weight is often under 14 kilobytes.
+
+Inlining everything into a single HTML file instead of using external CSS and JavaScript means that everything the browser needs to start rendering gets sent in a single HTTP request and this dramatically reduces the time to first render for my sites. You request a page, you get back a single HTTP request and the browser just goes off and does its thing. It's just ready to run and ready to render. It doesn't have to wait for more stuff to get downloaded.
+
+I also use mostly platform native JavaScript and as little of it as possible. One of the ways I keep my combined HTML plus CSS plus JavaScript so damn small is by using mostly platform native stuff. The lack of dependencies means less code to ship and load in the browser and over time as modern JS and CSS have gotten more powerful, that footprint just keeps getting smaller. I used to use a JavaScript plugin for animating scrolling to anchor links.
+
+CSS handles that with one line of code now. I used to use a library for responsive iframe embeds. Modern CSS does the same thing in just three lines of code and I'll drop links in the show notes to the CSS for both of those things.
+
+I use ES modules to create tiny bundles of JavaScript that I can load only on the page that I need them for and I will drop a link to my course and my guide on that in the show notes as well if you want to learn how to do that. Modules let me reuse shared snippets across pages without having to copy paste repeat which would be an unmaintainable nightmare for as many sites as I have and I manage. I have about a dozen of them.
+
+I tend to be very generous with inline documentation in my code and it's really helpful when I go back and look at some code I wrote a while ago to have a bunch of comments explaining what I do and why I've done it but all those comments add quite a bit of weight like you'd be surprised how much weight whitespace and comments can add to your code. So one of the things I do is I minify and gzip everything. I minify all of the code that gets shipped in production.
+
+I have a third-party tool that removes all of the comments and whitespace and converts my verbose easy to understand variable names into short one-letter versions that only robots can make sense of and this reduces file size by 30 percent or more. I also have my server configured to gzip all the things. Gzip format is a compressed file format a bit like zip that reduces the size of your files by on average about 70 percent.
+
+The combination of minification and gzipping is what results in all of my HTML files being under 14 kilobytes. Their un-gzipped and minified size would probably be about you know double to three times that and so this allows me to do that single HTTP request magic. I also lean heavily on service workers.
+
+Service workers are like magic pixie dust on the sites that I build and I will drop a link to my guide on working with service workers in the show notes as well. For my static sites they add resilience. I cache HTML pages as the user browses and if they ever lose connection the cached page is sent from the service worker instead of the network so they can still use and access my site. I also cache my custom fonts and any images and I always load those from the service worker cache removing a bunch of network network requests in the process. These assets load instantly after they're cached so a little bit slower on that first visit and then everything is saved in cache and just gets served from there so it's instant.
+
+The student portal where learners access their courses and workshops is dynamically rendered with JavaScript. I make an API call to get their purchases and render the content they have access to in the UI. Service workers cache those API calls for a short period of time about an hour or two and load API responses from cache instead of the network.
+
+After that initial API call all subsequent page loads are instant just like an SPA would be. Like seriously I will drop a link in the show notes to a video I took of me navigating through the course portal so you can see you get this initial loading screen just like you would with an SPA and then every page after that just opens and if the user loses their connection the API call is cached and they can continue to use the site while offline.
+
+So using traditional just load separate HTML files as an approach to web development instead of using SPAs has allowed me to dramatically reduce the complexity of my development process and provide a better and more resilient experience to my users. So in my mind this is a no-brainer win-win solution.
+
+I'd love to see a shift back to MPAs become the norm in our industry again and recently I've noticed with you know tools like Svelte and Astro becoming more popular I think we're actually headed in that direction so I do see some kind of some brightness on the horizon there. So anyways that's it for today.
+
+If you wanted to buy any of the courses or guides I mentioned you know kind of talking about some of these techniques you can take 30% off as a listener of the show with the code podcast at checkout. Head over to vanillajsguides.com to see all of those and if you're looking for something a little more project-based and hands-on I also run a JavaScript workshop four times a year. You can learn more about that at vanillajsacademy.com.
+
+See you next time. Cheers.

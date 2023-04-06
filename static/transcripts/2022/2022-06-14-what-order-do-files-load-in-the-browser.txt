@@ -1,0 +1,23 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Today, I'm talking about how browsers load files. Let's dig in.
+
+So the other day, I got an email asking, what order do files load in the browser? Does CSS load before JavaScript? That's a great question. It's one of those things where if you've been building for the web for a while, you kind of take for granted. But when you're new to this, it's really confusing.
+
+I remember being really kind of unsure about how this stuff all worked and the timing of things and does everything just kind of all load at once. So let's demystify this a little bit. So here's an oversimplified, hand-wavy explanation of how browsers load files. First, the HTML file downloads.
+
+Then the browser starts reading it and rendering stuff in it in real time as it does. So as it comes across headings and paragraphs and all that, it just starts rendering them in the browser. If the browser finds a remote asset, it starts downloading that asset two at a time as it comes across them.
+
+So it finds an image file, then it finds another image file. It's going to download both of those at once so that one really big, slow file isn't holding up the other. And then once they're downloaded, they get rendered. Now, that last step is where things get a bit weird. Browsers are optimized to avoid repainting the UI whenever they can.
+
+If the browser finds a CSS file, it keeps downloading stuff but stops rendering until that CSS file is downloaded and parsed. Because CSS changes how HTML is laid out, the browser wants to know the right way to do that to avoid repainting the UI or having to paint the UI twice.
+
+If the browser finds a JavaScript file, it starts rendering and stops downloading other files except for that one JavaScript file. Because JS can add and remove elements from the UI, the browser wants to know what the final layout is before continuing. So it doesn't just wait for that file to get downloaded. It actually has to get compiled and parsed and not necessarily executed, but the browser wants to read it to know exactly what's going to happen in the UI before it continues.
+
+JavaScript files can also be loaded using async and defer attributes. The defer attribute tells the browser to download the file but wait until all the other stuff is done before actually running it. The async attribute tells the browser to download the file but don't stop downloading others while you do.
+
+And you can use these two in conjunction. So the short answer is files are loaded in the order that they appear in the HTML file. But the long answer is it depends. That's it for today.
+
+If you want to finally master JavaScript, I have a few different ways to help you do that in addition to listening to this podcast, of course. If you're someone who enjoys kind of self-paced courses or books, head over to vanillajsguides.com to check out my pocket guides and video courses.
+
+If you're someone who enjoys more of like a hands-on kind of experience working with others, being part of kind of a group of people working on things, three or four times a year I run a workshop that you can learn more about at vanillajsacademy.com. And you can take 30% off either of those with the code podcast at checkout as a listener of this show because I appreciate you so very much.
+
+So anyways, that's it for today. Thanks so much. I will see you next time and have a great day.

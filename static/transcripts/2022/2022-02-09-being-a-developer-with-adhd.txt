@@ -1,0 +1,79 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Today I'm talking about what it's like to be a developer with ADHD. Let's dig in.
+
+So I'm pretty open about having ADHD. It causes some challenges, but it also gives me some superpowers.
+
+A handful of developers who are just starting to learn that they have ADHD asked me what tools and systems and approaches work for me. So today I wanted to talk about that a bit.
+
+Now standard caveat here, I am not a medical professional and this is not medical advice. This is all stuff that I've learned from reading, watching a ton of YouTube videos and talking to other ADHDers about their lived experiences. So ADHD or Attention Deficit Hyperactivity Disorder is a shitty name for what ADHD actually is.
+
+An ADHDer doesn't have a deficit of attention. They have trouble regulating him. If something is boring, it can be really tough to focus on it. Easy tasks can feel impossibly difficult to get through.
+
+If something is exciting, ADHD brains will often do something called hyper focus, where instead of not being able to focus, you actually over focus on something and do a real deep dive into it and ignore everything else like having to eat, having to use the bathroom. You just kind of tunnel vision and ignore everything else. So it's not a deficit of attention. It's trouble regulating your attention. ADHD also impacts working memory.
+
+In computer terms, you can think of this as RAM. You might have an amazing solid state drive in your brain that stores a ton of information about stuff you find interesting, but you can only keep one or two active thoughts in your head at a time. ADHD affects emotional regulation. You might take criticism, particularly personally, or be quick to anger or feel rejection, real or perceived, very acutely. You might crave validation and positive feedback.
+
+And as you can imagine, these things have a real big impact in a work environment with things like code reviews and standups and performance evaluations and stuff like that. ADHD can cause you to ramble when you talk and go on lots of tangents. It can make you overwhelmingly hyperactive in crowds like a puppy around new people and crash hard after social interactions. I find conferences really overwhelming. I get really over-excitable around a lot of people.
+
+I love talking to new people. I love meeting people, but I crash really hard. I find it just physically exhausting, and I need a lot of away time and quiet, sometimes in the middle of a conference, but definitely afterwards. The thing, though, is everyone's experience is a little bit different.
+
+I've shared some common features of ADHD, but these are not the only ones, and they don't affect everybody or affect everybody in the same way. Some people struggle with regulating attention, but don't have the hyperactivity that goes along with it. Some folks don't struggle with emotional regulation, while others feel it really strongly. The thing with ADHD, though, is that if you have it, you have fucking superpowers.
+
+A lot of literature on ADHD was written by old white dudes who don't actually have ADHD and focus on easily measurable stuff, and as a result, a lot of medical information on ADHD is focused on its negative aspects and how to fix them. But like, fuck that. You have fucking superpowers, and you're amazing, and you should embrace that.
+
+Folks with ADHD are often incredibly creative. You'll have more ideas in a year than most people can implement in a lifetime.
+
+Hyperfocus, that can give you incredibly unpredictable superhuman productivity. Like when it's on, you can get so much shit done. You are so incredibly productive if it's something you're interested in and the hyperfocus kicks in. So the thing, just for me personally, is I am over trying to fit into a neurotypical world.
+
+Having ADHD can be hard. I'm not trying to sugarcoat it, and you still need to work at taking care of your basic needs and not annoying people around you. In particular, the hyperactivity and just kind of the rambling nature can just... They can be a lot for some people, and it can make just simple things around you harder, like taking care of a home, doing the dishes.
+
+I actually like doing the dishes, and I like folding laundry, but just generally straightening up. Not for me. I expect people to meet me a bit closer to where I am too.
+
+Relationships of any kind are about mutual respect, and that goes in both directions. I was diagnosed many years ago, but it wasn't until the last year or three that I started to understand a lot of things about myself through the lens of ADHD. I used to think that these were just kind of like weird quirks about myself, and I didn't realize that a lot of these aspects of what make me me are actually pretty common among people who have ADHD.
+
+With that in mind, let's talk about some tools and systems that I use as a developer with ADHD. I want to share some things that have worked for me, built up over the years through lots of trial and error. They may work for you, and they may not. They may work for you at a particular moment in time, and then stop working.
+
+That's very common too, because ADHD brains tend to get bored easily. Systems that work really well at first sometimes don't. What I want to talk about today are some systems that I've found work really well for me in the long term. I've tried a lot of things, and these are the ones that I seem to keep coming back to.
+
+To-do lists. Of all the productivity hacks I've tried over the years, the only one that's really stuck for me is a simple, bulleted to-do list. If it's not on my list, it just falls out of my brain. It's that short-term working memory thing again. Any thought, task, or idea I have goes into my to-do list immediately, so I don't forget it.
+
+I keep lists for various things, stuff to do around the house. Back when I had a day job, any work-related tasks had their own list. Daily newsletter ideas, because I have, again, more of those than I could probably write in a lifetime. If I need to buy groceries and things like that, and so on.
+
+Every morning, I scan through my list and add three to seven things that I want to accomplish that day. I usually don't get to them all, but this idea of picking the top three to seven items comes from this variation of getting things done by David Allen, by this gentleman named Leo.
+
+I forget if his name's Barbudo or Barbuda, but his system is called Zen-to-Done, and it's a really pared-down version of getting things done, where he talks about this concept of big rocks, and you want to pick the big three to five things that you want to get done during the day.
+
+Then, if you accomplish those, you can start to pick off some of the little things around the edges. One of the questions I get around to-do lists is a to-do app or pen and paper.
+
+The truth is, I actually prefer paper. It makes things stick in my brain a little bit better, and I find it an easier medium to work with. I really like being able to look at a physical notebook and see the things and cross them out, but because of the ADHD, I never remember to keep it with me when I need it.
+
+As a result, I use To Do by Microsoft. It's a cross-platform app. The only thing it's not on is my Apple Watch. I wish it was, but for me, it's the perfect to-do app, and it's free. The reason why I love Microsoft To Do is that it does just enough. It's about as close to a pen and paper to-do app or to-do system as you can get while still being digital, so it does just enough. It doesn't try to add a ton of distracting features.
+
+You can create lists and add items to them, and tasks can have subtasks. You can set up due dates and get reminders, but the ultimate feature for me is this thing called My Day. You can add items from any of your lists to a special My Day view that includes just the stuff you want to do that day.
+
+In the morning, I'll open up my To Do app. I tap on All Items, and I scroll through, and I swipe right on the items that I want to add to My Day. I can just really quickly go through and build out, here's the big stuff I want to work on today in just this one dedicated list that I can look at.
+
+One other really big thing that I've started to do in the last few years is work around my hyperfocus. I will have some days or weeks where I am wildly unproductive and get almost nothing done. I'll have other weeks where hyperfocus kicks in and I'm overproductive, and then I have some in-between weeks where I just get an average amount of stuff done. I used to try and really just grind through things during those unproductive periods, and I've stopped doing that because it doesn't work. I can exert incredible amounts of energy and get almost nothing done.
+
+So I now tend to use those unproductive periods for brainstorming and letting random ideas out of my head instead of trying to accomplish tasks. I've found that forcing productivity when my brain isn't there generally just leads to burnout for me. I've gotten better at kick-starting my hyperfocus, and often that involves just doing the first small thing of a task until I end up deep in it. But this really only works if it's something I'm passionate about.
+
+So if I've got a big thing I'm excited to do but I can't get myself to tackle the big stuff, I'll pick at some of the small things until I get sucked into the task.
+
+Another thing that's really important for just ADHDers in general that I've found works really well for me is green time. That's the outdoor time around nature. Taking walks helps me focus a lot, and there's a lot of research on the importance of green time for ADHD folks. I'll drop a link to a video on that in the show notes.
+
+It's from this really awesome YouTube channel called How to ADHD, where they talk about some of the research around that. I found this and exercise to be immensely helpful for me. A few minutes ago I mentioned the Apple Watch.
+
+I fully recognize this is absolutely a privileged person thing, but the Apple Watch is one of the best ADHD tools I have ever found. Having my calendar display directly on my wrist, yelling at me five minutes before a meeting is absurdly useful. I used to miss a lot of meetings before I got one.
+
+I also use timers for everything because, you know, again, ADHDers have really bad short-term memory, and so, you know, you may start some tasks that you need to come back to like laundry or putting food in the oven or brewing a pot of coffee, and then you'll forget about it for hours.
+
+And so I set timers for that. So I'll set a timer to switch the laundry after an hour. I'll set a timer for 10 minutes to go take my food out of the oven, five minutes to go grab coffee from the pot I just brewed. A shitty short-term memory means that you forget stuff easily and little things can become big hassles otherwise.
+
+So for me, just timers on my wrist always with me. You can use a phone for this too, but I find having it right on your wrist makes it a lot easier to actually do. So you know, one of the other things I get whenever I talk about this is people kind of asking themselves if they have ADHD themselves and how to figure that out.
+
+So in another episode, I'm going to dig into that a little bit and, you know, some things you can do if you think you might have ADHD. But in the meantime, if you are a fellow ADHDer, I would love to hear from you. What works for you? What doesn't? What do you struggle with the most? Is there anything I didn't talk about that you'd like to learn more about?
+
+Over the last year or two, I found a huge community of ADHD folks on Twitter that have helped me understand myself better, and in a future episode, I'll be talking about that a little bit more as well.
+
+So that's it for today. If you want to finally master JavaScript, head over to vanillajsguides.com where you can check out video courses and books I've written on a variety of topics. These are actually like really great for ADHD folks. They are super short, super focused. They're going to get you in and out of a topic in an hour. So you're not going to waste 40 hours going through a big course. These are just like, get it done. Get back to whatever you actually want to get done. I mean, as a listener of the show, you can take 30% off with the code podcast at checkout.
+
+See you next time.

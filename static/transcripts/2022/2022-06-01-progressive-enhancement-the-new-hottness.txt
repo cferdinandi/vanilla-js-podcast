@@ -1,0 +1,49 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Today, I'm talking about progressive enhancement. Let's dig in.
+
+So a few months ago, back in March, my friend Sara Soueidan tweeted out a poll saying, do you use progressive enhancement to build your web products? If you don't, do you mind sharing the reason why? A shocking 36.8% of respondents said they didn't know what progressive enhancement was, and another 13.5% said they don't use it.
+
+So today, I wanted to talk about progressive enhancement, the new hotness. Progressive enhancement means that you add functionality to things you build in layers.
+
+All users, when possible, should get a basic minimum functionality as part of the HTML file, and then you can progressively layer in enhancements through your CSS and JavaScript. If the CSS or JS fails, the user still gets a usable, albeit less flashy experience. Progressive enhancement stands in contrast to the all or nothing approach that you often see with modern websites, where if something fails, the user gets no experience at all.
+
+So that's progressive enhancement in the abstract, but let's maybe talk about a specific example just to make this make a bit more sense. So I think a good simple example of progressive enhancement is like a slide-in navigation component, where the site navigation slides in from the side of the page when the hamburger icon is clicked. Let's imagine that by default, the nav menu is hidden with some CSS. When the hamburger icon is clicked, a CSS class is added that shows it, probably with some CSS-driven animation on it. Clicking the hamburger again removes the class and hides it.
+
+What happens if the JavaScript file that powers the nav menu fails? Well, now the user can't navigate to the site. As an alternative, you could place the nav in the footer and use an anchor link for the hamburger. So rather than that just being like a button icon does nothing, you could have a literal like href that points to the ID of your nav menu in the footer.
+
+When your JavaScript loads, you can add some classes and attributes to progressively enhance the menu from a simple anchor in the footer experience to the slide-in navigation. And you would do that in the actual JavaScript file that powers the nav menu. If this was part of kind of starting up that script, you would enhance the existing HTML. And you would do that by maybe adding a class list to the parent nav or the document.
+
+And because that anchor link is now gonna function as a button, you'd also wanna use the set attribute method to add role equals button to the link that kind of gets enhanced into this hamburger button. And you can then make your CSS conditional on the inclusion of the slider class. So all of these styles that are dictating that slide-in menu, they only exist if that slider class is also present.
+
+This ensures a baseline experience for everyone and a nicer experience for people when something goes, or when nothing goes wrong rather. So even if everything but the HTML fails, you can still move around the site and do things. So why isn't progressive enhancement more popular? There were a lot of myths about progressive enhancement and many of them were popularized by JS library thought leaders as a way to dismiss legitimate feedback or criticism about the tools they were building.
+
+So one of the most popular is that progressive enhancement is only for people who disable JavaScript on purpose and you shouldn't do that. And it's true, it's 2022, a time of recording. JavaScript is an essential part of the front end stack. And it fails about 1% of the time, just outright fails.
+
+Most of those failures are not people who deliberately turn off JavaScript, although there are valid reasons to do that. File errors cause JavaScript failures, CDNs go down, ad blockers flag a file incorrectly. I've worked at companies that had really aggressive firewalls for security reasons that blocked lots of files unless they were on a safe list. Another myth is that progressive enhancement is only for older browsers.
+
+But all of those file errors we just talked about, those happen in new browsers too. There's also this belief that progressive enhancement is only for JavaScript. And while that is a primary use case because scripting so often results in kind of the things breaking on the web, CSS enhancements can be treated as progressive enhancement too. CSS files also fail to load and modern features don't always work everywhere. Grid-based layouts, progressive enhancement. A single column layout has the base experience and then you layer into kind of grid when it's supported.
+
+Animations, treat those as a progressive enhancement. Any style at all should be treated as a progressive enhancement. In fact, it's probably a good idea to test your website with CSS disabled just to see if it actually makes sense. It's probably gonna look hideous, but can you move around? Does the markup that you have there actually make sense? By the way, what you experience by doing that might be similar to what people who navigate your site with a screen reader experience as well because so much of that is driven by markup, not that CSS isn't important.
+
+Another like really big myth that I think drives a lot of kind of the resistance against progressive enhancement is that it's inherently more work. In the comments on Sarah's poll, there are a lot of progressive enhancement is a lot more work and clients won't pay for that type comments, but it doesn't have to be.
+
+It can be just a little more work or none at all depending on how you structure your code. So just, for example, let's talk about some low-hanging progressive enhancement fruit. Some simple things you can do to start implementing progressive enhancement today. The first is treat CSS as an enhancement.
+
+Disable your site and then look at it. Is the HTML well structured? Is there any hidden by CSS type junk that completely ruins the experience or is confusing? Can you still navigate around? Use CSS and HTML elements that provide progressive enhancement out of the box.
+
+So for example, and I'll drop a link to this down in the notes, but the details and summary elements can be used to create a show and hide or disclosure component natively. In older browsers, you get a heading and always visible content. And in modern browsers, you get an expand and collapse component.
+
+The progressive enhancement is just baked right into how that element works. The CSS scroll behavior property lets you animate scrolling to anchor links. It's somewhere between one and five lines of CSS, depending on whether or not you properly disable it when someone has reduced motion preferences turned on in their operating system, which you should always do. In older and unsupported browsers, such as Safari, anchor links just jump to the location, the old-fashioned way.
+
+In modern browsers, though, you get a nice animated scroll effect. Progressive enhancement baked right in. Another strategy here is to provide fallback or loading content. So if you're pulling data from an API, you can provide alternative content while you're waiting for it to load.
+
+Just as an example, let's say you're using the GitHub API to get and render a list of your top repositories on GitHub. You might include a link to your GitHub profile as the default HTML. And then when the API actually returns data, you can wipe that out and replace it with your dynamically rendered HTML from the API.
+
+This is great because if the API fails, people can still get to your profile and see your stuff. And this strategy worked great for any API-driven content that also provides an alternative view elsewhere. And it takes about 15 seconds worth of effort to implement. The other really, really important thing here is to remember that progressive enhancement is for everyone. So this is not just for people on crappy old devices, people who disabled JavaScript.
+
+You know, this is literally for everyone. If you work in tech, you know that eventually things are going to break. Sometimes it's your fault. Sometimes things just go wrong.
+
+Progressive enhancement adds what Jeremy Keith calls fault tolerance to the things you build. If you care about quality engineering, you want as much fault tolerance in the things that you build as possible. And progressive enhancement just kind of makes sense. So anyways, that's it for today.
+
+If you want to dig into more techniques like this, or other JavaScript stuff, head on over to vanillajsguides.com and check out my pocket guides and video courses. You can also head over to vanillajsacademy.com to learn more about my cohort-based workshops that run three to four times a year. As a listener of this show, you can take 30% off any of my learning material with the code podcast at checkout.
+
+See you next time, cheers.

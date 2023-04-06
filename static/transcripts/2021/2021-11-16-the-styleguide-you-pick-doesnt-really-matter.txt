@@ -1,0 +1,17 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm talking about style guides. Let's dig in.
+
+So during a recent session in my vanilla JS academy, one of my students was evaluating differing decisions and choices made around how to structure code and organize things across a few popular coding style guides.
+
+Should you use underscores or dashes and file names camel case or snake case or kebab case? What's the right way to structure your file directories? Function declarations or function expressions?
+
+Honestly, it doesn't matter.
+
+The most important thing about any style guide is not the specific choices, but consistency and implementing them. One approach to naming things or declaring functions is not inherently better than another. The benefit style guides bring is the predictive ability from project to project and to developer developer that you get from that consistency.
+
+So pick the approach that feels more comfortable and natural to you. And if you're working with a team, the rest of the team as well, document it and then get on with writing your code.
+
+That's it for today. If you want to dig into structuring projects and working on on projects and all of these kinds of different things that come about as you're trying to author code and also get the benefit of talking to other students and video office hours with me, head over to vanilla.jsacademy.com.
+
+I run a few sessions a year, but these are really awesome 10 week long project based workshops that are semi asynchronous. So you're going to be working with a cohort of students and you can go through the lessons in your own time and complete projects in your own time. But we do have some kind of milestones and markers and things where we all get together and talk about the stuff we're working on. Um, and you can find that over at vanillajsacademy.com.
+
+See you next time. Cheers.

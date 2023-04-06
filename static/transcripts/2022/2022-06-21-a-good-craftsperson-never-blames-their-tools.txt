@@ -1,0 +1,19 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Today, I'm talking about the tools that we use and how a good craftsperson never blames their tools. Let's dig in.
+
+So a couple of weeks ago, I came across a site someone had created to trash the popular Blue Yeti microphone and encourage people to buy other more expensive options instead. It included all of the typical gatekeeping nonsense that you'd expect from a site like that.
+
+Things like, quote, this is what all the cool kids are using these days and you'll sound like a true podcaster. And ultimately, you'd be better just throwing your Yeti in the bin and getting one of the suggested options. But as my friend Todd Libby says, a good craftsperson never blames their tools.
+
+I taught myself to code on a sluggish Dell computer and Notepad++. I started my first podcast with Audacity, which is free, and a $20 wired headset with a built-in microphone, one of those old-school 1980s telemarketer kind of things.
+
+Over time, I slowly upgraded my tools. I bought a faster, more reliable computer. I purchased Sublime Text. I upgraded my microphone. I purchased screencasting software and I upgraded my microphone again. Each upgrade brought an initial dip in productivity as I learned the new tool and then made me a little more productive once I learned how to take full advantage of it.
+
+But I'm not a better coder now because I use Sublime on a MacBook Pro. I'm a better coder because I put the time in, much of it in Notepad++, to really learn my craft. I'm a better podcaster and educator because I improved my ability to teach clearly and effectively, not because I use a $350 microphone setup.
+
+Those tools cut down on the time I have to spend doing certain things, but if something I create is good or not, that's not the fault of my tools. So if you wanna get better at your craft, any craft, it doesn't matter if it's coding or woodworking or whatever, use the tools that you have and put in the time to practice.
+
+Good tools can help, but only if you know what to do with them. You need to focus on that first. So if you're not sure what to work on or how to practice coding, I've got actually a handful of options to help you do that. First is a free collection of lessons and projects you might be interested in over at vanillajsprojects.com.
+
+If you want to dig into some specific topics in kind of a self-paced type way, over at vanillajsguides.com, you can find a bunch of self-paced courses and eBooks. And if you're someone who really enjoys kind of project work and a little bit more accountability, I run a few workshops a year. You can learn more about those at vanillajsacademy.com. For any of these, as a listener of the show, you can take 30% off with the code podcast at checkout.
+
+So anyways, that's it for today. Thank you so much. I will see you next time. Cheers.
