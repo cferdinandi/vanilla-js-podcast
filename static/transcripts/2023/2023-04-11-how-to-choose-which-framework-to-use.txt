@@ -1,0 +1,29 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinand. Thanks so much for joining me today.
+
+I'm talking about how to choose which framework or library to use. Let's dig in. So I often talk about how awful tools like react are for web performance. And every now and then when I talk about this, I'll get like a letter or an email from someone...
+
+Not a letter. What are we talking about? This isn't the eighteen hundreds.. asking...
+
+> You don't recommend react as a front end framework. So what do you recommend?
+
+And the answer is just a little nuanced, but not very based on your goals and priorities.
+
+I'm privileged enough to choose the stack I use. I'm an experienced developer with a social safety net, and I fully recognize that not everyone has those same options.
+
+So if your top priority is paid employment right now, react is still honestly a great choice for that. I really hope the industry starts moving in another direction and I see early signs that it's starting to do so.
+
+With the increased popularity of tools like felt and Astro, but they're still not hugely mainstream yet. We're moving in that direction, but we're not there and actually have some episodes. I've done talking about those tools, so I'll drop a link to those in the show notes.
+
+But there are so many jobs looking for react experience. I think it's the obvious choice if you need to get hired and you need to get hired quickly. If your priority is long term resilience and maintainability, I honestly think vanilla JavaScript probably with a light build process on top of it is the ideal choice. It will never become obsolete or suffer from breaking version changes.
+
+It's fast and performant. It results in less code sent over the wire, and it generally has a smaller footprint of things that could actually break. It does require a bit more wiring of things together for the developer, but often it's actually less work and less work in the long term than using a library.
+
+If you need a client side UI library and there are absolutely valid reasons to do that.
+
+Preact is orders of magnitude faster than react with the same API and is an obvious choice. I think view has a nicer syntax and while it's a lot bigger version three is actually much more performant than react. So that's not necessarily a terrible choice either.
+
+If you want the benefits of a UI library with the performance wins of vanilla JavaScript, a compiled framework like Hugo 11 T s felt or Astro give you a JavaScript library authoring experience with the performance wins of sending mostly HTML and a little JavaScript.
+
+Anyways, that's it for today. If you are ready to make this year the year that you master JavaScript, I can help head over to gomakethings.com to access a ton of learning resources, including free projects, lessons, books, courses, workshops, and of course my daily developer newsletter.
+
+That's it for today. See you next time. Cheers.

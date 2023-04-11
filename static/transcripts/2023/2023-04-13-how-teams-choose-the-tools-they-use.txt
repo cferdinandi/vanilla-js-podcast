@@ -1,0 +1,27 @@
+Hello, hello, hello. This is the Vanilla JvaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about how teams choose the tools they use and why it's often not because they're the best tools for the job. And this is a follow-up to my talk the other day about how to choose which library or framework to use. Let's dig in.
+
+So there's a pervasive belief that teams and organizations choose the tools they use. To build and maintain their sites and apps because they're the best choice for the job. I often hear things like if a company uses react. It must be because they tried it tested it found that it works well for them in the long haul.
+
+Otherwise, they'd stop and use something else. But in reality companies often end up using tools that aren't the best fit for a wide range of reasons. Things like our lead developer used this tool in the past and likes it. So that's what they want to use again or Facebook or Twitter use it.
+
+So it must be good or our lead developer really wants to learn insert tool here. So we'll be using this for the project or we're already deeply invested in this tool. And even though it's far from perfect switching would be expensive.
+
+Tools are a trap. Evaluating them for long-term fit takes a long time.
+
+Time companies often either don't have or don't want to invest so they pick one with. imperfect information guided by the biases and preferences of their team and once they're in they're in a. Lot of folks find the idea that team lead preferences would govern big decisions like this implausible.
+
+But that's exactly what happened with the Mozilla developer network when they rebuilt themselves using react and I'll drop a link to the GitHub repository where there's actually a discussion thread on this, but I am literally quoting from that thread right now.
+
+> As an MDN developer, I want to rewrite the MDN page header using React so I can gain experience using React for non-trivial page components, and so that I can reduce our dependency on jQuery.
+
+So just think about that for a second.
+
+They want to reduce their dependency on jQuery by adding another bigger library. That's actually worse for performance so that they can try something new. And they're not removing their dependence on jQuery they're reducing it so now instead of just loading jQuery you're reloading jQuery and react so, like, this is the kind of thing I'm talking about.
+
+These these decisions are not always rational a lot of times. It's just I'm bored. I want to learn something new. I'm gonna pick this tool.
+
+If you are ready to make this year the year that you master JavaScript, I can help head over to go make things calm to access a ton of learning resources. Including free projects and lessons books courses workshops and my daily developer newsletter.
+
+That's it for today. See you next time. Cheers.
