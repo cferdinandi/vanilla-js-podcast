@@ -18,14 +18,15 @@ transcript: true
 - [Screenflow](https://www.telestream.net/screenflow/)
 - [Camtasia](https://www.techsmith.com/video-editor.html)
 - [FFmpeg](https://ffmpeg.org/)
-- FFmpeg command line script...
-	
-	```bash
-	FILE=name-of-mp4-file
-	ffmpeg -i $FILE.mp4 -ac 1 -ab 96k $FILE.mp3
-	```
 - [tagr](http://www.entwicklungsfreu.de/tagr.html)
 - [DigitalOcean Spaces](https://www.digitalocean.com/products/spaces)
 - [Working with static site generators](https://gomakethings.com/tips-and-tricks-for-working-with-static-site-generators/)
 - [Whisper and OpenAI](https://github.com/openai/whisper)
 - [Descript](https://www.descript.com/)
+
+**FFmpeg command line script...**
+	
+```bash
+FILE=name-of-mp4-file
+ffmpeg -i $FILE.mp4 -ac 1 -ab 96k $FILE.mp3
+```
