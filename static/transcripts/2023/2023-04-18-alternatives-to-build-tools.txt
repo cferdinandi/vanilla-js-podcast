@@ -1,0 +1,35 @@
+Hello, hello, hello, this is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Last week, we talked about how to choose which JavaScript framework to use and how teams choose the tools they use.
+
+Today, I'm talking about alternatives to build tools. Let's dig in.
+
+So in response to those last few episodes, I actually got a note from a listener that said, what would be nice to see is alternatives to JavaScript build tools, for example, JavaScript modules and import maps.
+
+And a few years back, I actually wrote an article for my newsletter over at gomakethings.com about how build tools aren't required to be a good developer, but how they can be nice to have. A lot has changed on the web in two years.
+
+So are build tools still useful? That's kind of what I wanna talk about today and I wanna really unpack.
+
+So today, the native web can do a lot of things that we used to have to hack around and use build tools for. You can create modular JavaScript files and import just the parts you need using ES modules. And I'll link an article on kind of getting started with those down in the show notes.
+
+CSS variables let you define properties once and reuse them throughout your CSS, something that you used to need SAS for. And again, I will link to the MDN reference for CSS variables or custom properties as they're now called down in the show notes. CSS nesting is something that's in the works and when it's implemented, it's going to provide native support for something that you also used to need SAS for. I'm really looking forward to that one.
+
+With HTTP2, you can now download a bunch of smaller CSS and JavaScript files at the same time. Used to be limited to just two at once. Removing some of the benefits of concatenating everything into one big file. You used to want to do that for performance reasons and now it's arguably better to split a file into a bunch of smaller pieces. GZipping is done on the server and has a much bigger impact on JavaScript performance than minification does.
+
+And I'm going to drop a link to an article on kind of GZipping versus minification and how they both work down in the notes as well. It's possible to build in a modern way and never touch a build tool, but you still may want to. Here's some reasons why.
+
+While modern web development is awesome, there are some limitations that affect performance and user experience. If you have ES modules nested a few times, the browser has to download the file, compile it, parse it and download the nested import again before it can run. This can create notable delays in running your JavaScript.
+
+Native ES modules don't do any sort of tree shaking and I will drop a link to what tree shaking is and how that works down in the show notes as well. If you're not familiar with tree shaking though, just at a really high level, it's the process of when building a file from a bunch of ES imports.
+
+A lot of build tools now will drop out any files that aren't or any functions or variables rather in those files that aren't needed or used. So the file that you get out ends up being potentially smaller than the files you import in.
+
+If you import one function from a file with dozens of functions in it though, just using straight up native ES modules, the browser is still downloading all dozen of those functions even though it's only using one.
+
+While minification isn't as impactful as gzipping, the two together is better than just one or the other, especially on large sites or apps. It can have a pretty significant impact. And there's no native process for reducing the size of images or SVG files. You still need a build tool or some sort of before deployment process for that.
+
+Build tools don't require the command line. So they don't have to be big or complicated or dramatically change how you develop. My favorite tools let me develop the way I always have and spit out a slightly enhanced version of my code at the end. For me, that means I don't use things like Babel or TypeScript.
+
+And while I use a command line tool, you don't need command line at all. There are GUI tools like CodeKit for Mac OS or pre-pros for Mac OS Windows and Linux that do most of the same things with a visual interface instead of a terminal window.
+
+So I still think that build tools have their place. I think that a modern developer's toolkit has a build tool process that's maybe a lot smaller and leaner than what we've done in the past or what's potentially common or viewed as a best practice today.
+
+If you're ready to make this year the year that you mastered JavaScript, head on over to gomakethings.com where you can access a ton of learning resources, including free projects, lessons, books, courses, workshops, and my daily developer newsletter. That's it for today. See you next time. Cheers.

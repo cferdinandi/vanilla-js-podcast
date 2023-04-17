@@ -1,0 +1,29 @@
+{{- $data := getJSON $.Site.Params.api -}}
+{{- $testimonials := index $data "testimonials" -}}
+{{- if isset $testimonials (.Get "for") -}}
+{{- $testimonial := index $testimonials (.Get "for") -}}
+{{- if ne (.Get "photo") "true" -}}
+<blockquote>
+	{{ index $testimonial "quote" | safeHTML }}
+	{{- if isset $testimonial "url" -}}
+	<cite>- <a href="{{ index $testimonial "url" }}">{{ index $testimonial "name" }}</a></cite>
+	{{- else -}}
+	<cite>- {{ index $testimonial "name" }}</cite>
+	{{- end -}}
+</blockquote>
+{{- else -}}
+<div class="row">
+	<figure class="grid-third">
+		<img class="img-center margin-bottom-small img-circle" height="150" width="150" src="{{ index $testimonial "photo" }}">
+	</figure>
+	<blockquote class="grid-two-thirds">
+		{{ index $testimonial "quote" | safeHTML }}
+		{{- if isset $testimonial "url" -}}
+		<cite>- <a href="{{ index $testimonial "url" }}">{{ index $testimonial "name" }}</a></cite>
+		{{- else -}}
+		<cite>- {{ index $testimonial "name" }}</cite>
+		{{- end -}}
+	</blockquote>
+</div>
+{{- end -}}
+{{- end -}}

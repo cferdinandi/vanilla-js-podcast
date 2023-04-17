@@ -1,0 +1,89 @@
+Hello, hello, hello, this is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me today.
+
+I'm talking about how I self publish this podcast. So if you've ever been interested in starting your own podcast or you're thinking about it, this is the episode for you. Let's dig in.
+
+So one of the questions that comes up from both students and business friends periodically is what platform I use to host the vanilla. JS podcast and most people are surprised to learn that I self publish. So I want to dig into some of the tools I use and what my setup looks like.
+
+Just a quick word about equipment and audio quality. I want to make something really clear up front. You don't need fancy expensive equipment to run a podcast. The audio does not need to be studio quality.
+
+It doesn't need to sound like you're an NPR host. It just needs to be good enough and generally that means that you don't want to use the built-in microphone on your computer.
+
+Even those cheap headphones that come with most smartphones now or used to anyways are a step up. What you're trying to do is get the microphone closer to your mouth so that you can eliminate some of the echo. As long as your audio is clear and there isn't a ton of echo or background noise. You're good enough to get started.
+
+Don't let perfect be the enemy of good here because you could burn a ton of time. Trying to put together the perfect audio setup and never actually. Start making your podcast and that's the most important part. You want to get into that habit of. Creating things and releasing them into the world.
+
+I have upgraded my audio setup over the last year or two, but I. Used to use a cheap what I had around already equipment for years. So let's start with the microphone when I first decided to get a nicer microphone. I had originally literally just been using like those Apple. Earbuds, you know the wired ones just plug them into my computer.
+
+When I decided I wanted to upgrade from that I purchased the Blue Yeti. Which I will drop a link to down in the show notes. Um at the time it was the microphone for most podcasters.
+
+To reach out to is their first nice microphone. The audio quality is actually really good and it served me well for many many years. but then the pandemic happened and. All the folks who used to be out of my house were suddenly back in the house and I started noticing a lot more. background noise in my recordings not just from inside my house, but.
+
+Neighbors everybody was working from home. So you had neighbors out you had, you know kids in the neighborhood doing remote school. And so they'd be like running around and shouting outside and stuff like that.
+
+So I was just picking up a lot more background noise. And because the type of microphone the Yeti is what's called a condenser microphone. It picks up a wide range of sound. Those sound amazing in a sound studio with noise reduction. Like eggshell foam all over the walls where you can really control the audio environment.
+
+But not so much in a home office. They pick up the echoes off walls a lot more. They pick up background noise a lot more. So super rich audio quality in a studio. Not so great in a home office. So some time over the last year or so I upgraded to the sure. MV7 and I chose it because it's I it's called a dynamic microphone.
+
+What that means is that it picks up a narrower range of sound and tends to favor loud noises. Directly in front of it and as a result it does a much better job of cutting out background noise. Dynamic mics are the kind musicians use on stage at concerts. Sure makes some nicer microphones, but most are what's called XLR. Which means they require a special cable and an interface that goes between the microphone and your computer.
+
+The MV7 is their USB model so I can plug it directly into my computer and start recording and it has been. Absolutely amazing. It has dramatically improved the audio quality of all of my recordings. My courses and stuff to have really benefited from this microphone. I also bought the Rode PSA one boom arm, which is totally optional.
+
+It lets me put the mic right in front of my face while recording. The microphone came with just like a little desktop mounted stand. This is really useful for recording without getting in the way of. Having my hands on the keyboard and also helps prevent vibrations from my typing from getting picked up by the microphone.
+
+I am also part Italian as a result. I tend to talk with my hands. I as I'm recording this I'm literally flailing my hands all over the places. I talk. And with the desktop mic stand I had to be really careful because I would constantly hit it or smack the desk. And it would send a vibration up through the microphone and the boom arm eliminates all of those issues from me. so. Next up. Let's talk about. Recording software so on Mac OS you can record audio using the built-in quicktime software and on Windows, there's a comparable Windows voice recorder app.
+
+Because I also do a lot of screen recordings, I already own an app called ScreenFlow and I just use that. When I was on Windows, I used to use something called Camtasia instead and they're pretty similar in terms of how they work.
+
+They can record audio and video capture your face from the camera while recording the screen. But you can also control just like the recording. Inputs and outputs.
+
+So for the podcasts, I use screen flow and only capture my audio on. The rare occasion that I'm interviewing someone else. I use zooms native audio recording feature, which is built right in. Because I already have zoom for office hours for my vanilla jazz Academy workshops. So, you know again, you can notice a trend here of just using the tools you already have for other things big believer in that. by default. zooms. Recording records a single audio track. But it also has the option to record each person as a separate audio file and I recommend turning that on if you use it.
+
+Just because it gives you a little bit more control over. Levels and cutting out, you know, like your guest has a dog bark in the background. You can cut that out a. little bit more easily I. Deliberately just ramble on my podcast. I want to talk about editing. So I deliberately ramble I record a single take and I skip the editing process. If I don't like how a podcast turned out, I just delete it and try again. Editing sucks.
+
+I know some people who do it themselves. I know a lot more folks who do this regularly and they outsource it so they'll pay someone to edit. You could you know chop and cut and mute stuff with screen flow or Camtasia if you wanted to. But it is just an absolute slog, so I'm I'm a big fan of just.
+
+Giving it one take if I say or do something really stupid in the middle of an episode. I might clap my hands really loud or leave a long pause and then go in and cut that part out later. But usually I just start over. Screen flow exports audio files as mp4. But for distribution and you know the streaming as a podcast I need mp3. So I use a command line tool called FF MPEG for that. It's free. It's open source.
+
+When I'm ready to convert my mp4 file, I open up my terminal window. go directly go to the directory rather where that file is and. run a command to convert my. My mp4 file into an mp3 file. I will drop the code that I run to make that happen down on the show notes if it's helpful for anybody.
+
+I am certain that there are GUI tools that will do the same exact thing. I used to use one. Called EVOM EVOM which I think is Mac only I don't know if they still make it or not. And I'm actually pretty sure I still have it on my computer. It's from a company called Little App Factory, I want to say.
+
+But I haven't used it in years. It tends to produce files that are a little bit bigger than what you would get from. Running FF MPEG and actually it looks like I'm just looking at the about on this app. It actually looks like it runs FF MPEG under the hood. So it looks like it might just be a GUI layer for that.
+
+But what it does is it converts my files from large mp4 files to smaller more compressed mp3 files. It also converts them from. Stereo to single channel for more efficient streaming and then I use an app called Tagger. Which I will link to in the show notes to add artist and title information and the podcast thumbnail to the mp3 file. And I whipped up my podcast thumbnail in. Sketch, which is a Mac app for doing like visual work.
+
+It's like a simpler easier alternative to photoshop. But there are a lot of great tools in the past. I've literally even used like PowerPoint or Keynote to create. Like icons and thumbnails and stuff like that just with simple shapes and text. I am not by any means a talented graphic designer.
+
+So, you know, just again use the tools you've got. So hosting let's talk about that I host my mp3 files on digital ocean spaces. This is a nice high volume storage solution that costs me five dollars a month. The site for the podcast itself is a static website hosted and powered by Hugo.
+
+I create a markdown file for the episode and add some front matter details about the episode like a description. Its length just in terms of you know time so like three minutes and 45 seconds or whatever it happens to be. The file size and a url to the mp3 file on digital ocean spaces.
+
+Hugo creates a page for the episode and embeds it onto the html file with an audio element. So it's going to take that mp3 file pop it into an audio element for me. So you can stream it right on the web if you want to. Hugo also generates a custom RSS feed for the podcast. I looked up the requirements for podcast feeds and made sure that all the necessary stuff was in there. I also use that feed to send email updates and convert kit.
+
+I also used Apple Google and Spotify's podcast host features to submit my own feed for syndication. A lot of third-party services will do that as well. You just create an account, drop in the RSS feed for your podcast, and they handle the rest for you. Whenever I publish a new episode, the RSS feed updates, they get notified, and the episode just shows up in all of those services. So why do I um oh actually one last thing that I just started doing recently.
+
+I'd be really, I'd really like to talk about this. I um oh actually one last thing that I just started doing recently. I'd be really remiss to not mention this.
+
+I for a very long time did not have transcripts on my podcasts. Which made me very much a hypocrite. And was particularly noticeable when talking about accessibility things. And then having an audio only thing with no text alternative for hearing impaired folks. So I recently started using a tool called Whisper, which is powered by OpenAI.
+
+To create automatic transcripts from my podcasts. So the way this works is it's a command line tool. It's a command line tool, it runs on Python, but I drop in my MP3 file.
+
+And it spits out a .txt file for me that has the text version of what I said in the audio file. It runs kind of slow, it is relatively accurate, it always gets my last name wrong.
+
+And the formatting is always a little wonky, it just spits it out as one giant chunk of text. Which does not work great just from a formatting perspective. So I kind of go in and I just add like paragraph breaks and stuff. It takes me a couple minutes, it's not a big deal. The other thing is if you were doing an interview style podcast. Whisper does not distinguish between speakers. So if you were going to do that.
+
+The Zoom automatic transcript feature does not do a great job of spitting out. I found, first of all, it only sends me the transcripts intermittently. I don't really know what's going on there. But it also, it's not as great. So one alternative, you could use Descript, available at descript.com.
+
+I will drop a link to that in the show notes. That is a paid product, but they have a free offering that gets you an hour of transcriptions a month for free. And that will detect different speakers. So if you're only intermittently interviewing people or you keep them short. That can be a really great option.
+
+If you want to upgrade to 10 hours a month, it's only like $12 a month. So it's a relatively cheap way to kind of handle this depending on your volume as well.
+
+But yeah, so Whisper and Descript, really great for the transcript part of this. So why do I do this instead of just using a third party service?. The two reasons for me are cost and control. Most third party services get pretty pricey, but save you a ton of time. I frankly don't do enough with my podcast to justify the cost. I shouldn't really say this. You may have noticed I've been publishing a lot more regularly.
+
+But by this point I already have a pretty nice flow going with my self-hosting thing. When I originally started this, I just wasn't sure I was going to commit to podcasting. So I didn't want to drop a bunch of money on a paid service. Only to bail on it and then have to rip my podcast down. This way if I stop, it's like a basically no-cost thing that allows me to keep the podcast up and running. More importantly though, self-hosting gives me more control over the layout and the user experience. And that's generally why I tend to build my own platforms anyways.
+
+ I do that for my course platform as well. I want to present a unified experience across all of my stuff.
+
+ So that's it for this episode. If you're ready to make this year the year that you master JavaScript, I can help. Head over to GoMakeThings.com where you can access a ton of learning resources. And sign up for my daily developer tips newsletter. See you next time. Thanks so much for listening.
+
+ Cheers.

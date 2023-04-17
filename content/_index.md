@@ -12,6 +12,8 @@ fullWidth: false
 
 {{<subscribe>}}
 
+{{<testimonial for="steph">}}
+
 {{<cta for="funnel">}}
 
 {{<episodes>}}
