@@ -1,0 +1,37 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about CSS Grid versus Flexbox and when to use which one.
+
+Really quick before we start, on an internet littered with out-of-date blog posts, vague or passive aggressive answers on Stack Overflow and tutorials that assume you have a degree in computer science, do you ever wish you had a community of supportive developers and experts that you could turn to when you need help?
+
+The Lean Web Club is a membership community for developers, both current and aspiring, who want to build a simpler and more resilient web. I'll share some details at the end of the episode, including a discount code to join, so stick around.
+
+All right, let's dig in.
+
+So one of the questions that comes up every so often in my membership community, the Lean Web Club, is Grid or Flexbox, which one should I choose?
+
+I have a personal tendency to pick the one way to do things and stick with it for as long as I possibly can. For example, I pretty much always use let and never use const or var when I'm defining variables in my JavaScript, because I just don't want to have to think about it.
+
+In coding, there's often multiple ways to accomplish the same task and it often doesn't matter which one you pick. But it's also important to recognize that sometimes different tools are designed for very different jobs and pick the one that you use accordingly.
+
+In the case of layout, CSS Grid and Flexbox were built with two very different use cases in mind. When you want your layout to adjust and flex to your content, use Flexbox.
+
+When you want your content to conform to a specific layout, use Grid. You often don't have to pick just one or the other, you can mix and match them in your layout as needed.
+
+And to be fair, you can design and build the same exact layout with Flexbox or Grid in multiple cases. But they have kind of a different mental model and a different approach and the way they were built to work is going to be a little bit different.
+
+So for many layouts, you could just use one or the other and not have to think about it, you'd get the same exact output either way. But there are situations where picking one or the other can make your life a lot easier.
+
+For example, if you have a nav menu where the number of items might vary over time and you want them to always be evenly spaced no matter what, Flexbox, that is absolutely a use case that Flexbox was designed to handle with ease. You might choose CSS Grid for a list of projects on your portfolio page because you want them to be presented in a very specific way with every item in a specific place.
+
+Modern CSS gives us some amazing tools that we only dreamed of 10 years ago and you don't have to pick just one.
+
+If you wanna learn more about Grid versus Flexbox specifically, Jen Simmons has a fantastic video explaining the differences between them in her Layout Land YouTube series. And she was a real pioneer in getting both of these into the browser. So she is absolutely the best person to explain the differences and how to dig deeper into each of them.
+
+So if you want guidance like this or you have questions like this and you're not sure where to turn, the Lean Web Club is a community of supportive developers who want to build a simpler and more resilient web.
+
+And when you join the Lean Web Club, you get exclusive 24-7 access to a vibrant Slack community. You also get invitations to live Q&A and training events, access to recordings of all past events and a trove of free bonus gifts to help you accelerate your learning. It's a place for you to ask questions like the one we talked about in today's episode. It's also a place to share cute pet photos, talk about books and movies and more.
+
+If you wanna join, this week only, you can save 30% with the code CLUB30 at checkout. Head over to https://gomakethings.com/membership to learn more.
+
+Anyways, that's it for today. See you next time. Cheers.

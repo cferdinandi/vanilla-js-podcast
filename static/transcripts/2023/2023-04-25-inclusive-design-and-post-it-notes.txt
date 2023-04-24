@@ -1,0 +1,59 @@
+Hello, hello, hello! This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about inclusive design and post-it notes.
+
+Real quick before we start though, on an internet littered with out-of-date blog posts, vague or passive-aggressive answers on Stack Overflow, and tutorials that assume you have a degree in computer science, do you ever wish you had a community of supportive developers and experts that you could turn to when you need help?
+
+The Lean Web Club is a membership community for developers, both current and aspiring, who want to build a simpler, more resilient web. I'll share some details at the end of the episode, including a discount code to join, so stick around.
+
+Let's dig in.
+
+So, this is relevant because actually just last week, someone in my membership community asked a question about how to persuade or how to talk to senior developer leadership about the importance of accessibility and inclusive design. They had someone who was maybe being a little bit dismissive about it or treating it as not a priority, and they wanted some help influencing the outcome of what they were building.
+
+And so, one of the things I shared with them is what I want to talk about with you today. So, in my last real job before I started teaching JavaScript full-time, the company that I worked for sold API management software. Customers would get access to a white label CMS that they could use to document their APIs, register developers, and manage access to different endpoints. And my job was to make that CMS look like the rest of their brand.
+
+Imagine something like WordPress or Squarespace, but with way fewer DIY hooks. I'd add their logo and brand colors and typeface and create a homepage that they were happy with.
+
+But one time, we had a customer who insisted on using a black background with white text and red links. If you've ever seen this combination, you'll know that the links are really hard to read for people with normal vision and create incredible problems for people with colorblindness and other vision issues.
+
+I pointed this out to them.
+
+> We don't care. Our CEO prefers dark backgrounds was the answer I got back.
+
+I pulled up their CEO's own personal website and showed them that, in fact, it used a white background, not dark. "Doesn't seem like he minds all that much," I said.
+
+> We don't care. Just do the dark background.
+
+I pulled in data about lawsuits related to accessibility issues under the Americans with Disabilities Act. Again, push back.
+
+> Just do it now and we'll fix it later. We just need the CEO to sign off.
+
+I ended up fighting with my boss at the time about it. He was an exceedingly kind person.
+
+So... it wasn't really much of a fight, but he was very much of the just do what the customer is asking for kind of mentality. And I was very much of the, I have a moral obligation not to kind of personality.
+
+As a professional web developer, I'm obligated to build things that are inclusive. Just like a construction company can't ignore the fire code just because the CEO doesn't like the look of fire alarms. I ultimately lost and we shipped a dark and inaccessible background with a promise that it would be fixed later.
+
+And spoiler alert, it never was.
+
+I wish that at the time I had had this gem from Juliana Rowsell. She shared this in a tweet. I'm going to share it with you now. It's something I just keep in my back pocket for these discussions going forward.
+
+So Juliana writes,
+
+> okay, just so we're clear, let's write down who you're willing to exclude with that decision. I've used this approach to accessibility and inclusive design. I asked stakeholders to put it down in writing, even if it's just on a post-it note with which individual group or community they're willing to exclude based on a decision they're making. I find that it has a profound effect.
+
+I love this. There's something powerful about making people put in words exactly who they're willing to say fuck off to.
+
+It's one of these tricks that I really, I wish I had at the time and I'll definitely be holding onto for the next time I run into developer groups, or often not developer groups, but leadership groups that are willing to exclude certain marginalized individuals.
+
+One of the things that kind of came out of this conversation was, you know, so we were kind of walking through what that conversation might look like. And the question was like, okay, so what if the developer is not necessarily willing to exclude a group or the developer leadership rather, but you know, they want some sort of data on whether or not we even have people in that group who are using the thing that we're building.
+
+And the reality is you can't know that. There's no way to track that with analytics. It's a privacy issue. That's medically protected information. And people with disabilities should not be required to disclose those disabilities just for you to give a shit about them. So yeah, anyways, that's that.
+
+If you have tough questions like this or even easy questions and you just don't feel like you have a place to turn to ask them, the Lean Web Club is a community of supportive developers who want to build a simpler, more resilient, more inclusive web.
+
+When you join the Lean Web Club, you get exclusive 24-7 access to a vibrant Slack community, invitations to live Q&A and training events, access to recordings of past events, and a trove of free gifts to help accelerate your learning. It's a place for you to ask questions like the one we talked about in today's episode and share cute pet photos, talk about books and movies and more.
+
+It's just a really great place to hang out on the web, especially as places like Twitter continue to collapse. If you want to join this week only, you can save 30% with the code CLUB30 at checkout. Head over to https://gomakethings.com/membership to learn more.
+
+Anyways, that's it for today. I will see you next time. Cheers.
