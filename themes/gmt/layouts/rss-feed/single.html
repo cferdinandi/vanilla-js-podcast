@@ -60,7 +60,7 @@
 		    <itunes:explicit>{{ $.Site.Params.explicit }}</itunes:explicit>
 		    <itunes:summary>{{ `<![CDATA[ ` | safeHTML }}{{ if isset .Params "description" }}{{ .Description | markdownify | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}]]></itunes:summary>
 			<itunes:subtitle>{{ `<![CDATA[ ` | safeHTML }}{{ if isset .Params "description" }}{{ .Description | markdownify | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}]]></itunes:subtitle>
-		    <description>{{ `<![CDATA[ ` | safeHTML }}{{ $.Scratch.Get "newsletterPre" | safeHTML }}{{ if isset .Params "description" }}{{ .Description | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}{{ .Content }}{{ if isset .Params "transcript" }}<p><a href='{{ (replace (replace .File.Path "episodes/" "/static/transcripts/") ".md" ".txt") }}'><strong>Transcript &rarr;</strong></a></p>{{ end }}{{ $.Scratch.Get "newsletterPost" | safeHTML }}]]></description>
+		    <description>{{ `<![CDATA[ ` | safeHTML }}{{ $.Scratch.Get "newsletterPre" | safeHTML }}{{ if isset .Params "description" }}{{ .Description | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}{{ .Content }}{{ if isset .Params "transcript" }}<p><a href='{{ (replace (replace .File.Path "episodes/" "/transcripts/") ".md" ".txt") | absURL }}'><strong>Transcript &rarr;</strong></a></p>{{ end }}{{ $.Scratch.Get "newsletterPost" | safeHTML }}]]></description>
 			<enclosure url="{{ .Params.file }}" length="{{ .Params.legth }}" type="audio/mpeg" />
 			<itunes:image href="{{ $.Site.Params.image }}"/>
 		</item>
