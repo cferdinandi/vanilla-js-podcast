@@ -1,0 +1,31 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Today, I'm talking about how abbreviations suck.
+
+Really quick before we start, do you ever wish that you had a community of supportive devs that you could turn to when you need help? The Lean Web Club is a membership community for developers, both current and aspiring, who want to build a simpler and more resilient web. I'm gonna be sharing some details about it at the end of the episode, including a special discount code. So stick around.
+
+All right, let's dig in.
+
+So a few months back, I had a discussion with some web friends about how the abbreviation element, `abbr`, actually sucks for accessibility.
+
+The abbreviation element is supposed to be used to denote an abbreviation or acronym. If you include a title attribute, you can describe what the abbreviation or acronym that you put inside it means. And it's surfaced as a tool tip in certain browsers on hover.
+
+So for example, you might write `abbr`, title equals Cascading Style Sheets with a closing `abbr`. And then inside that element, you would put CSS. So CSS stands for Cascading Style Sheets. The thing is, the abbreviation element actually sucks and you probably shouldn't use it.
+
+Just a few days after I had that conversation, Martin Underhill published a really great article that I'm going to link to down in the show notes. It goes into a lot of detail.
+
+It's definitely worth a read. But here are the two big highlights that I took away from the article.
+
+The first is that screen readers don't actually read or announce the title attribute out loud. So visually impaired users can't access that information.
+
+And the title attribute shows up on hover. That means you have to know to hover over it. And if you have a device that supports hovering as an input, you're good. But touch-only devices, they get nothing.
+
+So what should you do instead? Nearly 100% of the time, the better option is to just write out what the acronym stands for the first time you use it. So instead of wrapping the text CSS in an abbreviation element, you would write CSS, parentheses, Cascading Style Sheets.
+
+And then anytime you go to reference CSS after that, you've already established what it means. Clearly, visually, in text that everybody can access and that gets read aloud by screen readers.
+
+It's actually less work and it provides a better user experience. So that's it for today.
+
+But quickly before you go, the Lean Web Club is a community I created for supportive developers who want to build a more resilient and simple web. When you join the Lean Web Club, you get exclusive 24 access to a vibrant Slack community with over a thousand developers, invitations to live Q&A and training events.
+
+Just yesterday, we had a live stream event where I converted a 10 year old JavaScript library into modern JavaScript. You also get access to recordings of all past events and a trove of free bonus gifts to help accelerate your learning. It's a place for you to ask questions like what we talked about in today's episode, share cute pet photos, talk about books, movies and more. Listen, if you want to join, it's such a phenomenal resource and this week only, you can save 30% with the code `CLUB30` at checkout.
+
+Head over to leanwebclub.com to learn more. And that's it for today. Thanks so much for listening and I'll see you next week. Cheers.

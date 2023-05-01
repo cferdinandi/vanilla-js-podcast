@@ -1,0 +1,41 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Today, I'm talking about JSX in the browser.
+
+Really quick before we start on an internet littered with out of date blog posts, vague or passive aggressive answers on Stack Overflow and tutorials that assume you have a degree in computer science. Do you ever wish you had a community of supportive devs and experts you could turn to when you need help?
+
+The Lean Web Club is a membership community for developers, both current and aspiring, who want to build a simpler, more resilient web. And I'm going to be sharing some more details at the end of the episode about that, including a discount code to join. It's an amazing place. I really hope you'll stick around to find out more about that.
+
+But let's dig in.
+
+One often repeated refrain that I hear from the React crowd is build JSX into the browser, you cowards. And I've never quite understood that because JSX already is built into the browser as template literals. JSX is a syntax extension to JavaScript. And I'll drop a link to the details on that down in the show notes.
+
+That's used to create elements in React. Consider the traditional way of generating a multi-line HTML string in JavaScript. So for each line, you need to wrap it in either single or double quotes and then concatenate it with a plus sign.
+
+So for each line, it's wrapped in its own quotes with a plus sign. In JSX, you can wrap it in parentheses and just write it out like normal HTML. JSX also makes it easier to add variables and functions.
+
+You can just wrap them in curly brackets. So instead of having to have a break in your string with more plus signs and variable names, you can just write out your HTML like you normally would, insert your variables as is but with curly brackets around them and it gets replaced. For those of you who grew up in the era of the web where mustache and handlebars were a thing, similar syntax. So cool.
+
+I see the benefit of that. I think that's great.
+
+The thing is template literals provide developers with an easier way to create HTML strings in JavaScript. And the syntax is very similar to JSX. Instead of using double or single quotes, you use backticks.
+
+And unlike a traditional string, the strings you create with template literals can span multiple lines without any special characters or escaping. Template literals also allow for string interpolation, which is a fancy way of saying that you can include variables and functions as part of the string.
+
+You wrap the variable or function in curly brackets, but unlike JSX, you also include a leading dollar sign. And here's where I get stuck. Because when reactive evangelists say that template literals are a bad implementation of JSX, I have no idea what they're talking about. They do pretty much the same thing and they're awesome.
+
+So what can JSX do that template literals can't?
+
+Sanitization. And I'm going to drop a link to an article I wrote on what that is and why it's important down on the show notes. But in that article, I wrote, by default, React DOM escapes any values embedded in JSX before rendering them.
+
+Thus, it ensures that you can never inject anything that's not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent cross site scripting attacks or XSS.
+
+There is no browser native feature for this yet, but the HTML sanitizer API, currently an experimental feature, will fix that once it's finally released. And I'm going to drop a link to the details for that on the MDN website down in the show notes.
+
+So the next time you see someone ranting about putting JSX in the browser, you can tell them it already is. So that's it for today.
+
+Just real quick before you go, the Lean Web Club is a community I started filled with supportive developers who want to build a simpler, more resilient web. When you join the Lean Web Club, you get exclusive 24-7 access to a vibrant Slack community with over a thousand developers who are all really passionate about a more lean and resilient way of building things for the web.
+
+You also get invitations to live Q&A and training events. At time of recording, there's actually one happening tomorrow where I'm going to be converting an old 10-year-old JavaScript library that Apple used on their Swift website into modern JavaScript. And people will be able to attend and code along with me and ask questions and work through stuff together. You also get access to all of the past events and a trove of free bonus gifts to help accelerate your learning.
+
+It's a place for you to ask questions like what we talked about today, like why is or isn't JSX in the browser? And it's also a place to share cute pet photos, talk about books and hobbies and more. So if you want to join this week only, you can save 30% with the code `CLUB30` at checkout. Head on over to leanwebclub.com to learn more.
+
+Anyways, that's it for today and I'll see you next time. Cheers.
