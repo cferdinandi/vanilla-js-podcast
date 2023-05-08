@@ -1,0 +1,317 @@
+Chris: Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm joined by a very special guest, my friend, Ben Myers, and we're going to be talking about accessibility and hopefully a little D and D and a whole bunch of fun stuff. Um, so for Ben, for folks who don't know who you are or what you do, um, could you tell people a little bit about yourself?
+
+Ben: Yeah, howdy howdy y'all. I am a front end developer at Microsoft. I work on the Microsoft Learn platform, which is our developer documentation platform. Uh, I'm not writing the documentation there. Instead, I work on building the interface, uh, specifically with a focus on, uh, making it accessible for disabled users, um, as well as other factors such as internationalization and web performance.
+
+And, um, I also help maintain a design system we have going for that project as well. Um, I'm a huge accessibility advocate. Um, if you've seen me around on the web, uh, you may have seen my blog. I like to blog about accessibility topics. Um, and I also just brought, uh, just brought back a stream that I host called Some Antics.
+
+where I bring on guests from around web development and web design on a roughly weekly basis to teach me something about building great user experiences for the web in a hands on way with a focus on accessibility and or core web technologies. I am really passionate about bringing accessibility to developers who I broadly feel like do care and want to learn more, but oftentimes don't know where to start or how to prioritize, um, accessibility.
+
+And so, uh, that's kind of the content niche I like to fill. Um, and so if you've seen me around, uh, that's likely where.
+
+Chris: Awesome. And I'm going to make sure we drop links to both, uh, Some Antics and your blog down in the show notes, uh, for folks who want to check those out. You definitely should. Um, you should also check out Ben's 404 page, which I just accidentally found myself on.
+
+Um, your Unleash the T Rex's button brings me immense amounts of joy. You
+
+Ben: have to keep clicking it.
+
+Chris: I know I literally am I've been I've been clicking it while you've been talking.
+
+Ben: I'm going to provide an audio description for folks at home who have not yet discovered my 404 page. There is, I mean, there is a big honking like 404 heading, then underneath it.
+
+There are two buttons I forget what the first one is but the second one says, unleash the T Rex is. Um, and you click it and it sprays a confetti of T Rex emojis. Uh, the more you click it, the more T Rex disappear. And eventually the button just says in all caps with like a dozen exclamation marks, Unleash.
+
+That's where I'm
+
+Chris: at right now.
+
+Ben: You're at the Unleash with like a dozen exclamation marks.
+
+Chris: Yeah, it's um, my screen is just 100% T Rex at this point.
+
+Ben: I, I am so sorry for the like performance that's gonna cause on your CPU. Yeah, well, it does work out at some point
+
+Chris: it. Yes, it did start to lag a little bit, but I got one of them.
+
+Fancy M1 or M2 max. So we, uh, we, we kept sailing for a little while. Anyways,
+
+Ben: I can handle like 100 T Rex is out of time
+
+Chris: with the T Rex frame rate. Um, okay. We're going to go off the rails really fast. Cause that's, I have a tendency to do that. So, uh, Ben, I know a big part of kind of your work is advocating for accessibility on the web.
+
+Um, uh, this is a topic that a lot of my students feel really passionate about. Um, and I do as well, but I know one of the kind of the shared. Challenges that a lot of, a lot of folks, myself included, kind of struggle with is knowing where to start, knowing kind of what's some of the big or like low hanging fruit things that, uh, we should focus on our, um, so when you're talking about folks with this, are there any like common challenges or easy wins that you, you kind of start with or how does that, how does that conversation usually
+
+Ben: go?
+
+Yeah, so oftentimes, um, the, I, I find that oftentimes people already kind of have the answers, weirdly enough, so, uh, what you'll find is that when accessibility people start introducing accessibility, it's common to break disability into several kinds of categories. And, uh, those could be vision disabilities.
+
+So if you're blind or low vision or colorblind, or you have like partial vision, for instance, like obscured vision, um, uh, those, those are some examples of like vision disabilities that people might have, um, there's auditory disabilities, so, uh, you're deaf, you're hard of hearing, or you have auditory processing disorders, which are, uh, disabilities where you can.
+
+Here, but parsing meaning out of what you're hearing is difficult. Um, you've got your like physical and motor disabilities. So, uh, for instance, I have some limb abnormalities. I have some short limbs. I have no thumbs, um, stuff like that. Um, and that impacts my ability to manipulate devices. Right. Um, and then finally we talk about like cognitive disabilities and that is itself a massive, massive spectrum where you're talking anything from like.
+
+ADHD for instance, which might make it difficult to stay focused on a sustained task for like a sustained period of time, right? Especially when that task is complex, right? Um, there are disabilities like dyslexia, which might, you know, make it difficult for you to read the contents of a page. And then there's, you know, a whole host of cognitive disabilities that might just generally make it difficult for you to.
+
+are like complex instructions, right? To understand the complex interface. Um, so oftentimes what I like to do, uh, is encourage people to think of disabilities they know, and then just imagine like, Hey, if you were. You know, someone with that kind of disability, what needs might you have? How might that impact how you navigate the web?
+
+Oftentimes people are actually pretty good at figuring that out, right? Like, oh, if I imagine that I have some form of colorblindness, uh, I think there's a more clinically correct name for that now, which is something like, uh, color vision deficiency or something like that. But if, if, if you struggle to discern different colors, right, then where might that show up?
+
+Well, it might show up in form validation where, you know, red green colorblind is, uh, the like most common form of colorblindness. And yet we indicate form status with showing. Red for invalid fields and green for, uh, valid, correct fields. And, um, so oftentimes I like to just encourage you to just almost brainstorm a list of disabilities, you know, and then run through that.
+
+It'd be like, how could that impact someone's experience? Or if you don't know, which. You know, if you don't have those disabilities, you oftentimes likely don't know so I would encourage you to seek out people who have already written about that people who have written about things for instance, like, I have vestibular disorders that make me nauseous when I see motion, and here's how I experienced the web, there are several excellent news stories out there that describe that lived experience.
+
+And so that's where I usually start. Um, from there, I like to remind people that, uh, no two disabled people experience their disability in the same way, no two people have the exact same access needs, and no two people will have the same preferences, right? Um, this is a, a very subjective thing, and we can make maybe some generalizations, but ultimately...
+
+People have individual needs, uh, and also I like to remind people that you could be multiply disabled, right? Uh, we often talk about this platonic ideal, like, oh, here's a blind person, but we never stop to think about, you know, well, not everyone is blind in the same way, and then blind people could also be deaf, for instance.
+
+Um, so yeah, I'll pause there, because I think you have some thoughts. Well,
+
+Chris: yeah, so you've, you've hit on a couple of... I think really important things. Um, one of them is, I, I know one of the things a lot of folks do when they kind of first start is think about disability as kind of this monolith, right? Like we got the disabled community, uh, and it is very much not a monolith.
+
+Um, I also think kind of the go to archetype that I have absolutely been guilty of, of doing this myself is, uh, blind or visually impaired people, right? So it's, let's talk about screen readers. Let's talk about how to navigate with a keyboard. Um, or I think the other, like, really easy one that a lot of folks go to is, um.
+
+The color contrast stuff, right? So folks who have, um, uh, you know, color deficiency issues or things like that. Um, but the thing that you were just talking about is, I think, a big part of what makes accessibility so hard is because even within, say, a group of people, right? Visually impaired folks are like, you know, we talked about cognitive issues, right?
+
+Like ADHD. So Alex Trost from Front End Horse and I had a really great conversation a while back about. Our ADHD, um, and, uh, he has a different subtype of ADHD than I do. So the way he experiences ADHD is dramatically different from mine. He doesn't have the hyperactivity that I have, which is it's its own kind of beast.
+
+And so when we were talking about things that worked for us, like the different tactics that helped us get things done were wildly different. Um, and so, um, uh, I think all of this is to say, um, I think programmers really like. To do, you know, to achieve X, do Y kind of solutions, right? And accessibility doesn't really work that way.
+
+Like there's no, like you just wave a wand and your site is accessible kind of thing, because there's so many different moving parts and kind of, uh, types of disabilities that, you know, could impact the way things work. So, um, one of the things I've encountered when talking to folks about this is there's a, there's a tendency to, uh, Get frustrated and feel like, well, I'm never going to be able to make this accessible to all the different people.
+
+So why should I even bother? So like, I, do you have any, any kind of advice or kind of approaches for managing that? It's, um, I've been guilty of it myself. Like I've had lots of conversations with folks like Scott O'Hara, um, before around how it feels overwhelming. Like I don't know where to start, you know?
+
+Ben: I, I can definitely relate to that understanding, right? Like, yes, it, it is true on a 100% like, factual, like, pragmatic level. You will never be 100% accessible to all the people, right? Um, but, I think that, in general, progress over perfection is a healthy mindset to take, um, and, you know, a product being accessible to 95% of people is better than a product that's accessible to only 90% of people, right?
+
+Like, we can always improve scope, and we are always improving scope. We're constantly learning. People in the accessibility space, like, Accessibility experts who have been experts for a long time are constantly learning. Um, but, uh, I would recommend finding, um, you had asked earlier about some low hanging fruit.
+
+I would, I would recommend starting with those. So, um, there is an organization called WebAIM, uh, which is short for Web Accessibility in Mind. Um, and they do a ton of just excellent, uh, surveys and research into the state of accessibility. And one of their projects that they run is called WebAim Million.
+
+They actually just like last week published their 2023 results. Um, what they do is they scan the 1 million most popular homepages across the web. And, and they scan those for automatically detectable accessibility issues. Now, Absolutely, we should note, not all accessibility bugs are automatically detectable, there's only a certain subset of them that are, and also, homepages are a very limited context, this says nothing about, you know, other pages, or what things look like in a logged in, authenticated state, or when you visit the internal dashboards, or whatever, right?
+
+But, um, what they found, When they, and they've run this, this project, the scan for several years now, and what they found is that consistently six bugs, I think it is consistently show up, um, year after year, uh, something like, uh, 30% of automatically traceable accessibility bugs are color contrast bugs.
+
+They're issues where the foreground does not stand out sufficiently from the background and that's common on so many sites I would have to pull up web a million to tell you how like how many pages had color contrast issues, but is significant right is shocking and shocking in part because. It's imminently fixable, right?
+
+Like we have color contrast, uh, calculators. We have checkers, right? You can run automated scans like this using apps, dev tools, for instance, on your own site. And it'll tell you which color contrast combos just don't work. And the solution is pick a different color. Like that is in the grand scheme of things, not that difficult, you know?
+
+Um, you might have to run it past designers and stuff like that, but like, you know. The solution is presented on a platter for the most part. Um, and all of these top six bugs are like that. Um, they've also surfaced that, uh, there's way too many links and buttons that have no text contents. So screen reader users aren't informed of what they are.
+
+Um, it's a lot harder for voice control users to use those. Um, additionally, uh, links that do have text contents in them, uh, often have very ambiguous names like click here. Which, if you're familiar with some of the more advanced, uh, navigation modes of a screen reader, uh, you might be aware that you can navigate through a page, going from link to link, skipping any surrounding context, and so your click here link is absolutely context free, uh, for many users.
+
+So, um, this itself is another really low hanging fruit. There's one that's, um, the HTML element is missing the lang attribute, and so screen readers don't know like which pronunciation rules to load the page in, um, that is one attribute that is missing on a ton of webpages, right? Um, and this stuff is easy enough to fix, right?
+
+This is not the complicated, let's sit down and have some serious brainstorming sessions over how to fix this experience. It's like, We could pick a different color, we could add this attribute, we could add some text here, um, and by clearing that away, you're going to remove some of the largest barriers, uh, that people have to, like, uh, experiencing the web from your site.
+
+You're like, you're already going to be ahead of the pack in many ways. Um, going on from there, like once you've cleared those things, what I would recommend doing is, running some automated accessibility scans of your own against your site. Um, I mentioned, I mentioned axe dev tools, that tends to be my scan of choice.
+
+Um, again, automated testing tools won't catch everything, but importantly, they will catch even more of the low hanging fruit that you've likely missed. Um, and usually what they do is they surface. Results that are like, Hey, here's this guideline that this bug violates. Here's more information. When I was learning, when I was starting out with accessibility, I used to just scan a bunch of sites, including sites I was working on sites I wasn't working on.
+
+And I would see what bugs came up. I would take that as a cue to learn more, right? Why is this a bug? Who does this impact? What is the experience that this is causing? And what is the experience someone would expect in this case? I love using that as a springboard to just learn more about how people are experiencing the web, but in a very piece by piece way where you don't have to boil the ocean, as it were.
+
+You can just fix one bug at a time.
+
+Chris: That sounds great. Is there, um, is there a reason you favor, uh, or I guess let me phrase this differently. Um, how does say the axe dev tools extension differ from lighthouse, which I think has accessibility baked in? Is it, does it go into like kind of more areas or is it just like a different people like
+
+Ben: different tools kind of thing?
+
+Lighthouse actually uses axe under the hood. But, uh, yeah. So, uh, Google has not gone and built like their own accessibility checker. They're using basically a subset of acts. Um, and remember the, so I think lighthouse is a great approachable tool, but the end result that, uh, Google has in mind with, um, you.
+
+using Lighthouse is that you're going to make your, your site more search friendly, right? They, they want your site to be a better experience for, um, their crawlbots to understand your site and, and they want it to be a, I mean, uh, and, and they want, um, when a user clicks on your link. from Google search results.
+
+They want it to be a, like, Google wants it to be a good experience, because otherwise that reflects poorly on Google. So that is, like, their motivation. And so, um, you know, an inaccessible site is part of that, uh, but they're only showing, like, a subset of accessibility practices, and, um, I find that acts tends to out of the box surface a little more that's kind of changed recently because they've like access made it so that you have to like, check a box that says like show best practices, so you can get like the recommendations that aren't strict failures aren't about strict failures.
+
+I find the act surfaces more. Additionally, a lot of the, um, I, I believe in a very systemic approach to accessibility, right? You have to incorporate checks at every part of the process. And if you're scanning against your live site, like, it's already a little too late. Um, you know, it's. It's oftentimes where you have to start, but, uh, teams that want to have a, uh, want to have process maturity around accessibility are probably going to be doing things like running automated scans in their CI CD pipelines.
+
+And those scans are all powered by axe as well. Um, I like just having like one kind of ecosystem. I think everyone kind of lands on their different tools, but axe, I think is a very strong contender.
+
+Chris: Nice. Uh, just for anybody who, uh, doesn't know what a CICD pipeline is, it's a continuous integration and continuous deployment.
+
+So like an automated push to some sort of Git repository and then have a bunch of things kind of automatically fire off before your site is deployed, uh, and flag you if anything fails. Mm hmm. Um, uh, cool. Yeah. Um, changing gears just a little bit. Not just a little bit, just a little bit. Um, I, uh, I have on occasion gotten emails from folks who are interested in getting into Accessibility, uh, advocacy, um, or consulting just professionally.
+
+Um, so how did you, how did you kind of end up down this path and do you have any tips or tricks for folks who kind of would like to follow down that same
+
+Ben: career path? Yeah, so I, okay, um, my, my job titles have always been more generic like front end developer titles, right? I have never held the job title accessibility advocate, right?
+
+Um, and that I think is a, a thing to note as indicative of perhaps the larger industry. So. How I got started in accessibly, first of all, I've been disabled all my life. I've always had to be a disabled, like a champion for, uh, accessibility and, you know, disability rights, because like that is a personal necessity for me and my like agency in the world.
+
+Right. Um, and so I, I think that that is a sentiment that will feel very familiar for many disabled people. Um, right. I got into web dev actually kind of by happenstance. Like I knew I was like good with computers. So I wanted to do something kind of programming, but I didn't know like what field of programming.
+
+Um, I did an internship at a bank and I happened to be assigned to a front end team and I just really loved it. I loved being able to, uh, directly see the interface that I was creating and how, um, how we would feel to use it. I, I think that that is one of the beautiful. gifts of front end development is that you can actually see the and use the interface that you're building.
+
+Um, and so I, uh, interned with a team. I joined that team full time after I graduated and on that team, like, well, All the developers there were front end developers or back end developers. Um, everyone kind of fell into some champion roles, more or less. Um, so, you know, we would have someone who was like the testing champion, right?
+
+Um, and, and stuff like that. Um, And there was a teammate that was, at that point, kind of the point of contact for accessibility, but he wanted to be doing more back end stuff and more security focused stuff. Like, accessibility just wasn't where his passions were lying anymore. And I happened to have just joined the team, and I had already kind of shown an interest in that.
+
+Um, and he was like, Ben, do you want to... Be the champion. Uh, I will say as a general note of advice for people in the world, maybe don't point to the obviously disabled person on your team and go, do you want to be responsible for accessibility? Um, that is not always a cool move. However, in this case, I was ecstatic about it.
+
+I was thrilled. I was jazzed. Um, and I consumed as much as I possibly could have on, on Uh, that, so I was reading, you know, WebAIM, I was reading blog posts from, you know, people I've since been able to network with. We've, uh, mentioned Scott O'Hara, for instance. Um, you know, I, I started just reading everything I could on this matter, um, and testing my site.
+
+Uh, but, Accessibility Champion, like, it was... This, this was not again, like a formal role, like it was maybe a bullet point under my larger front end development role. And, um, again, I think that that's going to ring true for a lot of people who work in accessibility is that they are largely front end developers.
+
+By role and accessibility is a bullet point of that role. But, um, a lot of people, you know, people don't know what they don't know, right. They don't know the extent of their ignorance. And so they don't know necessarily how to consider accessibility. And so oftentimes being the accessibility champion is about being like, well, what about the screen reader experience, right?
+
+Where does the focus go? Have we considered how this is going to look for someone who relies on a magnifier, right? It's. You do kind of have to inject those questions into the conversation because unless you're on a team that already has extreme accessibility maturity, like, those questions aren't going to come up, uh, for many people.
+
+So you have to, you have to take charge there and be the one to inject those and eventually it'll get to the point where, uh, hopefully, hopefully. People like your product owner and your designers will, for instance, be like, well, you know, I hadn't considered this, but now because this has been a topic in conversations past, I'm going to go like ask this accessibility point of contact what they think about it.
+
+Um, and so, yeah, there is kind of this like self determination, self role creation that I think is, is often necessary. Um, from there, uh, I started, uh, I, I gained kind of a reputation actually at my company in large for being someone that you could just like reach out to over Slack and ask accessibility questions.
+
+Um, And from there I started to get involved in like greater content creation, because I found that I was, you know, answering some of the same questions over and over again, so I started blogging what I was learning. Oh, our new hire onboarding process uses a video course that recommends clickable dibs.
+
+Well, I now have the benefit of hindsight and know that clickable divs are a devastating pattern. This is where, uh, instead of using a button element, you, like, use a div element and attach a click handler. Uh, it's not keyboard navigable. It's not screen reader usable out of the box. Uh, you should just use a button.
+
+99 times out of 100, you should be using a button. Right? Um, and so I was, like, answering questions. I was providing guidance so often that I just ended up, like, modifying it as content creation, um, and it turned out to be decently successful. Um, I became a bit, well, like, well known, uh, at least on like tech Twitter, web dev Twitter, accessibility Twitter, um, for these things.
+
+Eventually I started the stream. The stream allowed me to also network with, uh, other accessibility professionals, um, and Eventually, when I decided I wanted to leave my role, uh, having a network of accessibility professionals and having this backlog to prove that I know what I'm talking about was hugely instrumental in me landing my current job, right?
+
+And again, my job is as a front end developer. Uh, I was hired in with the understanding and, and my team understands this too, that like. Accessibility is specifically part of my purview, right? Like I was, I'm a front end developer with a focus on the site's accessibility, but, um, you know, that like it helped that I had.
+
+backlog and active community involvement of me kind of showing that I know what I'm talking about and showing that I'm passionate about it, right? Um, and I think that while there are some accessibility roles out there, uh, I think that for many people looking to get into accessibility, Um, you may have to make it a bit of a Trojan horse thing where you're a front end developer who focuses on accessibility and you prove your passion and understanding of accessibility in many ways by greater community engagement and involvement and Yeah.
+
+That,
+
+Chris: um, that all tracks, um, the, the blogging piece to like, I add every good thing that's happened in my career has been an offshoot of me writing about stuff as I was learning it, uh, publicly, um, literally one of the best things I've ever done for my career.
+
+Ben: And, and absolutely, I believe, like, you should, you should document learning in public, like, I think there's a sense of, like, oh, I have to be the expert before I can blog it, but, you know, it is absolutely worthwhile for you to just share, hey, here's the thing I learned, here's where I learned it from, here's how I changed things, like, that process is hugely helpful, and honestly, oftentimes, even those resources are more helpful than the quote unquote expert pieces, because, yeah, Yeah, you're, you're, you're connected to the day to day work, um, and you're approaching things as a fellow beginner would, you know?
+
+So, um, yeah, don't feel like you have to become the accessibility expert to start doing accessibility content creation. Like, just share what you're learning and how you're learning it and how that's changing what you're doing. That is absolutely, like, more than good enough. What? Um,
+
+Chris: uh, not what? That's not the right question here.
+
+Uh, so as you've been going, I've been in situations before where I've kind of been the informal accessibility advocate in a group of folks where there really wasn't anybody tasked with that job. Um, I've also been in places where there was someone tasked with that job. And, uh, in both situations, uh, We kind of we we run into situations like sometimes I'd work in tandem with that person, but I've I've been in places.
+
+I think what I'm trying to get at where, um, the company either pushes back hard on that stuff or doesn't care. So, you know, you'll hear things like, well, we don't have. Disabled users or yeah, that's important, but we don't have the engineering time to focus on it right now. So we'll, we'll push out a minimum viable product and we'll get to that later.
+
+Or, um, like I think the most egregious one I've ever run into was like, I was doing, doing some work for a company that had like a red link on black background color palette. And I was like, Hey, that's not. Like that, you won't be able to see that text if you have certain types of, you know, visual impairments and they were like, no, no, our CEO wants it so you just have to do it like, and you know, like, so how do you have you ever run into?
+
+I'm sure you've run into that before. How have you dealt with that? Have you ever figured out a way to successfully persuade people to do the right thing anyways? Because I, I am very bad at that. Like, I'm really good at rallying people behind a thing they already care about. Yeah. Um, like my, like, I, and I'm not good at convincing people when they don't.
+
+Um, I am not a particularly persuasive person.
+
+Ben: I, I think I align a little more closely with you on that. Uh, I think like it's, it's far easier to galvanize people who already care. But, you know, that is a strong suit, right? Um, in a, in a way, because, uh, I think of almost like the tech adoption cycle, right?
+
+Uh, where if you're not familiar, like, you know, when new technology is introduced, it's not, um, You know, people don't just immediately flock to it. There's always like a set of like early adopters who are incredibly passionate. And, um, you, you can usually assemble a small cohort of those like passionate early adopters who see the value in what it is you're, you're selling.
+
+Right. Um, and then as that group grows, they can leverage their connections. They can leverage their influence and. start to communicate the value of this to other people, right? So, um, If you're in a position where you're fighting an uphill battle, sometimes it's okay to just leave, right? Like some companies are not interested in investing, uh, like in investing in accessibility.
+
+And, um, there's a, uh, an excellent tweet thread from accessibility advocate Marcy Sutton, where she describes, like in her experience on accessibility work, um, burnout is the result of not having the agency to make the change you're trying to make. Um, in the most recent AXCON, uh, Accessibility Conference, um, Shell Little also put together just amazing talk about burnout in accessibility because oftentimes, um, you know, the Care and advocacy type roles tend to be the roles that burn out fastest because it's absolutely like a role that you can get emotionally invested in and, you know, like also have the least agency.
+
+So generally burnout is an important thing to keep in mind. Some places may not be, uh, receptive at all, in which case leaving is an option. But that said, if you want to push for change, I, I don't think you're going to be able to boil the ocean. Right. I think that it is important to kind of follow that tech adoption cycle of like, figure out who your early adopters are, who are the other people that care.
+
+Right. Um, and I find that generally, uh, when I've spoken to the vast majority of developers, like who work on interfaces, a lot of them would be seriously bummed if they found out that someone couldn't use a thing they built.
+
+That feels crummy, right? And maybe they don't know where to get started on accessibility, they don't know how to prioritize it, or they feel like they can't prioritize it against other work, but they would feel crummy knowing that, like, someone can't use it, right? And that is, that is the bit of heart that you need, right?
+
+Is, um, because that person is oftentimes, like, their parents, their grandfather, their, you know, uh, a friend that they have, you know, their best friend growing up, um, that person, right? Um, and oftentimes you can actively just show people, hey, if I, you know, turn on a screen reader and go through our page, Look at how clunky this is, right?
+
+You, yeah, like by doing this one practice of putting a link tag around everything, right? Look how, you know, verbose this link is. This is how people really experience the web like you can show people like you find the people who you think will be, uh, invested in their product being at least some degree of usable.
+
+You can show them the ways in which currently the product is failing users. And then you can show people. The concrete steps that you could take, um, to resolve that. Right. Um, and you build up momentum, right? Tech adoption is always about momentum. You find the early people who care. Um, you show them why, why they should care.
+
+Uh, you, you, you get them on board. You build up some momentum with like, here, let's fix a few quick things here and there. Look how doable what that was, right? Like that wasn't, we didn't have to overhaul everything. We made a few key fixes and suddenly this is better, right? You build up that momentum, um, of just fixing a few key blockers, maybe even on a few key pages.
+
+Like you could scope this down to, what have we just committed to fixing color contrasts on our homepage? That's easy enough to scope down. We could fit that within our sprint, right? Um, Okay, well, now that we've done that and we figured this out, what if we fix it on our about page, you know, or we notice our homepage has, you know, some empty links.
+
+What if we committed to fixing that, right? Taking those small actionable changes, um, building up some actual momentum with it, um, and using that momentum that then to start selling just how much more usable the site is, and then you can start to recognize some bigger problems where it's like, well, actually, Thank We couldn't quite fix the color contrast on our site because these colors, uh, come from our design palette.
+
+The fundamental problem here is that our design palette isn't set up to meet these needs. So now maybe we need to get the designers involved. Maybe we can figure out a new color. Right. And now suddenly we've got a systemic fix. Um, this is the value of a design system, by the way, uh, for anyone who's unaware, a design system is.
+
+A source of truth for, um, UI decisions, basically, uh, UI and UX decisions about our sites and applications across our brand. Um, and so it's a, a centralized single source of truth. So when we update a decision, it should hopefully propagate, uh, throughout the rest of our applications and sites. Right. And, you know, colors are a part of that design system.
+
+If we realize. Hey, we just straight up are never going to get this blue to work with anything because color contrast is poor. We fix it at the design system level and suddenly lots of people can benefit. Um, so if you're dealing with that kind of uphill battle of people who feel like we can't prioritize this work, right?
+
+Fine. Key blockers that are also low hanging fruit, right? Use that to build up some momentum. Figure out who the people are in your organization who would care. You're likely to find those amongst your developers. You're likely to find those amongst your designers. You're likely to find those amongst your product owners, right?
+
+People who believe that a product can and should be good and want to see it get better, um, and sell them on small steps and use those small steps. To build up momentum so that you can start making more systemic changes. Um, and, and, you know, communicate what you're doing there, right? And along the while, just show people the real experience that you've created.
+
+For sure.
+
+Chris: Um, I'm going to, uh, cause you mentioned, uh, Marcy Sutton's Twitter thread, uh, as well as Shel Little's talk at, uh, AxeCon. I'm going to drop links to both of those in the show notes as well. Um, one thing you, uh, You were just talking about Ben that really, I think resonates well, it's two things.
+
+Actually, the first is small steps. Um, one of the things, even just like any type of technology change, new thing, um, I see people do is try to do too much too fast, right? So whether it's learning JavaScript or trying to get into accessibility, um, if you try to tackle too much, you can get really frustrated and confused and just Just give up, which sucks.
+
+So, um, I really like this kind of thing you're advocating for, which is like, start with some easy iterative changes and then kind of scale up as you get more proficient. Um, the other thing you mentioned though, that I, um, I think is really interesting is kind of showing people how this is not what you said.
+
+But this is me kind of reinterpreting it showing people how their stuff sucks as is and then how to fix it. Um, so one of the things I do in my vanilla JS Academy workshop, um, is, you know, uh, After each project, I show kind of my, um, both my approach and then some of the common issues I see. And one of the, one of the projects I specifically kind of go through, uh, actually a few of them, like not accounting for, say, screen reader users, right?
+
+And I'll open up. Voice over on my computer and walk through like the app in a way that people commonly build it and show what that experience is like, um, and it's amazing how much more eye opening seeing that screen reader experiences is for folks versus just describing why. Something doesn't work in screen reader, like hearing clunky announcements, like where you've got way too much information in a particular thing that gets announced every time a UI update happens or having not enough information.
+
+So you don't know what buttons do on a page. Um, it just seems to hit so much more viscerally and really drive home the point in a way that just describing it does not,
+
+Ben: um, It takes it out of the realm of like the academic and theoretical into the realm of real user experience, because, you know, it is.
+
+People can intellectually understand that a screen reader user could use the site, or could try to use the site, right? They might not know what that experience is like, but you could say, like, okay, sure, I'm willing to bet that there are at least some users of this, right? Um, but then you show them what that experience looks like, and sounds like, and feels like, and they're like, holy cow, I would have, if, if I were doing this, I would have totally missed this.
+
+Or, um, I, so one of the things I've done on my stream sometimes is like, I'll have people bring their personal sites, uh, like they can, they can suggest their sites and I'll do like an accessibility audit live and very, very keen to like walk through screen reader demos and stuff like that. And, um, there's a very popular pattern of having the like clickable card, you know, like where, uh, maybe you've got like a grid of, of cards and all of those cards are completely clickable as links to things and.
+
+It's very understandable to wrap whatever element you're using as the card in an anchor tag. But, you know, what that means when you're navigating to that link with a screen reader is the, uh, screen reader user will be told, link, and then the text contents of everything in that card in one go, including the alt text of any images you've got, any description stuff.
+
+And Um, you know, a voice control user to activate that link would have to say click and then the exact same string, including the alt text of the images and whatnot, right? Like it's abysmal. And so I've shown this sometimes and I've had like the people who submitted their site, uh, they'll like pop up in the chat and they'll be like, holy crap, this is terrible.
+
+What have I been doing? You know? And it's like, you, you oftentimes just, you need to see it to like understand it at a visceral level.
+
+Chris: Yeah, it, um, it almost like triggers a, um, kind of an empathy reflex. I know I, I'm sometimes guilty of this myself where like, you can know something, but until you experience it, it's like a lot harder to kind of have that, um, that empathy reaction.
+
+Um, uh, and it's maybe just a, uh, Either a personal failing or a failing of, of humans as a species. Um, and
+
+Ben: this, this I think also goes to like, is so important to manually test your sites, right? Um, like until you've actually hopped into real screen readers. And I mean that plural, right? Screen readers plural to see how an experience is actually.
+
+Like how it actually feels on your page. Uh, you're just not going to know, right. There's, uh, it's, it's so easy to talk about like, Oh, the screen reader should, but because of, you know, differences in browsers, operating systems, devices, and screen readers, and other assistive technologies, um, oftentimes the.
+
+And now it isn't what you'd expect. Right? Um, and that manual testing is, is so, so important to get like that sense of like how this actually is apart from how it theoretically could or should be. Yeah. One more thought on that. Oh, you know, go, please, please. Yeah. Uh, I, I realized like I had, uh, had a thought and then, uh, forgot to actually say get proficient in those assistive technologies, right?
+
+Become a power user of screen readers, become a power user of magnifiers. I admit I don't hop in a magnifier nearly as much as I should, right? Become a power user of assistive technologies because your users already are. Disabled people, by necessity, have to become power users of their assistive technologies.
+
+And so, um, there are, you know, screen readers have navigation settings where you can hop from link to link to link, or heading to heading to heading, or, you know, button to button to button, form field to form field to form field, table to table to table, and so forth. Um. These settings exist and they're often thought of as like advanced or power user settings, but they're perfectly valid and real ways to navigate a page.
+
+And so you should expect that people can and will use those on your page, right? Um, And so become a power user of assistive technology because your users already are right. These are valid ways to experience the page. You should understand what those experiences feel like. So,
+
+Chris: um, 1 thing you kind of mentioned about, um, people being, you know.
+
+People who use screen readers being power users of their tools. Um, I think one other aspect of this is there are also people who use those tools who are not power users of those tools, but depend on them or, um, you know, either for reasons that they're newly disabled. So they're still figuring the tools out or they're not as technically proficient.
+
+Um, and, uh, you know, so that potentially creates some unique challenges. To write, um, in terms of how they potentially, like, navigate and work with these tools.
+
+Ben: Absolutely. Yeah, it's, it's always a balance, right? And
+
+even amongst screen reader users, right? There's huge debates about, like, how verbose something should be, right? And, Uh, screen readers offer ways to provide more or less verbosity, right? So you can't even necessarily guarantee that even in the same screen reader on, you know, the same operating system that things will end up similarly to.
+
+So, um, it's, it's, it's tricky, right? Um, and the, the best that we can do is, um, try to understand. That spectrum of experience, um, working, especially where possible with people who actually do have that lived experience, right? Like, uh, within, uh, disability history, there's this mantra of nothing about us without us, which is this notion that, like, You shouldn't be building for disabled people, but with disabled people, right?
+
+Um, because disabled people know their own needs best and, um, you can, you can inadvertently cause a lot of harm by, uh, building what you think disabled people need without having, uh, like them involved in the process. Um, yeah, that's, that's a whole side conversation we could get into.
+
+Chris: Yeah. Yeah. This, um, this feels almost a little bit like, um, like, like white savior complex applied to disabled communities.
+
+Right. Where, um, Uh, talking outside the web, like you'll see things like I've built a wheelchair that can climb stairs instead of just putting a fucking ramp on the building, right?
+
+Ben: Uh, have you heard the term for those kinds of things? I have not. Okay, this was by, uh, what is her name? Liz Jackson. Uh, she coined this term, disability dongle.
+
+Uh, which she defines as a solution. Created by, uh, non disabled people for problems. We didn't know we had, um, and basically this is this idea that, uh, um. Yeah, you've created a product ostensibly for disabled people, but without having involved them in the process, so you don't know whether this is something they need, whether it's something they value, whether it's something that's even useful for them, the, uh, you know, those stair climbing wheelchairs are a great example because, um, every time one of those comes up, there's always a thread on Twitter of like real everyday wheelchair users who are like, Holy shit, I would never get into that.
+
+I don't know if I can say that on this podcast, but, um, You can, there's, there's, Okay, noted. Um, like, I, I would never get into that because, uh, this, uh, this wheelchair, the seat, would have me at a precarious angle. I would fall out of the chair if I did this. Or, um, noting that, like, wheelchairs in general, Part of the reason that they're so expensive is because in many cases, they have to be custom made for the specific body that they're being built for.
+
+Otherwise, that person could build up, uh, injuries from sitting in the chair too long, or they could build up skin conditions from sitting in the chair too long, right? Like, uh, wheelchairs that are not custom built for people, uh, you know, can actively injure them, right? And, and so this stair climbing wheelchair Is built for an idea of what someone might be, but is really more inspired by like hospital wheelchairs that are not meant for long term use, and they would put people at precarious angles and also they're incredibly expensive and also they're way too fragile.
+
+And also, they work only on specific stairs that have rails, and, and, and, and suddenly, and also. They're prohibitively expensive. Right? And so no one in the real world is going to be able to use this. Um, and a bit of user focus groups beyond, you know, a handful of friends that are going to validate what their friends are testing and building, right?
+
+A handful of user focus groups would have surfaced many of these things, right? Um, and, and clearly never did. There's also, you know, this. That white savior incentive also shows up with like the news and media attention that comes like oftentimes these disability dongles are vanity projects designed to increase funding for a design department, right?
+
+They don't care about putting into the wild like if you follow up a year later, those chairs don't exist in the wild. Those sign language gloves don't exist in the wild, you know, just because. That's not really what they were for. They were vanity projects that, you know, seemed great. Like, oh, we could treat disability as a charity cause and not ever actually determine whether this would be good or useful or, you know, valuable for the world.
+
+Sorry, I don't know that you were expecting a dissection of media and design in today's podcast, but that's what you got.
+
+Chris: No, I appreciate it, Ben.
+
+Ben: Um, if you're interested in learning more, uh, about disability dongles, I, I mean, you, you can Google it. I would specifically recommend the works of Liz Jackson, who coined the term as well as Alex Haygard, um, who is an academic that, uh, is, they've been heavily involved in, in kind of describing, um, and documenting and reporting on, um, disability dongles in the world.
+
+So those are the two people I would especially look to, to like, learn more about this. Awesome. Yeah.
+
+Chris: And I found a talk from Liz on that. So I'm gonna, I'm gonna link to that in the show notes as well. Um, awesome. Well, Ben, thank you so very, very much for, um, coming on the show to chat with me. I really appreciate it.
+
+Uh, folks want to learn more about you and kind of your work and all that. What's, um, what's the best place for
+
+Ben: them to go? All right. Well, uh, I blog at benmyers. dev. Uh, that tends to be my little, uh, Home page, I suppose. I stream twitch. tv slash some antics dev. That's s o m e a n t i c s d e v. Um, uh, because I am a pun driven developer.
+
+Uh, I came, true story. I came up with the name some antics and I was like, I have to do something with this. And that's where the show came from. It was not the other way around. Um, I had the great name and I'm like, I have, I can't let this go to waste. Um, If, if you're still of the Twitter persuasion, um, I can be found on Twitter at Ben D.
+
+Myers. If you prefer, uh, Macedon, I'm at Ben on the a11y. info instance. Um, those are some good places to reach out. Um, yeah, those, that's... probably where best to find me. Um, I'm also very active in, um, two, uh, online communities of practice on discord, uh, the lunch dev, uh, discord server, which you can get to at discord.
+
+gg slash lunch dev. Um, and, uh, a particularly welcoming home for the two of us, Chris, uh, the front end horse community, which you can get to at front end dot horse. Slash chat. Um, if you'd like to, uh, participate in those communities, we'd love to have you.
