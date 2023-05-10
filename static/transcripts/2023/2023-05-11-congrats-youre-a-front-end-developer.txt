@@ -1,0 +1,31 @@
+Hello, hello, hello. This is the Vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about what makes someone a front-end developer.
+
+Really quick, before we start, this week only, you can save 50% on all of my Vanilla JavaScript courses and eBooks over at VanillaJSGuides.com. Use the code `yayitsmay` at checkout. All right, let's dig in.
+
+So lately, I have been seeing the Twitter web dev grifters all posting the same format of tweet.
+
+> HTML and CSS => GitHub and Git => Tailwind and CSS => JavaScript => React/Vue => TypeScript => Node.js => MongoDB
+>
+> Congrats, you're a front-end developer
+
+Wow, is that some gatekeeping nonsense. Here's a more accurate version.
+
+> Enough HTML to cobble together a static webpage?
+>
+> Congrats, you're a front-end developer.
+
+That's it, that's the benchmark, HTML.
+
+CSS is great and it's incredibly powerful. JavaScript can add all sorts of interactivity and app-like functionality.
+
+Tooling on top of those can make what you build easier or harder and worse for users, depending on what the tools are and how you set them up.
+
+All that you need to be a front-end developer is HTML. That's the foundation, that's it. That's the whole thing. Anything else is just icing on top.
+
+So hey, my pocket guides are short-focused JavaScript courses and e-books made for beginners. In each one, you'll learn the ins and outs of a specific topic in about an hour.
+
+If that sounds interesting to you, head over to vanillajsguides.com to learn more and use the code `yayitsmay` at checkout to get 50% off every single guide or bundle at sale ends this weekend. So that's Sunday, May 14th. So don't miss out.
+
+That's it for today, see you next time. Cheers.
