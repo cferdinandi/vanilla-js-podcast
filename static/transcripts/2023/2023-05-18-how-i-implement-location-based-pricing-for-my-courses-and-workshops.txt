@@ -1,0 +1,61 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about how I implement location-based pricing for my books and courses. If this topic is interesting to you, you can also head over to techeducatorschool.com, where I'm putting together a bunch of resources on how to do stuff like this. So let's dig in.
+
+For the last five years now, I've offered automatic location-based pricing adjustments on all of my courses, books, and workshops. Customers who live in countries where the exchange rate and local economy make my products more expensive relative to someone living in the U.S. can purchase them at a reduced price.
+
+Today, I wanted to share how I actually implement this, including how I figure out what the adjustments for various countries should be. So why do I do this at all?
+
+A few years ago, I got an email from someone in Africa who had been saving for months to purchase my course bundle. What would cost a student in the U.S. less than a day of work was going to cost this person the equivalent of over a week's salary, and that felt deeply unfair. I'd heard of the concept of pricing parity from Wes Bos a year or two earlier, but this email is what really pushed me to implement it on my own products as well.
+
+If you're listening to this and you need a more selfish reason to offer location-based pricing, in the months after I implemented it, my revenue grew by about 50% as a massive amount of potential customers who couldn't afford my products before suddenly could. The experience has been overwhelmingly positive, but that's not why I started. I literally started because I realized someone was trying to buy my stuff in a way that just felt wildly unfair.
+
+So here's how I actually implement it. I'm going to first talk about how it works at a high level, and then I'll explain my specific setup. I've talked to multiple people who have done something like this. We all have a slightly different setup. Everyone's way of doing this is a little bit different, so I'm just explaining how it works for me. The first is I create an object of countries that should get a discount and how much of a discount they should get.
+
+I use their requesting IP address to identify which country they're browsing from. If that country is in the object of countries that should get a discount, I show them a message letting them know and apply that discount to their total at checkout. So from a high level, this is relatively straightforward.
+
+In a JavaScript-based world, so let's say you were running Node on the server or something like that, you might have an object like let discounts equal, and then you'd have something like Brazil colon 0.63, Cambodia colon 0.65, Chile colon 0.45, and so on. And then using an API or server-side library, you would get the visitor's country. Then you would check for that country in the discounts object. So you might check to see if the country name is in that discounts object.
+
+And if there is, you can show it in the UI. So for me, I display a message up at the top of the page on the product sales page that says, looks like you are from country where this might be a bit expensive, a discount of, and then I keep all of my discounts stored as fractional percentages. So a 43% discount is going to be 0.43. That way I can do math with it when I'm going to calculate price totals.
+
+So when I'm displaying that in the UI, I need to multiply it by 100 to get a proper percentage. So a discount of 43% or whatever it happens to be will be automatically applied to your cart at checkout to make the price more fair. And then finally, in your checkout system, you'll need to apply that discount to the actual purchase price before charging their credit card or PayPal account or whatever. To do this, you multiply the price by the discount as a fraction and then subtract it from the regular price.
+
+So, you know, I'd reset the value of the price by saying price minus and parentheses price times discount, and that's going to give you the new price. So I use Easy Digital Downloads for my checkout and course management. I don't use WordPress for anything else. My whole website is powered by Hugo, a static site generator, but the checkout system runs on WordPress with Easy Digital Downloads. And I chose this setup because I wanted to host my own checkout platform rather than using something third party.
+
+WordPress is really extensible, so it's easy for me to customize the experience to match the user experience I want for my customers, and it's easy to add custom APIs for additional integrations. And this is how I provide access to the courses on an entirely separate portal. WordPress is literally just handling the checkout and then I'm using static site generators for everything else. So I wrote a WordPress plugin that extends Easy Digital Downloads, or EDD, with pricing parity support.
+
+It adds a custom post type for pricing parity discounts that I can use to add discount details for various countries. And I also integrated the Geolight 2 data from MaxMind to detect the customer's location and match against it. That database periodically needs to be updated, and if you were using like Cloudflare or something, they actually provide location data to you with every request. So you could theoretically rely on them instead.
+
+Last time I talked to Wes Bos about this, that's what he does on his end.
+
+The plugin adds an API that I can use to get that discount information and display it on my various product sites. So all of my different products have their own websites and landing pages, and so I use this API to get that amount and display it on those pages. And then the plugin also automatically applies that discount to my checkout cart. So users will get a message at the top of the checkout page that specifically says, looks like here's where you're from, this discount has been automatically applied to the items in your cart.
+
+So that's kind of the technical bit of it, but one of the questions I get a lot around this is how I decide what the discount should be.
+
+For years, I used a really basic formula. So I would take a typical web developer salary in the location I'm applying the discount for, divide it by what that same salary would be in the US, and then subtract that difference from one to give me the percentage off. So for example, the average web developer salary in Brazil, last time I looked, according to one site was about 25,000 Brazilian, forget the name of their currency, I apologize, BRL, which converts to, or at the time converted to about $5,000 USD.
+
+And at the time that I was doing this, the typical mid-career web developer salary was $70,000. I think it's closer to like 80, 85 now, but that's what it was at the time. So I would take that 20 or that 5,000 USD, divide it by 70,000, and then subtract that amount from which would give me 0.93 or 93%.
+
+The problem with this formula and the reason why I stopped using it is that it doesn't account for various other economic factors like cost of housing, healthcare, food, and so on.
+
+And this sometimes resulted in discounts for affluent European countries with lower salaries, but dramatically lower costs of living because they have more affordable housing, universal healthcare, whatever it happens to be. So I've looked into various calculators and third-party APIs and even tried to do my own math on the Big Mac index, but I never felt confident about the results. For a while, there was this really awesome pricing parity calculator that used data from the OECD and World Bank.
+
+It was clear, simple, and I could reason about the math really, really well. The problem was it was built on Heroku and when they did away with their free plans, the app went away. It never came back. They never upgraded to a paid plan. So I now use the PPP or pricing power parity API. I'll link to that in the show notes. It's an endpoint you can call that spits out some information about the country and a recommended pricing parity multiplier.
+
+Rather than using that API live, I periodically check against it and manually store those discounts using my easy digital downloads plugin. That also saves me from making a ton of API calls. It's just baked right into my system, but I use that and I will every few months go in and check to see if any of those values have updated. So one other really common question I get about location-based pricing is about cheaters. Can't someone just use a VPN to get a discount from a country they don't live in?
+
+And the answer is yes, they absolutely can do that. But there's also a pretty good chance that that person wouldn't have purchased it at regular price anyways. And I'm not going to punish all of my wonderful, honest customers because of a few shitty people.
+
+I run my business from a place of trust. I think that's a really important part of how I operate. I don't worry about that sort of thing. I think it's better for my customers, who I'm really focused on, people who are really going to pay me money for my stuff, to do with the way I do it. I know of at least one other person in the developer education space who restricts access to the country of purchase if you get a location-based discount.
+
+So let's say you're in Brazil and you make a purchase and you get the From Brazil discount. You can only ever access that course with a Brazil-based IP address. So if you are traveling for work or you move at some point in the future, you can't access that course anymore, which frankly I think is bullshit. What happens if you move? You have to buy the course again. What about if you're traveling for work? You can't learn on the road? What if IP addresses change and the system thinks you're from a country you're not? I've found that if you treat people like they're honest, that's generally how they're going to act. There are two challenges with maintaining a system like this. First is economies are constantly in flux.
+
+The discount amounts change over time and sometimes countries that have discounts today might not in the future or vice versa. Manually checking the shifting data is annoying and I don't do it all that often. I wish I did it more.
+
+I could probably keep it up in real time a lot more accurately, but I tend to check it only every few months. Similarly, the countries that various IP addresses map to also change over time. So the Geolight 2 data from MaxMind that I use is manually included as per their terms of use and I have to manually update that every now and then.
+
+And if I don't, they can give discounts to people who live in nearby but not the country they're actually from discounts or not give them one at all when they should get one. For example, I once had a student from Bangladesh get a looks like you're from India message and while the discount amounts were similar because of the political history between India and Bangladesh, it was not particularly well received. Despite these rough edges, I recommend location-based pricing for anyone who runs an education product business.
+
+I've been able to teach students from all over the world in countries where I otherwise never have been able to reach them. It's been an amazing experience and I just cannot recommend it enough.
+
+Now, if you enjoyed this episode and this topic, you should head over to techeducatorschool.com where I'm putting together a bunch of resources on how to create and sell your own books, courses and workshops, including stuff like this. Enter your email address and you'll get updates as the project moves forward, sneak peeks of stuff that's in the works and more. Anyways, that's it for today. I will see you next time. Cheers.

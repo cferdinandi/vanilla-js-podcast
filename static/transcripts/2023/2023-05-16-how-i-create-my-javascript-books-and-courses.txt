@@ -1,0 +1,83 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about how I create my books and courses. And if this is a topic that you find interesting, you might also wanna head over to techeducatorschool.com where I'm putting together a bunch of resources on how I actually do what I do. But at any rate, let's dig in.
+
+So this episode is gonna be specifically about the process of figuring out content, putting it all together, and packaging it up as a completed book or video. And in my product ecosystem, those books and video courses are called pocket guides. Every pocket guide that I create follows the same process.
+
+I learn how to do a thing. I outline the stuff that a student would need to know. The basics, some advanced topics, and any weird gotchas or edge cases that most tutorials miss. Then I write the ebook version. Once I have that written down, I create the source code from that ebook. So I'll go through each section and take out all of the code snippets and put them in actual HTML or JavaScript files that students can play around with and work with. I use that source code to create the video course.
+
+Once that's all done, I create a book cover and course image. I convert the ebook into a PDF, EPUB, MOBI, and HTML format using a command line tool I have. We're gonna get into all this in more detail in just a couple minutes. Then I upload the videos to a streaming service and get them captioned, and then I sell the course.
+
+So let's look at each of these steps in more detail because that's a lot. So how do you actually do these things?
+
+My pocket guides are short and focused, which makes creating them a bit easier and is also better for students. They're easier to get through. Information retention tends to be a bit better because I'm not throwing a ton of information at you all at once. And each one starts off as a narrow topic that I'm personally interested in or learning about. My code base was getting unruly, so I learned about ES modules, and then I wrote a book and created a course about it.
+
+I wanted to improve the resilience and offline capability of my site, so I learned about service workers, and then I created a book and video course about it. And the process for me always starts by using DuckDuckGo a whole bunch, reading a bunch of tutorials, and trying to implement some of what I've read into a simple working project. And there's almost always a bunch of assumed knowledge in those tutorials or edge cases that they didn't mention or gotchas or weird bugs that pop up that weren't discussed.
+
+And this is where I feel like I can come in and really add some value. It's the kind of stuff that makes self-taught learning really hard, and it's one of the reasons I started creating courses in the first place. So after I've built a few small projects, I have a pretty good grasp on how things work, and I'm also close enough to being a new learner that the pain points, and oh, I wish someone had told me that, are still really fresh in my mind.
+
+And this is the perfect time to start actually writing the course. And so for me, that next step is outlining all of the stuff that I think someone who's just learning this would need to know. And I find that most tutorials on the web fall into one of two categories. They either hand wave over some essential knowledge and jump right into the interesting stuff, which I get because it's more interesting, or they go into way too much detail about every aspect of a topic.
+
+Both approaches suck for different reasons. The hand wavy tutorials are impossible for beginners because you can never get started. There's all this stuff that you need to know that's not mentioned or covered. The too much detail tutorials can be confusing as well. They often cover stuff that's not likely to come up or not important at first, but good to know later. They're hard for beginners too because they overload you with information.
+
+So I like to break my outline into a few common parts.
+
+Part one is the essential stuff that you need to start doing the thing, whatever that happens to be. Part two is advanced topics. So after you've got those essentials down, now let's talk about those advanced features, edge cases, and so on. And finally, a project. And I found that for most folks, learning just really doesn't stick until you actually apply it. So I include a project in every course because it dramatically improves learning retention.
+
+You take what you just learned, you go do something with it, and it makes all of those concepts just stick and last a lot better. Once I have that kind of all outlined and figured out, I start writing the ebook. And I start with the ebook because it's easier for me to write and edit and clarify my thoughts in text first.
+
+I write my ebooks as a collection of markdown files, and each chapter gets its own file. Markdown works really well for me because my books include a lot of code snippets, and being able to create highlighted code blocks is just so much easier with Markdown than with other tools I've tried, like Microsoft Word or Apple Pages.
+
+There's no real trick here. I tend to write like I talk, and I talk very directly. That seems to work well for a lot of people. And I've also got years of experience writing about technical topics, so I've become really efficient at it.
+
+And so one of the things I tell a lot of folks is, if you're interested in becoming a tech educator, one of the best things you can do is start a blog, turn it into a newsletter, and start writing as often as you possibly can. If you can do it every day, awesome, because the more you practice it, the better you'll get at it, the more efficient you'll get at it, and the easier it becomes to do a whole bunch of stuff later.
+
+So once I've got the ebook written, I create my source code from the ebook. And that really just involves going through every chapter and pulling out that code into different files. Each chapter gets its own directory, and each section or snippet gets its own HTML file with the code able to run live in a browser.
+
+So you just open up that file, you can pull up DevTools, and you can see the code in action. And when I'm done, the entire directory gets put on GitHub for easy access and version control. And yes, that means anyone can view it. I don't think it's nearly as useful without the explanations around it, so I don't really get particularly worried about it. Once I have all my source code done, I can use that to create the video course.
+
+The video course versions of my Pocket Guides are me talking about and explaining the source code. So I will copy, paste text from the ebook into an email, and pull it up on my phone as a rough kind of notes thing that I can follow along with and make sure I hit all those important topics.
+
+And I used to try to be very precise with my scripts, but I've found that students like it better when a bit more casual in my videos. So now I pull up the source code and record myself explaining how it works. And I use ScreenFlow for this. That is a Mac only piece of software. If you're on Windows, Camtasia is a really nice alternative that works for Windows. And if you don't wanna spend money on either of those and you're just getting started, there's tons of free options, a lot of them baked right into your operating system that you can use as well. \
+
+Occasionally, I'll have a section that doesn't have any code. I'm talking about like a high level concept or like a strategy or approach rather than actual code snippets. And when that's the case, I like to grab a few relevant images from Unsplash, which is a place where you can get royalty free images at no cost to use in commercial products.
+
+And I put one or two big relevant words on a slide and keynote, again, if you're on Mac, or if you prefer it, you can use, if you're on, sorry, Windows rather, or you just prefer it, you can also use PowerPoint. It does the same exact thing. And then I use ScreenFlow, again, on Windows. You can use Camtasia to record myself giving a short presentation.
+
+My videos are typically two to five minutes in length. Once I've got the course and the ebook both finished, I create the book cover and the course image.
+
+And I use the same cover for every book almost. So every pocket guide cover has the exact same layout. It's got my company brand, go make things up at the top of the page. It's got by and my name down at the bottom. And then there's this kind of wave pattern and it looks like the ocean. I use a different background color based on the bundle that the book is part of. I've got this bluish color for my fundamentals bundle and a purplish color for the level up bundle, for example. And then I include some sort of nautical creature or artifact as part of the cover.
+
+So rather than just having the title on there and the color, I also throw in some sort of graphic. And I try to make it somewhat relevant when I can. So for example, the Accessible Components Guide has a starfish, which looks a little bit like the arms out person icon that's often used as the accessibility logo.
+
+And I get my icons from The Noun Project. I purchased the one time royalty free license for that. And even though everyone's moved on to Figma or whatever new design tool is popular right now, I still design my covers in Sketch. I think I have a really old license. I haven't updated in years, but it still works.
+
+And I also use Sketch and the cover image to create the graphic that appears at the top of the sales page for the course on the website. And for my products, that's usually, I think the book cover is on a tablet. And then I've got like my website pulled up on a phone. And then there's a laptop that has the source code on it. I don't know why I came up with that. It's just something I'd used years and years ago and it works.
+
+So I drop it at the top of all my courses. More recently, I released a series of vanilla JavaScript shorts, which are smaller than a course, a little bit bigger than a blog post. And for those, I am using Carbon to generate images of some source code. So that's at carbon.now.sh. I'm generating just like an image of some source code from the guide and dropping that at the top instead. So you don't have to follow that same pattern I do.
+
+You have a lot of options. I've seen people do like horizontally laid out versions of the book cover as well, or just some sort of unique icon for the book if that's something you prefer.
+
+So once I've got that all done, I'm ready to actually convert my Markdown files into book formats. So PDF, EPUB, MOBI, and HTML. I've got a bunch of Markdown files. I've got my cover image. I built my own, I cobbled together my own tool using some command line resources. Pandoc, WKHTML2PDF, which stands for WebKit HTML2PDF, and Calibre.
+
+And I have an open sourced version of the tool that I use available on GitHub. I'll link to that in the show notes. It probably needs some dependency updates. It works completely fine on my system, but if you go to install it, you might get some warnings about some stuff being out of date. So update accordingly.
+
+And then the version I use, I actually customized a bit to reuse certain files. So like my About the Author page, I use that in every book. It's the same exact one. So I've customized that build a little bit to use the same file that lives in a separate directory at the end of each book.
+
+And then I can batch compile multiple books at once. So if I've written a handful of them, I can build them all with one command line operation, and it'll spit them out all as separate files. So once I've got all of that done, and I have my videos done, I am ready to actually upload those to a streaming service and get them captioned. So I host my videos on Vimeo. The plan I'm on is called Vimeo Pro, which is no longer available.
+
+They have a different plan that costs the same exact amount and does the same exact thing, but it's called a different name. And I forget what exactly it is. I wanna say it's like Vimeo Business maybe is the name of it. I don't know, they changed some things. So I poke around on their website and figure out what makes the most sense for you. It does have to be a paid plan.
+
+So they're free plans, and they're just casual for creative plans. They prohibit commercial videos on those. So it has to be one of their business-related plans. But the reason I use them is that they handle bandwidth-aware streaming far better than I ever could. So if you've got someone who's on a slower device or a smaller screen, they're gonna send them a lower resolution video that's still going to look fantastic on their device, but it's going to use up a lot less bandwidth and a lot less data, which is great.
+
+They also let me customize the appearance of my embedded video player. Let me control where those videos can be embedded, support closed captioning, and support downloading. So it is literally one of the easiest no-brainer business expenses I have. And it's worth every penny for me.
+
+I use Rev for my captions. I know there are other services available and whatnot, but what I really like about them is that they are relatively affordable, and they also integrate with the Vimeo API. So I can log into Rev. I can select my videos and hit, you know, just pay for captioning, and then I don't have to do anything else. They just automatically, the captions get uploaded and added to those videos by Rev for me.
+
+When I started using them, Vimeo did not have any sort of automated captioning. They now do. It's pretty okay, but it misses the mark on some technical topics sometimes, as most AI-driven captioning tends to do. So, you know, if you're really trying to do this on a budget, you might be able to get by totally fine with Vimeo's built-in captioning. If you find it's not working really well for you, I think Rev is a fantastic option for that. And then the last part, of course, is selling the course.
+
+And honestly, for me, the marketing aspect of an education business is far harder than the content creation. I spend a lot of my time writing articles, creating podcast episodes like this one, answering questions on Twitter, chatting with students, appearing on other people's podcasts. I don't buy ads. I think that's a waste of money.
+
+Most of my sales come from people who subscribe to my newsletter, listen to my podcast, or heard me on someone else's show, like what I had to say, and eventually buy a course or 10.
+
+So, if you enjoyed this episode, you should head over to techeducatorschool.com, where I'm putting together a bunch of resources on how to create and sell your own books, courses, and workshops. Enter your email address over there to get updates as the project moves forward and sneak peeks of stuff that's in the works. That's it for today. I'll see you next time. Cheers.
