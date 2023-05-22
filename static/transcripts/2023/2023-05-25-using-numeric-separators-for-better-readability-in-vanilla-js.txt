@@ -1,0 +1,19 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about numeric separators in JavaScript and how they can improve code readability. Let's dig in.
+
+So one of the coolest new features of JavaScript is something called numeric separators. It's a simple trick that can be used to make big numbers easier to read in your code.
+
+Imagine you have some comically large number, let's say like `7000972542` or something like that. It's really hard to kind of figure out what that number actually is when you're looking at it because it's just a giant string of digits.
+
+But because it's a number and not a string, you can't add commas or dots depending on where you live as the thousands indicators. So a string representation of that, every three numbers or so, you would have a comma to indicate where the breaks in that number are.
+
+Modern JavaScript, though, gives us something called a numeric separator, an underscore placed between numeric characters in a number to make it easier to read. And so you can take that number and then where you would put those thousands separators, you put an underscore instead.
+
+And when JavaScript reads that number, it ignores the underscores and treats them like they're not even there. But it produces something that in your code becomes much easier for you to read. So you could still take that number and divide things by it or use math operators on it, and it's still gonna work.
+
+But it becomes something that's much more visually appealing to look at and that makes it a lot easier to maintain and edit and work with as a human who's working with this code. So anyways, that's it for today.
+
+If you're ready to make this year the year that you mastered JavaScript, I can help. Head over to gomakethings.com where you can access a ton of learning resources, including a bunch of free stuff, as well as books, courses, workshops, and of course, my daily developer newsletter.
+
+That's it for today. See you next time. Cheers.

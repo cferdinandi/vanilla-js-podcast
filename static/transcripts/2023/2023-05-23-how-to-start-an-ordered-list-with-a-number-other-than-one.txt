@@ -1,0 +1,17 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about how to start an ordered list with a number other than one. Let's dig in. And so I am sure that this is probably going to be my second shortest podcast episode of all time. Right after is CSS programming language.
+
+But yeah, so just a real quick trick that I really love. Nice little HTML trick.
+
+If you have an ordered list, so a list that starts with one and then works its way up with numbers, one thing you can do is add the start attribute with the desired first number as its value.
+
+And then that list will start with something other than one. So for example, if you wanted your list to start with four, you would add start equals four. And then the ordered list would start with four and go four, five, six, seven, etc.
+
+And this is particularly useful if you have a list that's split across a few different columns and you want to keep them consistently numbered. So for example, maybe you have like a multi column list of things set up in your UI. And to achieve that, you actually have to have multiple ordered list elements wrapped in some divs to give you kind of your grid layout.
+
+Normally, each of those separate lists would just start back at one. But by using this start attribute, you can force them to start with a different number. And so it looks like you have one consistent list across the UI.
+
+So anyways, that's it for today. If you're ready to make this year, the year that you master JavaScript, I can help head over to go make things.com to access a ton of learning resources, including free projects, a free course, books, courses, workshops, and of course, my daily developer newsletter.
+
+That's it for today. I'll see you next time. Cheers.
