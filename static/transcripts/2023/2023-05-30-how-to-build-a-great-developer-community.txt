@@ -1,0 +1,31 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about how to build a great developer community. Let's dig in.
+
+So for the last seven years or so, I've run a private community for developers who want to build a simpler and more resilient web. And if that's something you're interested in joining yourself, I'm going to talk a little bit more about that in just a little bit. But first, I wanted to share what I've learned about running a thriving online community.
+
+Whenever I mention this to folks, one of the first questions that comes up, or one of the most common anyways, is which platform should you pick? Slack, Discord, something else. There's a whole slew of new tools that are part community, part course hosting platform and so on. And honestly, it really doesn't matter all that much. Both Slack and Discord are both great and awful in their own and unique ways. Discord has some nicer moderation features.
+
+Slack has remind me later, which is absolutely essential for how I run my business and how my ADHD brain works. Both of them support channels and restrict access to things and provide thread conversations and all the other essentials you'd expect out of a modern online chat platform.
+
+I'd recommend picking the one that you find the easiest to get started with and not worrying about it all that much beyond that. The second really important point about running any sort of online community is that you get the community that you deserve.
+
+It's important to model the behavior that you want to see, make expected behavior clear from the start and weed out people who violate expectations early and publicly. The places without good moderation are cesspools of awful. I'm really quick to call out behavior that impacts marginalized groups. It almost is never intended.
+
+People, specifically white men, often use hurtful language without realizing it or thinking about it. I tend to be soft about that. I'll say something like, hey, I'm sure you didn't mean anything by this, but harmful behavior is often perceived as bad thing by affected group. Can we avoid doing that? For intentional violations, though, I boot people without hesitation.
+
+You're gone in 60 seconds with a very public message to the rest of the community explaining what happened and why. I'll drop a link to my community guidelines down in the show notes. Everyone has to agree to those before they can join. There's no kind of fuzziness around what's expected. I also make sure that they're linked in various places in the community itself. It's right there, front and center. Everyone can see it and knows what's up and what's expected.
+
+One of the things about community, just shifting gears a little bit, is that they don't just grow on their own. It's not really like a build it and they will come kind of situation. Early on, you need to stoke the conversation fire. When you don't have that many members, you're likely going to need to create conversation, make it get started by asking provocative questions and encouraging participation.
+
+Like a good fire, once the community gets going, that starts to take care of itself. But early on, you're probably going to need to push things to make that community start to happen. Otherwise, it's just going to fizzle out. Along the same lines, I tell people not to jump or moderators, people who manage communities, not to jump in to respond to questions too early. While it's important for you to have a strong presence in your community, you don't want to jump in and respond to questions too early before other people in the community have had to chance.
+
+Once the perceived expert, that's you, responds, conversation can often die on the vine, stifling the community and making it more of an ask me anything forum with everything directed at you rather than a group of people helping each other. Related to that, tag relevant people. If conversation isn't happening, don't be afraid to jump in with some loose thoughts and tag some folks who you think might have valuable perspectives to share.
+
+So, for example, I might say something in my community like, hey, I think Web Components might be a good choice here, but this other awesome community member has done this kind of thing a lot more than I have. Awesome community member who I tag, what do you think? And then from there, they hopefully join in and more conversation starts to happen.
+
+If this sort of thing sounds interesting to you, you might be interested, you might want to join the Lean Web Club, which is available over at leanwebclub.com. The Lean Web Club is a membership community for developers, both current and aspiring, who want to build a simpler and more resilient web. When you join the Lean Web Club, you get exclusive 24-7 access to a vibrant Slack community, invitations to live Q&A and training events, access to recordings of all past events, and a trove of free bonus gifts to help you accelerate your learning.
+
+If that sounds interesting to you, head on over to leanwebclub.com where you can learn more.
+
+Anyways, that's it for today. If you have questions or anything like that, head over to gomakethings.com where you can find my contact information and message me. If you have something you'd like me to talk about on this show, I'd love to hear about it. And I will see you next time. Cheers.
