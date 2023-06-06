@@ -1,0 +1,39 @@
+Hello, hello, hello. This is the Vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about how to build lean, efficient websites in 2023.
+
+Really quick before we get started, a new session of my JavaScript workshops just opened up for registration. I'm going to be sharing some more details about those in just a bit. But for now, if you want to learn more, you can head over to vanillajsacademy.com.
+
+All right, with that out of the way, let's dig in.
+
+The web, at least for me, feels more bloated than ever. Everywhere I look, I see people giving conference talks on how to jam even more JavaScript-driven UI components into what are mostly static websites. And weird thought leaders who don't actually understand CSS keep talking about why you need their CSS library to, quote, fix all the bugs in CSS that are actually features.
+
+I'm looking at you, the cascade is the worst part of CSS guy.
+
+The problem has gotten so bad that a new set of tools like SvelteKit and Astro attempt to smooth over a lot of the bloat by moving it into a compiler that spits out leaner end user code.
+
+And that's a great step, but my concern is that it doesn't fix the underlying problem. The tools that we use to build for the web often fight against the grain of it and add a tremendous amount of overhead, cognitive load, and literal cost in terms of money and electricity used to power it all.
+
+So how do you actually build a lean, efficient website in 2023? Well, for me, it's three things.
+
+Start with mostly static HTML. If you're building a blog or a marketing site or something like that, your journey can often stop here. Grab a tool like Eleventy or Hugo, and you're good to go.
+
+Step two is to progressively enhance the dynamic parts. Have some API driven content. Static site generators can actually fetch that for you too. But if it's user dependent or has to run in the browser, use JavaScript for just the parts that require it, not the entire app.
+
+Start with HTML first as a frame, as a structure, and then bolt the JavaScript in just where it's required.
+
+And if you're doing that, step three is to pick small focus tools. Is your dynamic content rendered once and then done? Just use vanilla JavaScript. Does it get updated with user interactions?
+
+Grab a smaller state-based UI library like Preact or Solid or Reef or Petite-Vue instead of one of the big monolithic tools.
+
+Of course, each situation is a little bit different. You might need a database or a specific hosting environment. You might have specific technical requirements or be locked into certain vendors.
+
+But generally speaking, you can still build lean, fast websites in 2023. It mostly requires just fighting against the tide of constantly chasing the new hotness and the latest buzzwords.
+
+If you enjoyed this talk and you want to learn how to build leaner, more efficient websites, the Vanilla JS Academy is a collection of project-based JavaScript workshops. In each one, every other day you get a project to work on, one to three short lessons that provide some background, and a template to help you get started.
+
+On the in-between days, I share my approach to the project and some of the common challenges and gotchas that students often run into. And if you get stuck, there's a 24-7 private Slack channel exclusively for students and video office hours every other week.
+
+If that sounds interesting, head over to VanillaJSAcademy.com to learn more. And today through Monday, you can get 40% off registration with the code EARLYBIRD.
+
+Anyways, that's it for today. I'll see you next time. Cheers.
