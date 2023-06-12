@@ -1,0 +1,31 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about coding, build tools, web performance, and cheap speakers. Let's dig in.
+
+So back in 2022, my friend Keith Sirkel from GitHub tweeted out, writing a webpack plugin that makes build times at least as long as it takes to download them. And he shared this mock dummy code that got the P95 time for a particular bundle.
+
+That is how long it takes for someone who's in the slowest 5% of web connections to actually download that bundle on a 3G connection and then forces the build to wait that long before processing.
+
+And while it was a joke, I think, I also think Keith might actually be on to something. A lot of the thought leaders in our space obsess over the developer experience and have bought into this myth that better developer experience or DX leads to better user experience or UX.
+
+And they also often work on really expensive high-end machines connected to fast and reliable networks. And this is just not the reality for a lot of people who use what we build. It's hard for a lot of people to feel empathy without experiencing that pain themselves. And I'd love to see build systems that have built-in settings that you can use to throttle builds to what actual users experience.
+
+You can automate some aspects of performance, minifying and gzipping. Service workers help a lot too. But a lot of web performance is baked into the core of your code, how you write it and what you ship.
+
+Now, a year ago, I wrote about this and I had a reader who used to work as an audio engineer share a story with me with permission that I thought I would share with you today that's actually relevant. So they wrote, when I was in college, I worked for an audio engineer who had a tiny set of $40 speakers under his thousand-dollar speakers that he used for mixing music.
+
+I asked him about it and to paraphrase, he said that if you can't mix music so it sounds good on the best and worst speakers that you can find, then it doesn't matter if it sounds good on the best speakers.
+
+People buying music probably aren't spending thousands of dollars on their audio setup. I think coding may be the same way. It doesn't matter if your code runs well on your most expensive setup if you can't run it well on the least expensive setup. So that was my reader. And so this had me thinking about how you can build sites that run well on cheap setups and not just expensive ones.
+
+So there are a few principles that I use. I treat JavaScript as an enhancement rather than a core requirement whenever possible. That's not always possible. There are times where you need JavaScript. But whenever there's another technology that will fit the bill, I tend to rely on that if I can. I also send as little code, HTML, CSS, and JavaScript to the browser as possible.
+
+And I cache aggressively with service workers to reduce latency on future requests and add resilience when the network fails. There are other tools, of course, or other techniques and approaches.
+
+But to bring this full circle, I really love the idea of having some sort of build step process that deliberately slows things down. Maybe not on every build because that would get really, really tedious as you're just kind of working and iterating.
+
+But maybe something before deploy that has some sort of aggressive target on it so that you can really understand what it's like for people who are browsing on suboptimal devices and networks.
+
+Anyways, that's it for today. If you're ready to make this the year that you master JavaScript, I can help. Head over to GoMakeThings.com where you can access a ton of learning resources, including free projects and lessons, books, courses, workshops, and my daily developer newsletter.
+
+That's it for today. See you next time. Cheers.
