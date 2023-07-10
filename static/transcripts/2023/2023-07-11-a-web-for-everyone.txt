@@ -1,0 +1,39 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today.
+
+I'm talking about building a web that works for everyone. Let's dig in.
+
+So my professional mission to build a simpler, more resilient web is born from the belief that the web is for everyone.
+
+I want as many developers as possible to understand the power of HTML and CSS to focus on performance, to build things accessibly, and to use way less JavaScript. It's why I publish this podcast, why I write my newsletter, and why I give talks and create courses and workshops.
+
+ But there's been a tension between that mission and how I run my business for years.
+
+ Truth is, my courses and workshops are expensive. I believe they're fairly priced for the value that they provide. But for many people, the price makes them unattainable.
+
+ I've tried to counteract this with a variety of approaches. I have some evergreen discounts for students and people in traditionally excluded communities. My checkout system automatically applies location-based pricing adjustments for people who live in countries where the exchange rate makes my courses unfairly expensive.
+
+ And all of my stuff includes payment plan options so that you can pay a little over time instead of a whole bunch at once. But for many, many people who want to learn how to code, it's still not enough.
+
+ And so they turn elsewhere. Free tutorials on how to use the latest JavaScript library instead of, you know, doing something you could have just done with HTML. Low quality courses on those big course sites that ignore accessibility entirely.
+
+ It's just really, it's one of these things that I've struggled with for a while. I want as many people as possible to take my stuff, but I also need a sustainable income to keep doing this work. And my current pricing model actively works against my mission of teaching as many developers as possible how to build a simpler and more resilient web.
+
+ So with the Lean Web Club, I'm doing something radically different.
+
+ My hope is that at just $9 a month or $90 a year, I can reach a lot more developers. And so if this is your first time hearing about this, the Lean Web Club is a new platform I just launched last week where you get unlimited access to hundreds of front end web developer courses, dozens of fun projects to work on, a bunch of learning paths to guide you through collections of tutorials and projects around focused tasks and access to my private Slack community where you can interact with a bunch of other supportive developers who are all learning the same stuff that you are.
+
+ And if that sounds interesting, you can learn more over at leanwebclub.com. So that's the Lean Web Club. But for it to work and sustain my business, I also need a bunch of subscribers.
+
+ I currently have about 110. My target is 1,500. So obviously, I've got a ways to go.
+
+ But that's not a bad start for a platform that just launched a week ago. This could completely cannibalize sales for my courses and workshops without actually bringing in enough money to replace them. And honestly, that's scary as fuck.
+
+ But this could also be the future of my business, allowing me to create or help create a web that works better for everyone and to reach way more developers with, you know, kind of this mission that I'm on here. I'm really hoping for the latter. I have to try or I'll never find out.
+
+ But if you're not already a member of the Lean Web Club, I really do hope you'll join me over there and see what it's all about. This week only, if you sign up instead of the normal seven-day free trial, you can actually get four full weeks or a whole month.
+
+ And I've got a lot planned, including an expansion into more HTML and CSS topics, as well as things like static site generators and some other tools.
+
+ So if that all sounds interesting, again, head over to the leanwebclub.com to learn more, to sign up to get your free trial. I think it is the best way to learn how to build for the web on the internet. And I hope you'll join me.
+
+ Anyways, that's it for today. I will see you next time. Cheers.
