@@ -1,0 +1,55 @@
+Hello, hello, hello. This is the Vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about what the Lean Web actually is. Let's dig in.
+
+So last week, I was having a conversation with a friend of mine about this topic. Static HTML and Vanilla JavaScript are clearly the Lean Web, but are they always?
+
+Is an empty HTML file statically served, but with entirely JavaScript rendered content, still the Lean Web? Can a WordPress site be Lean Web? What about a React app, but one that's compiled into mostly HTML and a little JavaScript with something like Astro?
+
+One of the challenges here is that there's, I think, some clear things that are definitely the Lean Web or not, and then there's this whole gray area in between. And that's what I wanted to explore on today's episode. One of the big challenges here is that the Lean Web is a philosophy, not a tech stack.
+
+It's an approach to web development that focuses on fast, resilient experiences that work for everyone, but it's not a tech stack. There are some tools and implementations that are pretty clearly Lean Web and some that are clearly not, but there's a whole bunch of gray area in the middle, this it depends kind of stuff.
+
+And so what exactly makes something Lean Web? There are a few core principles. The first one is to embrace the platform. So if there's a browser-native feature that does the thing you need and does it excessively, prefer that over a third-party library.
+
+For example, if you're getting some elements on the page and just toggling some classes with them, use the query selector method and the class list API instead of jQuery. If you need to call an API, use the fetch method instead of a library like Axios.
+
+The Lean Web is all about resilience, and that means using HTML and CSS instead of JavaScript when the platform provides an appropriate solution there too. For example, if you need a simple show-hide component, use the details and summary elements instead of writing a disclosure script and setting and modifying ARIA attributes.
+
+If you want to animate scrolling to an anchor link, use the scrollBehaviourSmoothCSS property instead of intercepting clicks and using the scrollTo method. And I'll drop some links to some of this stuff down in the show notes.
+
+The web platform can do amazing things, and you should use it to your full advantage. Of course, there are times when the things you want to do aren't supported, and that brings us to principle two, which is to favor small modular tools. The web platform is so powerful, but when it can't do what you want out of the box, choose tools that are small and that are modular instead of these big, all-encompassing, dependency-requiring kind of libraries that seem so popular in our industry right now.
+
+So for example, there are no native drop-down or toggle tab elements.
+
+There's no baked-in feature for DOM diffing. For these things and many more, you're going to need to either write your own custom code or reach for a third-party tool. And when you do, you should favor tools that are small, modular, and dependency-free. For example, a library that just handles drop-down menus is better than one that requires React or Vue to work.
+
+If you need state-based UI in your project, something like my own library, Reef, or Preact, or Solid.js are better choices than React or Vue. They're a fraction of the size, have fewer abstractions, and render DOM updates faster too. Instead of multi-tools, opt for single-purpose tools that don't lock you into a broader ecosystem.
+
+And principle number three is to build a web for everyone. If a site isn't accessible or only works in certain browsers or crashes on slow internet connections, it's not the lean web. The lean web is for everyone, and the things we build must be too. Doing that means that you need to understand semantic HTML and how people with various disabilities navigate the web.
+
+You need to test what you build with screen readers and keyboard-only navigation. You need to make sure that when failures happen, the critical parts of your site or app still work. But this extends to the people that build for the web too. Build tools and processes that include large amounts of NPM dependencies, are overly dependent on knowing command line prompts, or are heavily JavaScript-focused, gatekeep very talented people from participating.
+
+And this is a drum that I will just keep hammering on. The tools that we use make the development process easier for some people and keep a whole bunch of other people out of it.
+
+And they also create tool chains that are frankly kind of a nightmare to maintain. Something we don't talk about nearly enough is how simpler web development approaches are actually better for developers too. Cover that in a future episode. And this all brings us to the gray area.
+
+There are some things that are clearly lean web and some things that are clearly not.
+
+- A static website that's only flat HTML files and CSS with maybe a sprinkling of vanilla JavaScript or dependency-free libraries, that's lean web.
+- A single page client-side React app, very much not.
+
+There's no question in my mind that the first thing is lean, the second thing is not. But because the lean web isn't a tech stack, there's a whole bunch of stuff in the middle where it gets murky.
+
+- Is a WordPress site lean web? It could be. With good server-side caching, it can be really fast. You can rip out the default jQuery that gets loaded and serve mostly HTML and CSS.
+- Are sites that are built with tools like Svelte and Astro lean web, they take mostly JavaScript as an input and render mostly static HTML with a sprinkling of JavaScript as an output. So from a user perspective, I think they are. But Astro in particular kind of encourages a continued use of overly complex dev tools. So from a dev perspective, maybe not.
+- Is a single page client-side app that uses vanilla JavaScript or Preact lean web? Maybe. If it's a blog or a news site, I'm gonna say definitely not. But if it's a streaming site, like say YouTube or SoundCloud, where media plays while you browse, it almost has to be a single page app. So using a smaller tool like Preact is the lean web way to approach that specific task.
+- Can complex browser apps ever be lean web? I think so, but I'm not really sure where the line is that says one app is and another isn't. As a generalization, I'd say rendering whatever you can with HTML and then progressively enhancing the interactive bits gets you in the right direction though.
+
+So that's just my opinion. What do you think? Are there any principles that you'd add and that you'd remove? Any hard lines that make something squarely lean web or not?
+
+Feel free to send me an email over gomakethings.com. I just, I'd love to hear your perspectives on this or find me on Mastodon and we can chat about this more because it's something I've been giving a lot of thought to and these lines are not always clear. So it's just, I think a really interesting conversation that I'd love to talk about more.
+
+If you wanna learn a simpler way to build for the web with HTML, CSS and vanilla JavaScript, head over to leanwebclub.com where you can get unlimited access to hundreds of front end web dev courses, work on front projects, fun projects, not front projects and join a supportive community.
+
+And if you join today, it's free. So you don't wanna miss out on that. That's it for today and I will see you next time. Cheers.

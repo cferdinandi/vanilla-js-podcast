@@ -1,0 +1,55 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about how to use the platform when platform features aren't evenly distributed. Let's dig in.
+
+So one of the often repeated phrases among Lean Web evangelists like me is to use the platform whenever possible. I actually talked about this a few episodes back. It's one of the core principles of the Lean Web.
+
+And that means relying on Vanilla out of the box, HTML, CSS, and JavaScript over the libraries whenever you can. The modern web has a ton of amazing capabilities that make building for the web much easier than when I was learning like a decade ago.
+
+And browsers are much better at implementing features in a cross-compatible way. Again, this used to be a huge issue like a decade or two ago. But that doesn't mean platform features are evenly distributed. Different browser vendors prioritize different things.
+
+Chrome often releases JavaScript features before Firefox or Safari. For years, Firefox had CSS features that just weren't available in other browsers yet. Recently, Safari has been releasing some stuff before anyone else.
+
+As a result, some modern features end up available, but not for everyone. So how do you deal with that?
+
+Option one is to use polyfills.
+
+A polyfill is a term coined by Remy Sharp for a snippet of code that adds support for browser features to browsers that don't offer them natively. When you can polyfill, well, you can sometimes polyfill CSS features.
+
+They work best for JavaScript and interactive HTML elements like details and summary, for example. With a polyfill, you author your code as if the feature is universally supported in all browsers.
+
+The polyfill code checks if the browser has native support for the feature, and if not, creates it and implements it to the browser spec for you. For example, a polyfill for the array prototype for each method, which is now universally supported, might work a little bit like this. It would have an if check.
+
+So if there is no array prototype for each method, it will create an array prototype for each method, set it equal to a function, and then in that function, accept a callback, where inside the callback, it's going to loop over each element in the array and then run the callback method on it.
+
+Now, the best thing about polyfills is that they're designed to be deleted. Once browser support catches up, you can delete the polyfill without having to refactor any of your code.
+
+Option two is transpiling.
+
+Many things can be polyfilled, but not everything can. Notably, operators and expressions cannot. To polyfill things like methods, properties, and APIs, you can attach them to the appropriate JavaScript object or create a new class.
+
+But some things like temperate literals or a template literals rather, or let and const, there's no way to polyfill those. For that, you need transpilation.
+
+To transpile code, you run it through a build tool like Babel or ES Build. They take your modern JavaScript and convert it into something older and better supported. For example, that array prototype, let's imagine that the array prototype map method was not well supported. It is. And that let, const, and template literals, and arrow functions weren't either. They are.
+
+You would write your code the way you normally would. And the transpiler would spit out any instance of let or const would get replaced with var. If you had a template literal, it would break that into chunks and use string concatenation to combine those together.
+
+These days, transpilers have a much smaller role in web development, in my opinion. But depending on the project, they can still have their place.
+
+Option three is progressive enhancement.
+
+For features that are non-critical, progressive enhancement is a great approach. I use this a lot for CSS features. So if the modern CSS isn't supported and it not working won't result in a broken site, I will progressively enhance it.
+
+A dated example of this would be a modern layout with something like CSS Grid or Flexbox. You could use them to create a layout, and then if they're not supported, the user just gets a simple single page column layout instead.
+
+It's not fancy, but it still works.
+
+For a while, I treated details and summary elements as progressive enhancement as well. If the browser didn't support them, the user would still get all of the content with a heading, though not a semantic heading element above it as the default. It wasn't as pretty, but it was still perfectly usable.
+
+So which approach should you use?
+
+I generally use a mix of approaches on a particular project. For years, I favored polyfills. These days, most of my JavaScript is nice to have rather than essential, so I tend to rely on progressive enhancement a lot more.
+
+If you want to learn how to do more stuff like this though, you might wanna sign up for a free account over at theleanwebclub.com. You'll learn a simpler way to build for the web with HTML, CSS, and JavaScript, get instant access to a growing collection of short-focused tutorials, and work on fun projects as part of a supportive developer community.
+
+That's it for today. I'll see you next time. Cheers.

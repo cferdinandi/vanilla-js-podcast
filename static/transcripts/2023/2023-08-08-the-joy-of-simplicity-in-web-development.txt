@@ -1,0 +1,35 @@
+Hello, hello, hello. This is the Vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.  Today, I'm talking about the joy of simplicity in web development.
+
+Last week, I talked about what the lean web actually is. And in it, I mentioned that simpler developer processes can actually be better for developers too.
+
+Even though we tend to, as an industry, think about how lots of tooling is better for developers and improves developer experience or developer ergonomics.
+
+But I've actually found the opposite to be true.
+
+For the last few years, my web development process has been delightfully simple. I write content in Markdown and template with mostly HTML and a touch of Go, which is a bit like Nunchucks or Liquid, but weirder. I author mostly Vanilla CSS. I use Sass, but mostly just to combine files and use variables for breakpoints.
+
+I keep my JavaScript Vanilla. When I use libraries, I don't npm install anything. I download the files and include them.
+
+My build step is as minimal as I could make it. I run two little tasks, one to compile my Sass to CSS and one to bundle my JavaScript imports into one file. And I could honestly skip those and use native imports or something. I choose not to just to get a minor performance boost. I use so few tools in my npm chain that I almost never need to run an update before working on code.
+
+And that's one of the big reasons I ditched gulp for plain old npm tasks. A couple of years ago, I'll drop a link to an article on what that looked like and what I use now down in the show notes.
+
+My site itself, well, all of them really, because I manage a few dozen are built using Hugo. Whenever I have an update, I commit my code to GitHub, which causes GitHub to ping a PHP file on my server. That file does a git pull to get the updated code, runs my Hugo build step to create the pre-compiled HTML files, and then just moves them into the public directory.
+
+And I run literally two dozen websites on a single $5 a month droplet or server from Digital Ocean. They're fast, lightweight, and pretty much never break. I haven't had to install an update to a CMS in ages. Adding new content or updating code is as simple as opening an HTML file and a text editor.
+
+And when I preach about the lean web, I often focus on the end user experience. But simplicity is a much, much better developer experience too.
+
+Waiting for npm updates to install, trying to figure out why 12 critical errors can't be automatically fixed with the npm audit fix feature, like that sucks. Managing complex dependency chains suck. Spending 20 minutes fixing tooling just to write a five minute patch for some code sucks.
+
+There's a simpler, better, and honestly just more fun way to write code. Now you may be thinking, "hey, Chris, that's great and all, but I build more than just simple blogs and brochure sites." And there's a simpler way to do that too.
+
+ The Lean Web Club web app is also built with Hugo. It uses a super tiny PHP file to check if you're logged in or not, and then sends you the pre-rendered HTML file.
+
+ Logging in is handled with a small JS file and a fetch request, and the backend is powered with flat JSON files and some simple read write functions. Web development can be absurdly fun if you stop letting FOMO and JavaScript library propaganda get in the way.
+
+ And like seriously, if you want to learn what this is all about, head over to leanwebclub.com where you can get unlimited access to hundreds of courses on how to do stuff like this. Work on fun projects and join a community of other devs where we talk about how we're doing this kind of thing. It's free for 14 days. You get a free trial and then after that it's just $9 a month or $90 a year.
+
+ So I really hope to see you there. It's just an awesome resource that I think you'll love.
+
+ That's it for today and I will see you next time. Cheers.

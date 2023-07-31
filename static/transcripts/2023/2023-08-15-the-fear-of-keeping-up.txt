@@ -1,0 +1,29 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about the fear of keeping up. Let's dig in.
+
+So lately, I've had a lot of early career developers mention their fear of keeping up. For years, front-end development has had a tooling problem.
+
+The pace of change is part of what makes this industry so exciting, but this obsession we seem to have with tools and constantly creating new ones, instead of maturing what we already have, is absolutely exhausting.
+
+But lately, the platform itself has also been growing rapidly. Plain old CSS can do a ton of amazing things that felt impossible when I started as a web developer a decade ago.
+
+Native HTML elements are making big JavaScript libraries obsolete. It's a wonderful thing, but it can also leave you feeling like it's impossible to keep up or learn at all. And that's because you can't. The field is literally too big to learn everything.
+
+Keeping up is both impossible and overrated. It's the path to burnout.
+
+The truth is knowing specifics and technical details about every platform feature is both overrated and unimportant. Tech skills are the least important aspect of being a good developer. Our profession is about problem solving. You can look the details up when you need them. But here's the rub.
+
+To be a good problem solver, you need to have a general sense of what is and isn't possible and what options are available. Knowing big trends in our industry matters a lot more than knowing specific tools and techniques.
+
+For example, I know that there are now native HTML elements for things like dialogue modals and popovers. And I know that if I need a dynamic interactive UI, I could use client-side state-based UI libraries or a compiler that spits out mostly HTML.
+
+I don't know how to use the dialogue element yet. And I have some experience with Preact and Vue, but not a deep understanding of all of their implementation details. I'm also aware of Svelte and Astro, but I've never used them. If I had a project that needed one of those tools, I can look it up.
+
+So how do you stave off the fear of keeping up? Build a good understanding of the fundamentals, stay aware of general trends in the industry, and focus on solving problems with tech rather than just knowing a bunch of tools.
+
+If you wanna learn a simpler way to build for the web and stave off some of this fear yourself, head over to theleanwebclub.com where you can get unlimited access to hundreds of front-end web dev courses, work on front projects, I keep saying front projects, fun projects, and join a supportive community.
+
+I really hope you'll join today. It's free, you get a 14-day trial, and then after that, it's just $9 a month or $90 a year.
+
+That's it for today, I will see you next time, cheers.
