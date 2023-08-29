@@ -1,0 +1,246 @@
+Chris: Hello, hello, hello. This is the Vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm talking with Dave LaTorre about State of the Browser, an amazing conference that's available in person in London and live online, and it's coming up next month. Uh, so Dave, for folks who don't know you, do you mind taking a second to just introduce yourself?
+
+Dave: Certainly. Um, so, like many of you, um, I've been in the industry for quite a while, um, but it's not my first rodeo, as you might say in your neck of the woods, Chris. Um, I've previously been a glass cutter, a cabinet maker, a joiner, I've been a teacher. Um, and eventually when I got fed up with teaching after 14 years, I decided that it'd be a great idea to learn how to build websites.
+
+Um, and I did that, um, back in 2006. I managed to get myself a job within a couple of weeks of doing this course that I'd done. Um, and I was making HTML emails. And, um, They still haven't improved in all of that time, uh, and I never want to touch them again. But then I got myself a job at a great company called Squiz, who, uh, who was sponsoring our event, and I have done every time, because I worked there and I just made them sponsors, but, um, but I worked there, uh, they, they built massive websites for universities and government and had their own CMS, and I became The technical trainers, um, on all things that we built for our clients.
+
+So, other than that... Um, I like to go out and dance in fields, which is why I might sound a little bit tired at the moment because I've just got back from a field last night. That's me.
+
+Chris: Ah, you sound like a druid, Dave. Um, I love it. Um, awesome. Yeah. So, um, I know, I know we have a conference coming up next month.
+
+Um, I know you have an amazing speaker lineup. This has kind of been going on for a few years. Do you mind telling folks maybe a little bit about, um, state of the browser? I know you've been working with it for quite a long time. Um, you know, so what, what's the story there? How did you, uh, how did you get involved?
+
+How did this event get started? Um, and you know, what, what sort of things can people expect from it?
+
+Dave: So I, uh, a long time ago in 2007, the, we got these new, uh, technologies, they were called HTML5 and CSS, uh, you may remember, and there was a group set up in London, uh, by a guy called Joe Ortenzi, you might find him on the internet as Weelyweb, um, and he set up this group called London Web Standards, and we met up once a month in a pub, And we talked about these new elements and new things that were coming to HTML and CSS.
+
+So we talked about the video element, and is it really that cool, and will it, uh, change the way that we build webs? Uh, we talked about the form elements and all of things. It became really popular really, really quickly. And it became so difficult to get a ticket for, uh, for London Web Standards. But! I decided I was going to volunteer to help out rather than struggle to get a ticket because if you're there helping out, you've already got a ticket, you're already in the door, and it was just pure selfishness that I chose to help volunteer.
+
+And we ran that for, we've been running that since 2007. We haven't had a, a, a, an in face meetup since, uh, the bad times that happened a few years ago. But it's something that we're going to try and get back to as soon as possible. But what we have been doing since 2010 is we've been running a conference called State of the Browser.
+
+Uh, in the early days of state of the browser, what we did is we, uh, we invited all of the browser vendors to come into a room and fight effectively. Uh, what that actually means is we got them to come into the room and say, this is what we're doing with our browser. This is the corny thing. And it was way, way easier to do that in those days because there were so many different browsers.
+
+Now. We have Firefox, we have Safari, and we have Chromium browsers, and they're all the same. So, there's hardly any landscape there. So what we decided to do, we've, rather than re change the name of the conference that we've got a name for, we've been doing this for a while, we decided to change... the way that works and focus on what cool things can be done in browsers nowadays.
+
+And we'll talk more about that, uh, when we talk about some of the speakers we've got coming up. For the past few years, we've been focusing on, uh, that what a browser is capable of doing rather than show us your latest piece of tech. Um, we've learned the web standards and set of the browser. We've given some of the speakers.
+
+That you know very, very well their first, um, spot, or their first chance to speak in public. For example, we gave Jake Archibald his very first speaking, um, and that was the day that I decided. That I needed to become a volunteer, because the talk was just so incredible. It was Jake and Frances Berriman. Um, and they spoke about the JavaScript library that they were building specifically for the BBC, and it was called BBC Glow, and how they worked together, because they worked in totally different counties in the UK, and never went to the Office of Meta.
+
+So how did that work back in 2007? And we've given loads and loads of other speakers their first chance to speak. One of our key aims is to grow the community. And we always try to have somebody at our conference that's never spoken before. So much so that we've got a scheme where we get people to mentor.
+
+New speakers as well. So we're always looking for a new speaker and we can put them in contact with somebody who's Loads of experience with talking they can look through your notes give you advice and
+
+Chris: that's cool I just refer that that kind of thing is so cool though, too because I think one of the things I am there was a long stretch of time where I just had no interest in even going to web conferences anymore because if you If you follow some of the big names on, uh, you know, in tech on Twitter or through this back when like RSS was like still a thing that people actually did, I miss RSS, but if you read people's blogs and things like that, a lot of times you'd go to conferences and they'd have the same like five or 10 people speaking about the same stuff they've been writing about and sharing on social media.
+
+And so when you get to the conference, like you meet a bunch of cool people, but you don't necessarily learn anything new. And I really love conferences that put folks. Who don't normally do the speaking circuit front and center, because I always end up learning something new that I wouldn't otherwise, um, so I'm really, really glad to hear that.
+
+You guys put such a such a focus on that. That's awesome.
+
+Dave: It's also very important as well, because I once went to a conference. It was called the Web is. And it was massive. It was like 2000 people, and it was run in Wales and Cardiff. And the day before the conference, I was chatting with Andy Clark, um, you might know him as Malarkey, he wrote Hardball Web Design.
+
+And I was talking to him about, uh, he gives really good talks. And the question I put to him was, why should... Somebody else give a talk. It's basically the same topic as something that you've talked about, because people look at you as the thought leader. And his response to that was Your opinion and your way of doing things matters equally As much as what I've done in my, my talks, my books, my, um, my blogs, so, uh, all of the time.
+
+And I've, I've fixed with that for years and years and years because every time, uh, part of my job now is I read the W three specs. I'm dyslexic and reading the W3 specs is one of the hardest things to do in the world. So,
+
+Chris: uh, it's hard when you're not dyslexic. I can't imagine what it's like if you are. I can imagine it
+
+Dave: is.
+
+But I'm trying to understand because half of it is there for the browser. Builders, and this is how you should implement this thing. And the other half of that is for the developers. And there's no, uh, lineup. So I have to decipher my way of telling that story. Um, and I try and tell the story in a certain way that means.
+
+It's understandable to me. So I'll spend hours doing research and playing, creating code pens and all of those kind of things. But in the end, I've got to get across how this piece of functionality works from this, um, this, Yeah, these drafts, they're really well written, they're really well thought out, and they follow a set procedure, but for a dyslexic, I can't even say the word now, for a dyslexic person, it's just horrible, yeah.
+
+So your view is valid as anybody else's, because you've got a different way of telling the story.
+
+Chris: Nice. Nice. I love that. Um, cool. So, I think, um, One of the things I'd be curious to hear about, um, you guys always have some pretty amazing speakers and some pretty amazing talks. Um, I can remember, I can't remember it was last year or the year before, but, um, when state of the browser was running, uh, Twitter hadn't gone down the toilet yet.
+
+And I was just seeing tweet after tweet, after tweet. Of like awesome speakers and awesome talks and some of my favorite people, like all kind of in one place and feeling really jealous that I wasn't there. Um, would you be able to talk about some of the folks that are going to be speaking this year or some of the things that are going to be talked about?
+
+Um, cause I'd, I'd really love to hear a bit more about that.
+
+Dave: Yep, certainly. Certainly. So we've announced two people already. We're about to announce another speaker tomorrow, and I know this is going out a little bit later, so. We, we've announced three people in effect. So first person we announced was, uh, a young, uh, a person called Katie Fan.
+
+They live in Sheffield. And, uh, uh, she's got a, a, a hobby that matches me perfectly. She loves, um, DAF Punk. Uh, I, I'm, I'm fortunate enough to be quite old and I've seen Defunk. Many, many times. So much so that I appear on some of their recordings, but hey, um, and she's going to come and talk about, uh, the web audio API, uh, web MIDI.
+
+This meant that they have bought loads and loads of pieces of equipment to plug into their computer, to their browser, to play about with. And she's been trying to give this talk for the past three or four years. But things got in the way, um, and now she's bought so much equipment, uh, our technical demands for the, for the conference, for the venue, are absolutely off the scale.
+
+We need, like, twelve plugs to plug in all of this equipment. We need a table to put all of this equipment on. So, uh, Katie's going to come and... Show us what is capable with WebMidi. Now, MIDI is a technology that's been around for many, many, many years, like the early 80s. It's music interface, digital interface, I believe.
+
+Musical instrument, digital interface. So, and it means that you can control different musical instruments, in this case, through your browser. So we're very, very excited about that.
+
+Chris: Nice. And I'm reading, I'm cheating. I'm reading the description on the state of the browser website right now. It looks like she's going to be coding around the world by Daft Punk.
+
+But using web tech, not that's so rad. All right,
+
+Dave: it's yeah, we've because of all of the technical requirements we're going to put her on at the end of the day because why not have some dancing at the end of the day and it just means that we've got a whole break to be able to, uh, fill that time, uh, set up all of that equipment.
+
+So we've got like half an hour to set up all of the pieces of equipment, which will And then we don't need to clear the stage afterwards, we just need to go and socialize in the after party. Love it.
+
+Chris: Love it. Nice. Who else, uh, who else you got? Because I know you said you've already announced two.
+
+Dave: We have.
+
+Um, the second one is Killian. Killian Valkhoff. He builds an amazing development browser called PolyPaint. I'll be playing out. Are you aware of this?
+
+Chris: I am. Yes, I don't use it, but I'm in a few discords with him. So I'm very familiar with his work.
+
+Dave: Yeah. So it just allows you to, uh, sell lots and lots of different windows.
+
+Each doing a different thing. So you could have one window that is desktop view, one that's mobile view, one that is dark mode, one that is light mode, one that is from a specific country. So if you need to test your website in different countries and does it behave differently, you can set up each window to behave differently.
+
+You can have Light mode. You can have high contrast. You could put in all of the different preferences and see them all update all over the same time whilst you're doing your development. It's such a sick piece of cake, but that's not what he's coming to talk about. He's coming to talk about, um, one of the things that we've, that is key to what we believe and it is using the right tools for the right job.
+
+So, for example, you can use detail summary in HTML. To create an accordion, effectively, really, really simply, really, really accessible. Or you could chuck a shed load, I'm going to swore then, Chris.
+
+Chris: Oh, that's all right. This is an adult rated podcast. Yeah, that's
+
+Dave: fine. So rather than chucking a shed load of JavaScript at something, we could just use the right tool for the right job.
+
+So that's what, um, Killian's going to come and speak about.
+
+Chris: Nice. Now I've seen A, uh, like a really short, he did like a lightning talk version of this that I saw on YouTube, uh, a year or two ago. And it was really, really good. My understanding is this is maybe an updated version, right? Um, yeah, cause I know some
+
+Dave: stuff
+
+Chris: awesome. Nice. Yeah. This is, um, if, if it's even like a fraction as good as the talk I saw before, this one's going to be awesome. Um, my audience, I think if you're listening to this and you're Like you enjoy my other work. You'll probably really love this one because a big part of what I advocate for as a JavaScript teacher is using a lot less JavaScript.
+
+So, um, uh, in the video I saw Killian actually got booed during the opening slide, um, I'm assuming your audience will be a lot more, um, kind. He was at a JS conference, but he gave the last one. Um, but that's awesome.
+
+Dave: Nice. So I will. Our attendees, um, are the most welcoming bunch of people. We, we have speakers that come and the next year they sort of like, we can't wait to come back to this place.
+
+Um, so a lot of the people in the audience, we're preaching to the, to the, so they're converted effectively. So we always have talks about accessibility. Always, because it's one of the most important things that we should do with what we're building. But everybody in the room knows that already, but it doesn't mean it doesn't take away from the fact that people need to talk about this all of the time.
+
+Chris: Nice. Awesome. Um, is there anybody else you can talk about? Um, I know, uh, uh, I know you haven't announced. Any other speakers, but, um, uh, I know that might change by the time this goes live.
+
+Dave: Um, this is, uh, we're, we're recording kind of about a week before, um, we're going to announce a speaker tomorrow. I'm going to announce another speaker.
+
+Um, next week. So the speaker we're announcing tomorrow is, uh, Amy Hupe. Amy Hupe is a design systems specialist. She's worked with some incredible companies. She worked on the design system for GovUK, which it's phenomenal. It's fantastic. The whole GovUK Um, website and believes and strategies, I just love them and they've been shipped over to different places around the world.
+
+I know that they've done a lot of work with Australia's gov. uk or gov. au and things like that.
+
+Chris: So just for anybody who's listening, who's not already familiar, uh, the, the UK government web team. Is like the gold standard for accessibility, usability, resilience on like large scale, public web infrastructure.
+
+They just do phenomenal work and they managed to not have it look like garbage either. Like I know a lot of times people are like, Oh, you know, if you build stuff like that, it's boring. Um, and I, I very much do not think that is the case with gov. UK. They've managed to make it look really functional, really gorgeous.
+
+Um, they just do an amazing job. So that sounds awesome.
+
+Dave: Yeah, so she, she was key to the, that team. She's just been working with Springer Nature, which is a massive, um, publication, science publications, um, company. And she's been working with, um, Hayden Pickering and Stu Robson on doing the, their, um, design system.
+
+Oh, she's not coming to talk to us about design systems. Oh, okay. Well, that was about you
+
+Chris: just 180 me there, man. All right.
+
+Dave: About losing your way in your, in your career and burnout and mental health, um, all of these things that we've all suffered with all of these things. So it's, uh, she's coming to tell us about where she's got to and she's, yeah, I don't know.
+
+I don't want to say any more because, uh, A, I don't know too much because she was going to talk about design systems, and then she phoned me up and she says, Dave, I don't, I really, really don't want to talk about design systems. A, because I'm doing that at a conference two days before, but B, I really need to work out where I am in my life, and I can do that via a talk.
+
+So, that's what she's coming to talk to us about.
+
+Um, and how do I change my direction if that's what I want to do? All right. And I know all too well about this because I'm on my fifth career.
+
+Chris: Yeah. Yeah. And I, uh, Uh, I, I've definitely been there before. Um, it's just really, uh, I feel like this is, this is very much like a talk of, um, very much a talk of the times.
+
+Uh, who is it? Is it Ethan Marcotte? Someone is about to publish a book on like tech workers and unionizing, um, right now. Yes. Yeah. Um, so it's just, that sounds
+
+like a phenomenal talk.
+
+Dave: It is, and the reason, I've seen Amy speak twice. And every time she's spoken, she's totally blown me out of the water. Absolutely. So she first spoke about, um, design systems are generally more towards the rich people and they should be balanced. For all people rather than the big companies having the big money and all of that and that that it was brilliant I tweeted out at the end of that talk Amy Hupe for Prime Minister That's kind of like a president.
+
+But um, yeah, we have a kingy thing as well
+
+I was at a conference last year, um, called Full Frontal, uh, FF Conf. It used to be called Full Frontal. It's now just called FF Conf. And it's run by Remy Sharp down in Brighton. I can't recommend it highly enough. It's phenomenal. I
+
+Chris: don't think I realized that's what FF Conf stood for. Um...
+
+Dave: It used to. It now stands for Friends Forever, is what Romeo will tell you.
+
+And this
+
+Chris: is another conference that I've always wanted to go, I just, I've literally never been to the UK. Um, and I feel like you guys have some of the best web conferences. I always see such amazing things come out of that one too.
+
+Dave: Um, yeah, there's, there's a whole group of, um, organizers that talk to each other about all of these things that are sort of like, Remy, have you got any call, call for proposals that you're not using that you could pass this way and things like that.
+
+And, and we talk about how, what ticketing systems we should use and how do we go about finding, has anybody got any, um, ideas for sponsors, those kinds of things. Because these things are not cheap to put on, believe me. But, yeah, so Amy, I met Amy again at FFCon. She was an attendee and she found this post online, which she then gave a talk to, a talk about, at, um, all day, hey, another conference, which is in Leeds, Joss Nesbitt.
+
+Um, I'd recommend all of these. There's another one that we work very well with, and they're called WebDevConf, and they're in Bristol, and that's run by Alex. Ale, not Alex. Not Alex, Oliver Turner, David, it's really complicated. His name on discord is Alex, but it's not called Alex.
+
+Chris: That would trip me up to Alex.
+
+Um, so you mentioned, um, I know you mentioned that. You know, conferences are a little expensive to put on. Um, what that normally translates to is 500, 000 tickets, right? Like I remember an event apart, I think at one point it was like, like, I think before they, they went under, they were like 1, 500 a ticket or 1, 200 a ticket.
+
+US, um, state of the browser for all of your amazing talks and speakers are a little bit more affordable than that,
+
+Dave: right? Totally, totally. So when we started in 2010, we, we we're one of the only conferences to run on a Saturday, and part of the reason behind that is some people will go to their boss and say, can I go to this conference and say, no, we're not paying for that.
+
+Can I have a day off to go to that conference and I'll bring back my learnings. Now you can do it in your own time. You can take a holiday. So we decided that we'd put it on a Saturday and then we thought, okay, people go out on a Friday night, they have a few beers, they wake up on a Saturday morning, um, we best charge them because otherwise they'll wake up and go, Oh, it was free.
+
+I'm not going to bother. I'll turn up in the afternoon. So we charge and we charge as minimal as we possibly can. So when we first started, it was like 15 pounds for a ticket. But now after. This is our 11th state of the browser, um, it's 40 for a ticket, which in the US, that's probably, I don't know, some biscuits or something, I don't know, currency exchange rate, but it's probably about 35.
+
+But, if somebody can't afford or feels that they're not represented at our conference, Um, they can just fill in our diversity scheme, and we will give, give out tickets. Obviously, we can't give out unlimited, um, in person tickets, because we've only got so much space in the venue, but we've assigned 20 tickets for the diversity.
+
+Um, And we've got unlimited online diversity tickets, so if somebody is a student and they're not earning loads of money, diversity tickets, if they feel that they're from a background that is not represented, they probably are at State of the Bowser, but we'll give them a ticket.
+
+Chris: Yeah, now if you're like me, and you're in the US, or not.
+
+Uh, not the, the, the king and queens home and, um, you want to attend, uh, this is an online event too, right? So you guys also like live stream the day of.
+
+Dave: That's that's exactly right. We live stream the talks as they're happening. Um, and during the breaks, providing that nothing is going wrong, because we've all had technical issues, we will upload those videos, um, during the breaks for the, we'll have two talks, break, two talks, break, like so.
+
+And we'll upload those videos as the day is going along and people can go back. And we also hope if we've got enough, um, help and volunteers to be able to have the captions for those videos up and ready and done in time for
+
+Chris: that. That's awesome. Nice. Uh, the online tickets, it looks like if I'm looking correctly online, they're 10 pounds, which I think is like, what, like 972 American or something.
+
+I forget how that
+
+Dave: works out. Yeah. I think it's about 9.
+
+Chris: I'm just, yeah, it's not, it's not a lot. I, um, I'm just, uh, I, I, I'm an American, so I just. I don't know what anything other than USD is, but, um, yeah, that's, that's absolutely amazing that you guys put this on for, um, uh, for as little as you do. Um, I know we were talking a little bit, um, and you mentioned, uh, kind of off, off episode at one point that sponsors are a really important part of how you're able to put this event on at the prices that you do.
+
+Right.
+
+Dave: Totally. Totally. So, um, we could, we can't put these things on and give a ticket price that's affordable to everybody without the help of sponsors. Um, and we're not like, uh, we're not trying to make money. At no point do we make, do we make enough money that we get a salary or anything like that. The only things we need to cover are the technical teams, the venue, and covering the costs for our speakers.
+
+So, obviously, some of them live in London, which is awesome, but... If we only stuck to London, we'd run out of speakers. So we've got people coming from all over the UK and, um, and Europe. But, with all the will in the world, we'd love to fly, fly somebody over from the U. S. Um, and get them to give a talk. But, that would mean that we'd have to find loads more sponsors, we'd have to, um, put up the ticket price, and that's not what we're about.
+
+There are, there are other conferences that can do that. So we'll let them do that, and we'll focus on, um, making a quality event at an affordable price for as many people as possible.
+
+Chris: But,
+
+Dave: the way we do it is we don't have, um, sponsorship packages that are 10, 000 US dollars. Um, our most expensive is 3, 000 dollars, uh, 3, 000 pounds.
+
+In English money, which is probably about 2, 800. I don't know, but we have packages going all the way down to 300. And that means that we can get support from tiny little companies that only have one or two members of staff. And we'll give them tickets for their staff and things like that. And they can help us out as well.
+
+It's, it's a community run event by volunteers. Um, and we're not trying to make money. We're just trying to put on something for the community.
+
+Chris: The crazy thing for me about conferences, like I've talked to people who run big conferences with really expensive tickets. Prices too. And at those prices, people expect certain things that they don't have smaller community events, um, you know, in terms of like food and that, that kind of thing.
+
+And, um, uh, I don't know how any conference anywhere even breaks, even how expensive these things are to put on. Um, it is, it is truly a labor of love. Like, I don't think anybody does this for the money. Um, or if they do, they find themselves severely disappointed very quickly. So it's just, it's, and I understand a lot of that is like, you know, no international speakers and venue choice and things, but, um, I, it's just, it's awesome that you are able to put on an event that is accessible to so many people.
+
+Um, uh. Just, you know, listeners, the reason, the reason I wanted Dave to come on to talk about this stuff is, um, of all of the conferences that are out there, state of the browser, more than more than pretty much any of them has such a strong focus on the kind of things that I talk about and advocate for all the time, um, leaning heavily into what the platform can do.
+
+Um, really just getting the most out of those native features. The accessibility, the inclusion. Um, yeah, I just really, uh, I, I, I love, I love your event. I hope someday I'm lucky enough to be in the London area when one is running and I can actually attend in person. Um, uh, Dave, before we sign off, is there anything we didn't talk about that you want to make sure folks listening?
+
+Uh, know about or aware of. Um, I don't think we've mentioned the website yet. State of the browser dot com, um, where they can buy tickets.
+
+Dave: That's right. Um, we should probably mention what date it is. So that's important. Um, and it's on the 23rd of September. So just over, it's like five weeks away. Um, I've still got so much to do, uh, but, uh, uh, so yeah, we're five weeks away, uh, Saturday the 23rd of September, and it's at a venue called the Barbican.
+
+The Baran Center is a, a massive art center. It's got, um, two theaters, an art gallery and cinemas and everything, and we've got, um, a, a cinema screen so the speak speakers get to present their slides. On a 10 meter screen, which is, it's quite something, it's something to behold. Um, we're going to be live streaming it.
+
+We're also going to be, um, if you sign up to watch the live stream, you'll get a password and you'll be able to log in on the day. And then as soon as we can, we're going to get all of those videos, um, uh, put online with speakers permissions, of course, because it's not our content. It's their content. So if they're giving that talk somewhere else, because these things happen, we'll wait.
+
+It's doing the right thing for the right. Nice.
+
+Chris: And that's, that's the kind of thing, Dave, I just, I love about what you and the team are doing here. Um, thank you so much for coming on and, uh, and chatting to everybody about state of the browser. Um, I really do hope if you're listening, you'll head over to state of the browser.
+
+com, check it out. Uh, see some more of the awesome speakers that get listed and, uh, Um, maybe buy a ticket because it's going to be an awesome event.
+
+Dave: We also have, um, uh, with tickets, uh, uh, pay what you want. Um, starting at a minimum and the minimum for an in person is 40 pounds. But if you want to give us 50 pounds, that'd be awesome too, because, uh, things are tight where we don't try to overspend, but we've got to get hotels for speakers.
+
+We've got to feed them. We've got, we, you do get food at our conference. Um, you'll get breakfast, you'll get, um, a snack at the breaks. We let you run out into the streets of London to go find your, forage your food, um, with your own money. But then, um, we have an after party as well, uh, as well.
+
+Chris: Nice. Awesome.
+
+Well, Dave, thanks again. I really, I enjoyed, I always enjoy chatting with you. You're a delight. Um, but thanks for coming on to talk about state of the browser. I really, uh, it's, it's, it's always great to catch up. Thank you
+
+Dave: Very much.
+
