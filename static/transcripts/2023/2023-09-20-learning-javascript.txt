@@ -1,0 +1,77 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm talking about learning JavaScript and specifically why it's so damn hard and what you can do about it. Let's dig in. So, the hardest thing about learning JavaScript, uh, just in my opinion and my experience, isn't memorizing the various methods and approaches.
+
+It's understanding how to put them all together into working code. I've heard some version of this struggle so often from students that five years ago, I ended up creating this workshop program, the Vanilla JavaScript Academy. It's project based and it's designed specifically to address this. Uh, and this week I ended up relaunching it with a handful of big updates based on feedback from past students.
+
+So how do you actually learn JavaScript? In my opinion, the secret formula that's made the vanilla JavaScript Academy so successful. is a focus on small iterative projects that grow in complexity over time. I see so many beginners try to jump right into projects that are too big. They get frustrated, they struggle to get help, and then they just quit.
+
+So, you know, like a common example, a lot of times I'll see people jump into building a calculator app, which sounds like it should be really simple, but it's actually deceivingly hard. Or a to do app, which has so many moving parts and so much nuance that it can really quickly... Get away from you or a lot of times I even have, uh, you know, I see students or I see people who are, um, you know, trying to learn how to build some big thing with like back end integration and, um, you know, like deep API hooks, but they're just learning JavaScript.
+
+And so it just immediately becomes this thing that feels. Way too daunting, and they don't even know where to start. So, the Vanilla JavaScript Academy is designed to fix all that. Um, every other day, you get a project to work on, one to three short lessons that provide some background, and a template to help you get started.
+
+And then on the in between days, I share my approach to the project and some of the common challenges and gotchas that I usually see students run into. And if you get stuck, there's a 24 seven private discord community exclusively for students where you can share your work, ask questions and get help.
+
+If this sounds interesting, by the way, if you head over to vanilla JS academy. com, you can learn all the details about the program. Uh, there's a couple of different workshops depending on what you want to learn. Um, but this simple formula has hands down been my most. Successful program. One of the big things that I do is like a lot of courses will teach you a thing and then walk you through doing the thing.
+
+Um, and that's good. I have absolutely learned things that way, but a lot of times what you learn doesn't stick or there's kind of these things that get glazed over because the person who's. Teaching you is doing the building and so they know some stuff that they forget you won't and they just kind of glaze over It so one of the big things with the vanilla JS Academy is I I leave it up to you to build the thing And then once you've had a chance to do that, I'll review how I approached it Which is not always the right approach.
+
+It's just one of several approaches you could take and I also don't give you every single piece of information that you need a big part of becoming a successful programmer is Knowing how to look things up, how to find solutions, how to evaluate whether the information you have is any good and figuring out how to put all these pieces together.
+
+And so I try to give you as many of the parts is, I think you need to get started and then I leave a lot of the implementation up to you. But I'm there to help you get unstuck and this program has helped nearly 1000 people learn JavaScript. It's launched a bunch of careers, which has been just the coolest thing to have someone who comes to you at a point where they feel like they want to give up because it's just not clicking.
+
+And then a year later, they're like, I got my first job, uh, in, in web development and you know, I was able to move or buy a new house or kind of start this whole new career for myself. It's just, it's such a cool feeling. Um, and it's also leveled up many more developers into more senior roles. But, there were still some things that could be improved.
+
+Um, and there may be things about the program that made sense when it started, but the world is a very different place now than it was five years ago. So, here's what's changed. Uh, you can now more easily move through projects at a pace that works for you. You get even more projects to work on. Um, there used to be an office hours component.
+
+that, uh, worked really well early on and then started to not work so well. And I'll talk a little bit about that, but that's been reimagined to accommodate more people across more time zones and work schedules. Um, you now get free updates to the program for life. So as the web changes and I make updates to the program, you automatically get those, this used to be a program where if you went through it, that was your version of it.
+
+And if new versions came out. That was something different, but now it's, it's everybody's working off the same version. So as changes happen, you get those too, and you can go back through the program. Uh, I've added a bunch of interactive mini challenges, uh, and my base workshop, JavaScript Essentials, now includes a review of some fundamentals for people who are brand new to JavaScript.
+
+Uh, and last, potentially most important in today's economy, uh, the price has been reduced to make it more affordable. to more people. Um, so let's go ahead and dig into all of these in a little bit more detail. Just real quick though, if you're already sold, uh, right now, so this week you can get a 30 percent off over 200 off on registration.
+
+Uh, you can head over to vanillajsacademy. com to learn a little bit more about that. Um, but anyways, uh, let's kind of talk through some of these changes. So, pacing. Historically, the lessons and projects in the Vanilla JS Academy have been dripped out a little at a time. So, you log on on Monday, you've got your first set of lessons and projects.
+
+You log in on Tuesday, the solution which wasn't there the day before is now visible. Wednesday, the next set of lessons and project, uh, and so on. This really helps students have a sense of daily progress and cadence, but it also had a few drawbacks. So, let's say you really flew through. one project. You just, you found it particularly easy or you already had a little bit of experience with some of the stuff that was covered in it.
+
+You just flew through it. You couldn't move more quickly. You had to wait until two days before you could get your next project. You'd also have to wait to see the solution until the following day. Uh, if you went on vacation or got busy at work, a lot of students would start to feel like they had fallen behind as uncompleted projects started to pile up.
+
+And there was a lot of students who, you know, work, life happens, you end up a little bit kind of off from the daily drip. But it kind of gives you this sense of impending doom. And if too many of those piled up, sometimes students would get frustrated and feel like they were just totally behind. So now you get instant access to all the projects and all the lessons when you sign up.
+
+And it's still structured around a suggested cadence of daily projects over six weeks. But you can move faster or slower as needed without feeling like you're held back or you're falling behind. And this is something I just I got a lot of feedback on, uh, after completing the workshop, there's often a bit of a come down effect, right?
+
+So you just dove really deep into JavaScript and you built a bunch of cool stuff. What do you do now? Um, historically, I've always had, uh, you know, some suggested here's how you can keep learning here. So you can apply this to your other stuff. And I would have like three or four suggested things you could do with work with life with side projects, etcetera.
+
+But now, I've included 18 more bonus projects that you can work on after you finish the workshop. And they're designed specifically to build on and reinforce what you learned in the main workshop and help take those skills to the next level. So, we've done some stuff, we're gonna either do more of it, or we're gonna take it and do...
+
+Uh, do different things with it. Stretch your skills around a particular skill set. Uh, the projects are still being finalized for my Structure and Scale and Web Apps workshops, but they're already done and ready to go for JavaScript Essentials. Uh, I mentioned that the workshops used to have an office hours component.
+
+So, during the first year or two of the Vanilla. js Academy, office hours were one of the most integral parts of the workshop. Every other week, I'd host live video Q&amp; A for students. to ask questions and get real time feedback. And after a while, I noticed that a lot of the same questions kept coming up over and over again.
+
+And I started working answers to them into the workshop itself. Over the last two years, attendance at office hours has dropped to nearly zero. Uh, between scheduling conflicts and a lot of big questions that people had already getting answered, uh, through kind of common issues, uh, and other things I've just built into the lessons, there just wasn't as much demand.
+
+Um, either people wanted to attend, but they couldn't because of, you know, scheduling issues, or they just didn't have any questions. So what I ended up doing was I went back and I compiled a bunch of questions from previous office hours into video and text based. Q&amp; A articles as new questions come up from future students.
+
+I'll be adding to this library over time So if you have a question, that's not just a quick little like one or two sentence I'll actually go and record a whole walkthrough just like I would have in office hours of your question and my answer to it. And that gets posted to a library archive that everyone can access until you get the same effect as office hours, but without being time bound to, Oh God, I need to log in at this specific time on this specific day.
+
+Or I miss it. Um, you know, so we just, we get around that whole thing and I just feel like that fits with the world and the way people work a lot better now. Um, people in other time zones, people who have work conflicts, they can actually participate. Um, uh, I feel like the pandemic really shifted. The way a lot of folks work to remote to more asynchronous, and this just really lines up with that a lot better.
+
+Um, in addition to the big core projects, so those every other day big projects, I wanted to include many challenges with each lesson. So I ended up building my own lightweight code sandbox that lets you try out what you just learned in real time. And for a lot of lessons, I've actually worked in a challenge.
+
+for you to complete optionally, uh, to kind of make sure you've really gotten the concept. So, for example, let's say you just learned about the array prototype filter method, uh, which you can use to create a new array from an existing one, um, with only certain items in it. Uh, and then you're presented with a challenge.
+
+Uh, you know, so, uh, something like try it, use the array filter method to create a new array that contains just wizards with three or more spells and you have an array of wizards where each wizard has an object with the wizard name and an array of spells and you only want wizards that have three spells or more in your new array, anything that you type into the code sandbox.
+
+Automatically runs as you type and displays an update. Uh, and it also has a console that you can log things into. And then after you've tried it, I have kind of this hidden, you can expand it out. Um, solution with how I approached the challenge. So you can kind of check your work and see if you, you got it sorted out or not.
+
+Um, so, uh. The many challenges. Um, one other thing I don't think I mentioned before, uh, maybe I did. JavaScript essentials, uh, now include some fundamentals for people who are brand new to JavaScript. So one of the big, uh, the big things that came up a handful of times is, uh, if you're someone who's worked with the web a little bit, maybe you're focused mostly on HTML and CSS, you might already know how to do things like load a JavaScript file.
+
+In the browser, how to log things to the console, but a lot of students coming in didn't, and they would kind of feel a little disoriented when they started working on projects. So I've now added a module zero that includes things like what are variables? What is a function and how do you run it? How do you load JavaScript into the browser?
+
+How do you log things into the console and access that and use it to debug your code? Um, so I just really wanted to make sure that as many people as possible were able to. Jump right into this and, uh, start working. And then lastly, the price has been reduced. Um, so the economy is pretty tough globally in the web, uh, or tech space right now.
+
+Um, and so one of the things I did is I reduced the cost of the program by around 250. So it used to be 995. Uh, now it is 750. Um, and there's also a monthly payment plan that was always there, but it was kind of hidden. And so I've made it a lot more prominent. So if even the 750 is too high to swing, there's a monthly payment plan that you can take advantage of, uh, that makes it a lot more affordable for a lot of folks.
+
+Uh, and also right now, because it just relaunched. There is a 30 percent off discount, uh, that brings that price down to around 500 and something dollars, uh, instead of 750, I think like 524 ish, I'm bad at math, but you get over 200 off, so, uh, that's also kind of a, kind of a good thing you might want to take advantage of right now, um, so if that sounds interesting, head on over to vanillajsacademy.
+
+com where you can learn all the details about the three different workshops, and Pick the one that's right for you and sign up. Uh, this is a limited, um, open registration and then it gets closed off and won't be running again until January. So, uh, if you want it to take advantage of it, now's the time to do it.
+
+The reason I do that, um, is it allows you to go through with a cohort of other students who are all working on the same projects at the same time. I find it just, it lends itself to a much better experience. For students when I do it that way. So anyways, that's it. I'll see you next time and, uh, cheers.

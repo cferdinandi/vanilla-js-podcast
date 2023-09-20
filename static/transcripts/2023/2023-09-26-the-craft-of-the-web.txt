@@ -1,0 +1,9 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Today, I'm talking about the craft of the web and of web development. Let's dig in. So, web development is a craft, but it feels like a lot of folks in the industry don't actually care about craftsmanship.
+
+Being a good craftsperson means understanding the medium you work with. It means understanding how people use the things you've and it means being able to blend form and function to create. things that are functional and resilient and do what they're supposed to do. By contrast, our industry fetishizes tools that do the work for you and remove your need to understand how the web works.
+
+I don't have a problem with tools in general. The right tool and the right hands can make practicing your craft faster, easier, and more effective. But the wrong tool or the right tool in the hands of someone without the skills to use it properly can be catastrophic. For example, Just kind of forcing this analogy a little bit.
+
+A table saw can help you cut more wood more quickly with straight cuts. If you know how to use it. If you don't, you can create a bunch of uneven boards more quickly than if you use a handsaw. And so is true of tools like Tailwind and React and any other flavor of the month. If you care about the craft of the web and you want to become a better craftsperson, you might be interested in the Vanilla JS Academy.
+
+Uh, it is a project based workshop for beginners. Um, I actually have a few different workshops. Registration for the current session is all running right now and this week only. You can get 30 percent off when you sign up. Uh, registration does close in a couple of weeks. So if this sounds like something you might be interested in, head over to vanillajsacademy.com and check it out. Uh, and otherwise that's it for today. See you next time.
