@@ -1,0 +1,35 @@
+Hello. Hello. Hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm talking about HTML web component. Let's dig in. So I have a confession to make. I love web components, but for years they just did not click with me. I didn't understand what the point was.
+
+I had a really tough time wrapping my head around why you would ever want to use them. And then late last year, Jeremy Keith wrote about what he calls HTML web components. Some people treat web components like JavaScript library components, where everything is rendered with JavaScript. And honestly, that's how they're typically presented in a lot of tutorials and a lot of lessons.
+
+Um, I think a lot of the way they were originally framed was as if they were maybe some browser native alternative to react or view. But the reality is they do A lot of the same things that those libraries do, if you use them that way, worse. And so Jeremy presents a different way to approach using web components.
+
+He writes, try not to bring React's mindset with you. Think about composability with existing materials. Do you really need to invent an entirely new component from scratch or can you use HTML up until it reaches its limit and then enhance the markup? If your custom element is empty, it's not an HTML web component.
+
+But if you're using a custom element to extend existing markup, That is an HTML Web Component. I'm going to drop a link to Jeremy's whole article in the show notes. It's awesome. Go read the whole thing. It's what really made Web Components click for me. And then I actually got to experience the power of HTML Web Components firsthand that very week.
+
+I was building an app for NASA. Um, just as a quick aside, by the way, if you'd like to work with me, I have, um, I have at least one consulting spot left. You can learn more about that over at go make things dot com slash consulting. Uh, but so I'm working on a project for NASA. The back end engineer has built a powerful, simple back end using python.
+
+Every single user interaction is either a link that points to an actual HTML file Or a form that submits data to the server and then redirects to a server rendered HTML file. So it's all very progressively enhanced, super fast, super powerful whole thing works without a single drop of JavaScript. I wanted to preserve that deep level of resilience and accessibility by progressively enhancing the existing functionality rather than doing.
+
+Everything with JavaScript. My initial approach was to use traditional DOM manipulation. I went down this path of listening for submit events on the document and then running different callback functions for different forms. So I'd have, um, an event delegation set up where I'd list to all submits on the document, get the data form attribute from the submitted.
+
+form, uh, and then I had an object of handlers with different, um, different methods to run based on that data form attribute. So I might be adding an item, removing an item, combining some items for each event handler, uh, I would show some status messages and then either redirect the user to another page or display some success message in the UI and add or remove a list items.
+
+It worked, but as the number of interactions grew, so did the complexity and size of the setup. There was a lot of not so dry code, so I abstracted some of it, and that reduced the repetitive code, but also made the code less readable and even more complex to maintain. And then I read Jeremy's article, and I had an epiphany.
+
+Just use a web component. I ended up refactoring my first attempt into an HTML web component. Uh, the AJAX form component wraps around a form element. And by default, the form submits to the server just like normal. Once the, once the web component initializes though, It enhances the form. What I love about web components is that you can easily customize behavior with custom attributes.
+
+So for example, on my Ajax form, custom element or web component, I would add a prevent default attribute. And when that's present. The web component will stop the form from redirecting the page. I can have a series of message dash attributes that let you customize the submitting success and error messages.
+
+And if you need to update a portion of the UI, the target attribute will find the element with that same selector in the HTML that the fetch request method returns and replace the existing element in the UI. with the updated one. Uh, and so you can have a really robust set of interactions with just a single component.
+
+Uh, and this approach let me slash the JavaScript used for the project in half, easily progressively enhance the existing UI, and providing authoring approach that's much easier to read. And make sense of, you can look at the HTML and you know exactly what's going on just by looking at the attributes for a while.
+
+I really struggled to see the value of web components. And the reason I've come to realize is that I was locked into JavaScript component thinking by treating them as enhanced HTML. Everything starts to click in a way that it didn't before. And I've since then had the opportunity to use them on a bunch of projects.
+
+I wrote a custom web component for someone that adds some drag and drop. Um, interactivity, uh, as a consulting engagement, I rewrote the entirety of the JavaScript for the lean web club to use this approach instead. And again, every time I do this, I cut the amount of HTML I'm using by a lot and everything becomes much easier to manage.
+
+and reason about. So I think this is just an amazing, amazing approach. If you want to learn more about web components, I have a series of workshops, tutorials, projects and boilerplates over at leanwebclub. com membership is just 9 a month or 90 for an entire year and gets you access to hundreds of courses, workshops, projects and more on a wide range of front end topics, web components and beyond.
+
+That's it for today. I hope to see you next time. Cheers.

@@ -1,0 +1,136 @@
+Hello, hello, hello! This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me.
+
+Today, I'm talking about how a lot of front-end devs really don't understand accessibility. And just a quick heads up, if you are someone who actually gives a shit about other humans and has like basic empathy, this episode's probably going to piss you off quite a bit. So anyways, let's dig in.
+
+Late last year, I discovered that quite a few of my articles have made their way onto Hacker News.
+
+And the conversations around them are actually, generally speaking, pretty good for what I generally expect from the site. Except for an article I published in 2019 on how [building accessible websites is your job, actually](/building-accessible-websites-and-apps-is-a-moral-obligation/).
+
+It's apparent from [reading the comments](https://news.ycombinator.com/item?id=19452570) that a lot of folks who do this simply don't know anything about accessibility.
+
+This stuff is hard!
+
+I have quite a bit of understanding for people who are early in their journey and don't know what they don't know yet. I even understand when someone has a bit more experienced but never learned something.
+
+Many (most?) of us are self-taught. Accessibility is nuanced and hard. Mistakes happen!
+
+What really gets me is the folks who, when an issue or problem is pointed out, shrug and say, "Eh... maybe not a big deal."
+
+So today, I wanted to flip the tables a bit and pick apart some of the responses my article got on Hacker News. Let's dig in!
+
+Hobbyists versus professionals
+
+This variety of comment lumps fans and hobbyists building websites just-for-fun together with paid professionals.
+
+> So let's say some random person, Bob, builds an awesome website in his free time. Bob spends hundreds of hours just so others can use his awesome idea. Now you're telling him what to do. That's not morality, that's just entitlement.
+
+Two things...
+
+1. There's a big difference between "Bob the guy who loves vintage stamps and builds a fan site about them" and a professional web developer. The former gets a pass. The latter does not.
+2. Not building a website accessibly is [literally discrimination](https://www.ada.gov/resources/web-guidance/) and is literally against the law. It's not just "me" telling him what to do. It's the US government.
+
+Imagine thinking it was "entitlement" for your mechanic to not disable your brakes when repairing your car.
+
+Disabled people should point out issues to people who build websites
+
+This subset of comments was really into the idea that disabled people should be responsible for pointing out issues to professional web developers.
+
+> If you have a problem, you complain. If you don't complain, then you'll have to wait until someone else does or just live with it. That goes for everybody; it's how life works.
+
+Let's say I have a neighbor who repeatedly, purposely knocks down my mailbox with their car.
+
+Sure, I can report them to the police, or sue them for destruction of property. (And for accessibility issues, you _literally can be sued_ for not building accessible websites.)
+
+But... should I have to? And shouldn't you just build a site that everyone can use?
+
+Not understanding the law
+
+With this type of comment, people don't understand their actual legal obligations.
+
+> It wasn't my moral obligation to build that website to begin with. It wasn't my moral obligation to make it available to anyone in the first place. It's not my obligation to translate the web page to make it available to people who don't speak my language. And it isn't my obligation to make it available or accessible to any other group of people.
+
+It's not a restaurants obligation to open their business in the first place, but if they _do_, they _legally_ need to ensure that the doors are wide enough for a wheelchair, that their are multiple egress points, that they follow health codes, and so on.
+
+Similarly, if you build a website, you are _legally obligated to make it accessible_, whether you want to or not.
+
+> Is it a moral obligation for amazon to build their services so everyone can use them? There's probably a strong case there.
+
+Yep! And also, again, a legal one.
+
+> It's one thing to discuss how to best support people with disabilities.
+>
+> It's another thing to sit on your own high horse, and preach from on high about how other developers should do "their fucking job". I'm so sick of this gluttonous moral posturing.
+
+Ah but... building accessible websites is _literally_ your job if you're a professional web developer. Just like building a home to building codes is your job if you're a contractor, or following food safety guidelines is your job if you're a professional chef.
+
+> In other words, if someone fails to make their hobby SaaS for passive income accessible, they haven't have some "moral failing". They just prioritized shipping basic functionality for the majority of users. It's not really that different that opening a website or business for business in one country (or part of the country) and not another.
+
+Still against the law, though!
+
+> If you're making a new product for Google or Microsoft, I completely agree with this article. However, developing web apps is not the same as building bridges. If you are a bridge builder, you're a licensed civil engineer with a sizeable government budget. If you build web apps, you might be a 30-year senior dev, or you might be a student trying to launch a startup with a hundred dollars and no employees. Or, you might just be making a personal web page for yourself or family.
+
+Fun fact: a startup is just as beholden to the ADA and their requirement not to discriminate as Google and Microsoft are!
+
+> Why is it the job of a side-project, non-profit, startup, or personal developer to conform to obscure, complex standards--why isn't it the job of the for-profit screen reader companies to make decent standards in the first place?
+
+Again, non-profits and startups _can't discriminate against people_ just because they don't have a lot of funding.
+
+> Yes, it's a good thing for sites and apps to be accessible.
+>
+> No, it's not an obligation of any kind (nor should it be).
+
+Literally is, though!
+
+Not understanding the scope of disabilities
+
+These types of comments focus just on visual disabilities. I'd like to think this is just a misunderstanding that can be fixed with more education and awareness...
+
+> People with visual disabilities make up about 2.5% of the US adult population. People who do not speak English natively make up about 20% of the US population, and around 8% of the US cannot speak English fluently.
+>
+> So if you're aiming for maximum inclusivity, you should consider translating your app into Spanish a higher priority than adding ARIA tags.
+
+_Actually_, about [one in four Americans (as in, 25 percent) have a disability](https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html).
+
+Accessibility isn't just about people who have vision challenges. It includes neuromuscular challenges that can make using a mouse difficult or impossible. It includes cognitive issues.
+
+Automated translation software is far from perfect, but it's built into many browsers and can get you pretty close.
+
+Techno-optimists
+
+Some folks think technology can just "solve" this...
+
+> We have vision algorithms that are able to tell that a picture is a picture of a horse, why do we still need the alt attribute ?
+>
+> We have the level of knowledge to build a tool that make website accessible, so my opinion is you need that tool. It is easier to build one accessible tool than to ask all developers of the world to put an alt attribute and respect the h1, h2 naming
+
+[There's no such thing as automated accessibility.](https://shouldiuseanaccessibilityoverlay.com/)
+
+Machine learning can sometimes accurately caption imagines, but often cannot. There's no magic wand here.
+
+Bad people
+
+Then there are the comments from people who, given the chance to toss a puppy into a puppy-grinding machine to make a few bucks, absolutely would...
+
+> This is nothing to do with moral obligation. At least for me, much more to with the cost vs return on building a house that's going to collapse on people.
+>
+> Unless I'm forced to build website that is accessible, I won't do it.
+
+Uhh....
+
+> You should build for your market. Unless you're specifically targeting a market segment that has accessibility requirements, then you should do the least amount of work possible to provide value, then iterate. When creating a product in an early stage market, most development time is better suited to discovering an MVP than adding accessibility features. Think of it as premature optimization.
+
+Good to know that this person views disabled folks as an "optimization" and not actually human beings.
+
+> Hackernews readers put a huge amount of stock in building websites without JS, that work in lots of browsers, that deliver tiny bundles or no bundle at all, with old tech rather than new, and that "just work", because those are the things that impact the readers themselves.
+>
+> As soon as someone suggests building a site that works as well for other people the comments fill up with reasons not to.
+
+This person gets it!
+
+So anyways, that's it for today.
+
+If you want to learn how to build accessible websites and you want to make this the year that you really kind of master this stuff, I can help the lean web club, uh, is an amazing learning platform that contains hundreds of workshops, courses, projects and tutorials on a wide range of topics, including how to build things accessibly and how to build accessible interactive components.
+
+You get a two month free trial. And after that, it's just $9 a month or $90 a year. It is an incredible, amazing value. You get so much stuff for just $9 a month. Head on over to leanwebclub.com to check that out today.
+
+That's it for today. And I will see you next time. Cheers.

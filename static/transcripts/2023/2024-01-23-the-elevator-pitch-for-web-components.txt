@@ -1,0 +1,41 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Today, I'm talking about the elevator pitch for web components. Let's dig in. So, I am a web component fanatic. I think they are the best way to author DOM manipulation libraries. But that wasn't always the case.
+
+For years, I struggled to understand why you would choose them over other approaches and what the point of them really even was. Um, and that was until I read Jeremy Keith's article on HTML web components. And that's when things really started to click in my brain. Uh, if you missed that, uh, episode, it was last week's.
+
+I'll drop a link to that down in the show notes, worth a listen. Um, but, uh, then I ended up using that approach on a client project with NASA. And, uh, it just really all kind of came together for me. And since then, I've converted a JavaScript libraries to Web Components. I created a new Web Components collection over at the Lean Web Club.
+
+I rebuilt the entire lean web club platform to use web components instead of the approach I was using before. I've done a few more client projects where I've used web components and they just really, really shine. Over on Mastodon, I started getting some questions about why I think this approach is better and how it's meaningfully different from.
+
+Just creating a new constructor object with JavaScript instantiation and adding some data attribute selectors and today I wanted to talk about that. So here's what makes web components really shine over traditional JavaScript libraries First you get scoping and instantiation for free right out of the box So if you're creating multiple elements You don't have to, or multiple instances of a component.
+
+You don't have to figure out how to scope them and isolate them. Uh, it's just built right into how components work. You don't even need to instantiate them at all. They just run when they're loaded. It's beautiful. You get built in methods that detect when an element enters or leaves the DOM and when attributes on it change.
+
+So you get some built in interactivity just again, right out of the box. And because. Options and configurations are declarative in the HTML, not just JavaScript. It makes them both easier to author and easier to use differently in various places in the HTML. Uh, let's look at each of these in a bit more detail.
+
+So, with a traditional JavaScript constructor library, you need to instantiate each instance of your component. In the dom, let's say you have two tab navigation sections in on a page. To run your script, you need to manually instantiate. Each one. So for each of my tabs, I need to run new tabs and then pass in a selector for that element with web components.
+
+I can simply include the custom element in the HTML and it instantiates automatically because web component classes happen on The HTML element base class, the this keyword inside your class methods is automatically scoped to the custom element, which makes it just a little bit easier to scope your event listeners, selector methods and so on inside the web component class.
+
+Um, whereas. You know, historically, you'd need to do some kind of complex selector with whatever was passed in. Uh, I can just do query selector all on this to find child elements and things like that. You absolutely can do the same thing with traditional JavaScript libraries, and I have. But as someone who's written a lot of DOM manipulation libraries, built in scoping makes things so much easier to author.
+
+It's just, it's beautiful. Built in helper methods. Web components include. ConnectedCallback, DisconnectedCallback, and AttributeChangedCallback methods. And these run when a custom element enters the DOM, leaves the DOM, or an attribute on it changes, respectively. If you have content that gets dynamically rendered, it's really nice to have built in methods for detecting when it enters or leaves the UI.
+
+They provide useful hooks for instantiating tasks when an element is loaded, and cleaning things up when it leaves the DOM. Detecting attribute changes means you can do cool reactivity with your component. For example, the browser native details element displays its contents when the open attribute is added to it.
+
+The dialog element is displayed in a non modal form if you add open to it as well. The attribute changed callback method lets you do similar things with your custom web components. We're just adding, we're removing an attribute, can change the state of that element in some way. And then finally, declarative options and configurations.
+
+If you want to let users customize web component behavior, the way you do that is through HTML attributes. Uh, for example, let's imagine you have a table of contents custom element. If you want to change the heading levels that it generates the table of contents from, you could add a levels attribute. to that component.
+
+If you want to change the heading that's displayed above the table of contents, you could have a heading attribute on the table of contents. And you could even combine them to do multiple things. This makes it really easy to include multiple instances of a web component in your HTML. And use slightly different settings and configurations for each one.
+
+Because the options are all configured declaratively with the HTML, you can tell just from looking at the element what's going on. And it becomes much easier for people who aren't JavaScript experts to work with the library. People whose focus is more on HTML and CSS can be much more productive with this kind of API than a JavaScript based one.
+
+Compare that to the way you might configure your library, uh, with something like, uh, just a data TOC attribute and some sort of unique ID. For each one, you'd need to write new table of contents, pass in your selector, and then pass in a JavaScript object with your options. If you look at the JavaScript, you can see what's going on, but you can't from just looking at the HTML.
+
+You need to cross reference that against some separate file somewhere else. You could set up a traditional JavaScript library to also support declarative options using data attributes. I've done that in the past too. The thing is, it adds a fair bit of complexity to the library. You generally still want to support JS based configurations, so now you're merging default settings, JS based options, and declarative options together.
+
+And you need to decide how to deal with conflicts if there's a declarative option and a JS based setting for the same thing. Uh, you know, which one takes priority. Getting comfortable with Web Components, uh, so if you want to really dig into how Web Components work, I have 17 lessons, a workshop, a handful of projects, and a brand new set of copy paste components Over at the lean web club and membership for that is just 9 a month.
+
+It's actually free for two weeks. You get a trial. And then after that, it's just 9 a month or 90 for the year, uh, which is two months free. Um, and it gives you access to all of that. Plus hundreds of courses and workshops and more on a bunch of other topics. Uh, and if you have a project that you think could use web components and you need a little help.
+
+Getting that set up or working with those. I also offer consulting over at go make things. com slash consulting. I have one spot available. Um, and I'd love to work with you on your next project. So anyways, that's it for today and I will see you next time. Cheers.

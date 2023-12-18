@@ -1,0 +1,35 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm talking about my approach to CSS architecture. Hug CSS. Let's dig in. So in our last episode, I talked about classless versus class based CSS design systems and In that episode, I said something to the effect of, there's a middle ground between classless and class based design systems.
+
+My favorite CSS boilerplates and frameworks and so on, uh, include base styles for various HTML elements, some component styles for commonly used components, like nav menus and things, and some utility classes for nudging and tweaking the UI. I don't know if you'd call them classless plus or class based light or whatever, but they sit somewhere in the middle.
+
+That was last episode. Today, I wanted to talk about how I personally approach my own CSS architecture in projects that I work on. So here's the approach. Uh, as I use it with all of my CSS projects, I use classless HTML for core styles, utility classes to nudge and tweak elements when needed, and group classes to simplify styling collections of elements that may have more complex needs.
+
+So just as a quick recap, that's HTML. Utility and group or H U G C S S. Let's dig into these in a little bit more detail. So for the HTML core styles, I apply my default styles directly to my HTML elements. So for example, I might have some styles for. Unordered and ordered list elements, UL and OL, as well as list items to give them a little bit of padding.
+
+I'm going to style my heading elements, H1 through H6, directly. For button styles, I'm going to have a base button style that goes directly on the button element. This lets me author my HTML without needing to drop classes on everything. So, uh, I can just create a heading, a list of some items, drop a button in there, and just the plain old HTML is going to look good and cohesive right out of the box.
+
+The default HTML styles work great a majority of the time, but designs often call for deviations from the standard presentation. I really like utility classes for this. A utility class is a class that typically modifies just one or two properties on an element. For example, imagine that by default my headings have to have a good amount of bottom margin.
+
+But part of my design requires a heading and paragraph with no space between them. I can write a no margin bottom utility class that overrides any default margin bottom property. Uh, so no margin bottom and I'd set a margin bottom of zero on that. And then in my HTML, I can add that class to just the headings that I want to nudge or tweak a little bit.
+
+I have a few dozen little classes like this that I can use to adjust the font. padding, margin, and color of various elements inside my UI. For example, I have utility classes like TextSmall and TextLarge that adjust the size and line height of, uh, different blocks of text, uh, TextMuted, which changes the color from its normal color to a slightly more toned down version.
+
+Sometimes, though, you have a collection of elements that require slightly more complex styling. You could use a collection of utility classes for that, and some systems do. In fact, Tailwind is built entirely around this premise. But I find that creating a group class is just more practical. For example, let's imagine that we want to convert a standard unordered list to display the items horizontally.
+
+And without bullets, I could use a collection of utility functions for that. So, for example, imagine, uh, an unordered list that has class, list style none, display flex, flex gap, flex center, flex wrap on it. That would theoretically create the type of element. that I'm looking for, or component that I'm looking for.
+
+Uh, and this is what a lot of folks refer to as Tailwind style authoring of CSS. It works, and it can be nice for quick prototyping, but it's really clunky to work with in the long term. For something like this, I would create a ListInline group class that does the same thing with a single class, and On that class, I would have list style of none, display of flex, a line item center, a column gap, and some flex wrapping.
+
+And then I can just add that single class to my unordered list. You may notice that having a group class also makes it a lot more clear what's actually going on with that particular piece of HTML. I'm not looking at a bunch of utility classes and trying to piece together how they all work cohesively.
+
+I can look at my unordered list and see, okay. This is an inline list. You can also create utility classes to nudge and tweak your group classes if needed. So for example, I have a few inline list adjustment or utility classes that adjust the amount of spacing between list items. So I have list item spaced, list, uh, or I'm sorry, list inline spaced, list inline compact.
+
+And I will add those to a list inline element to modify it a little bit. So they're not recreating all of the class styles. They're just nudging one little aspect of it. I might tweak the column gap, for example. Utility classes also don't always have to be classes. Uh, I use the word classes in utility classes very loosely.
+
+So interactive elements in a UI often have attributes that change behavior. Uh, based on the element state. So, for example, a button with active and inactive states should have an aria pressed attribute with a value of true or false, depending on whether that button is activated or not. Rather than creating a separate isActive class to handle different styling for that, I'll just hook directly into the aria pressed attribute using attribute styles.
+
+Uh, so aria pressed equals true, we'll get some slightly different styles than the default button behavior. This removes the need for JavaScript to manage a state attribute and a class, reducing the likelihood of So, just as a quick recap to summarize, I use classless HTML for core styles, utility classes to nudge and tweak elements when needed, group classes to simplify styling collections of elements that may have more complex needs.
+
+And together that's HTML. Utility group or hug CSS. That's it for today. If you're ready to make this the year that you master CSS, JavaScript, front end web development, and more, I can help head over to go make things. com to access a ton of learning resources, including free lessons, books, courses, workshops, and my daily developer newsletter.
+
+That's it for today. I'll see you next time. Cheers.

@@ -1,0 +1,15 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm talking about how to detect when a web component is loaded with just CSS. Let's dig in. So lately I've been talking a lot about web components and today I wanted to share an awesome little trick that Hawk Ticehurst taught me over on Mastodon.
+
+Um, and I'll drop a link to his, uh, his toot or post on Mastodon down in the show notes. The CSS defined pseudo class applies to an element when it's been defined in the browser. And that's any element by the way, not just web components. But for web components that doesn't happen until the custom elements define method has been run on your custom element.
+
+I'm a big fan of HTML web components. I'll drop a link to my episode on that. down in the show notes as well. Um, and in those, uh, there are, sorry, HTML web components are custom elements that progressively enhance existing functional HTML. But sometimes a web component will only work with JavaScript and won't work until it's been defined.
+
+Historically, I've added a hidden attribute to the custom element and then removed it as part of the instantiation process in my web components constructor method. But the defined pseudo class provides another way to do that using just CSS instead of JavaScript. Uh, so for example, let's say I have a, um, uh, a count up button.
+
+It's like a counter. Um, I could in my CSS define count up colon not. So now I'm using the not, uh, pseudo selector. And then I pass. colon defined into that. And then I apply a style of display none. So, as long as that element is not defined, it will not be displayed. And then as soon as it is, it will be. Uh, and personally, I still end up using the hidden attribute a fair bit.
+
+Um, uh, just because it provides a bit more resilience even if Um, the CSS fails or some custom user style overrides things, but I think you could also use them in tandem, um, or use them in an interesting way. So it's a good thing to know about. Um, so that's it for today's episode, really short, simple one.
+
+Uh, but if you want to learn more about web components, I have a series of workshops, tutorials, projects. In boilerplates over at leanwebclub. com membership is just 9 a month after a two week free trial and it gets you access to hundreds of courses, workshops, projects, and more on a wide range of front end topics.
+
+That's it for today. I'll see you next time. Cheers.

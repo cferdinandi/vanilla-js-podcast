@@ -1,0 +1,51 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm talking about how to get stuff done as a developer with ADHD. Let's dig in. A few years back, I wrote about, uh, being a developer with ADHD. I also think I did a podcast episode on it.
+
+Um, And some of the challenges it presents and how I deal with them. Uh, and quick aside, if you think you might have ADHD, I wrote about that too. I'll drop links to both of those down in the show notes. Since then, I've learned that many of my students also have ADHD. And I've gotten a lot of questions about how I actually get stuff done as a developer in a world that's set up for neurotypicals.
+
+So, if you're a fellow neurodivergent, This one is for you. And if not, you might still get something out of it. But if not, no worries, and I'll see you in the next episode. Uh, quick caveat, by the way, everyone is different. So I'm going to talk about some of the strategies that work for me. But in my experience, what works great for one person with ADHD doesn't always work great for someone else.
+
+And what works great for a while may stop working eventually because ADHD brains crave novelty and hate routine. My use of the strategies that I talk about here waxes and wanes over time, but this is the system that I've most reliably used and come back to over and over again. Um, anything I've tried that deviates from this, just it might stick for like a week or two and then it, then it goes away.
+
+So the heart of my system is, uh, An approach to productivity called Zen to done when I first started working in my first real job out of college I thought I was going to get fired in my second month I simply could not keep track of all the stuff that was being thrown at me. I kept slipping on things.
+
+So I googled and discovered the world of David Allen, Getting Things Done, or GTD as it's often called, and productivity bloggers. I became obsessed with these complex systems they recommended and while most of them worked for a little while, eventually they fell apart because I couldn't keep up with the finely oiled machine that is GTD.
+
+As a quick aside, The world of productivity blogging is also partially why I started blogging. Uh, I discovered that blogging was a thing you could do and started writing about HR stuff. That eventually led me to become a web developer. So, uh, if it weren't for ADHD and my inability to get anything done when I first started working, I probably never would have become a web developer.
+
+Uh, but anyways, I digress. Uh, so. I was really struggling with GTD and then I learned about Zen to Done by Leo Babauta and I will drop a link to that down in the show notes as well. Zen to Done is a stripped down version of GTD that focuses like really, really narrowly on just a couple of things. And something in it, It finally clicked for me.
+
+I use an even more minimal version than what Leo does. He has kind of this bare minimum version that he, uh, he also talks about, uh, and that's the, that's the version I use with a couple of modifications for my weird brain. So, um, here's what it involves. It's three steps. It's collect. Process, and what I call Big Rocks.
+
+So, collect. I throw everything, every thought, idea, thing I need to do, and so on, into a single capture tool, so that you don't forget it. Um, for a long time for me, this was paper notebooks, or index cards, uh, but these days I use a digital tool, and I'll talk a little bit more about that later, so that I always have it with me.
+
+The next step is to process. You need to periodically go through your capture tool and deal with all the stuff that you threw in there. If something can be done right then, do it. If not, move on to a proper to do list for later. Same with emails, reply immediately or create a to do item and then delete it or archive it.
+
+You do not leave it sitting in your inbox. It will just build up. Uh, in fact, I'd recently, I'd gotten really bad about this a couple of weeks ago, I went through a huge purge. I had like. 200 and something unread emails, and I just cleared out my whole inbox, got myself down to inbox zero, and over time, I'll probably see this, like, fall away again, but for now, I'm keeping up with it.
+
+Uh, and then finally, Big Rocks. I try to pick one to three of the most important tasks, or MITs, which Leo calls Big Rocks, from my to do list. each day. And then I'll usually throw a few smaller items in there as well. Smaller rocks that kind of fit into the cracks around the big rocks. And that's what I work on that day.
+
+You can find a free copy of Zen to Done in the Internet Archive. Leo No charges a small fee for the e book and honestly, it's really good work so Uh, if you can support him, I would recommend doing so, but I'll drop a link to the free version in the show notes as well, just in case you can't. Um, so bullet journaling.
+
+The only style of capture device that's worked for me is a bullet journal. Uh, a bullet journal works like this. You, um, you have a capture device and you throw all of your things in it. Um, and then, you know, some systems try to like be really rigid about this is the section for this. That's the section for that, like different types of things, but a bullet journal doesn't work like that.
+
+You literally throw everything into it, um, and then you create an index that you use to cross reference, you know, here's where all the different things are. So it allows you to just be a lot more like loosey goosey and fluid with how you capture things. And for me, I like them because everything is a bullet.
+
+All of your notes, all of your details, all of your ideas, they're all just bullets. And I found that for me personally, simple bulleted lists trump every other type of productivity capturing thing I've ever tried to do. My maps, flowcharts, folder systems, and all that other nonsense, it's just too complicated.
+
+I toss a bunch of stuff into bulleted lists and sort them by a few big buckets or categories. For me, that's things like home, business, daily emails, lean web club, and so on. I even write my notes as bulleted lists. Uh, so I mentioned I was going to talk about tools. For years, my go to to do list was Microsoft To Do.
+
+It's nearly perfect. You can create lists, add items to them, those items can have subtasks, and you can group them into folders. And that's basically it. Uh, the one other super awesome, amazing, like, must have feature is that you can flag items as for today and pull them into a special list while keeping them in their original location.
+
+Uh, and those become like my, my big rocks for the day. However, Microsoft does not seem to be investing as much into it. Sync is getting buggy, the data isn't very portable, or like really portable at all. Uh, and I worry about having my entire brain stored in a service that I have no control over. So, I recently started using Obsidian, which provides a GUI layer over basic Markdown files.
+
+And, it has been working out. Really, really well for me so far. I'm not sure how long it's going to really stick, uh, because every new tool is always a bit of a roll of the dice. I've been on Microsoft to do for like a decade. But, um, so far this is working really, really well for me in a way that Microsoft to do wasn't.
+
+It maybe fills some of the gaps there, uh, some of the frustrations. I'm going to talk about my setup. in another episode because I could easily fill a whole episode just on that. Um, but I did also want to mention calendars. So anything that is time specific goes into a calendar and I actually have a few of them, personal one, work, want to share with my wife and so on, but they all aggregate into one view in Google Calendar.
+
+And, um, I would often miss these meetings and events nearly like a hundred percent of the time. If it weren't for my Apple watch, in fact, I used to miss them all the time. Uh, having an Apple watch is definitely a luxury item and I was super skeptical about it when I first got it. Having my meetings displayed prominently on my wrist buzzing just before the meeting starts has been a game changer for me.
+
+I also use it to set timers for anything. Start a load of laundry. I set a timer for an hour to remember to switch it. Put food in the oven, timer on my watch. You can have multiple timers going, each with its own name. It's just, it's an amazing feature. And yes, you can do all these same things with a phone.
+
+For some reason, having it on my wrist has just made all of the difference in the world. Um, and, uh, it's just the thing that happens to work for me. So anyways, that's it for today. Um, if you are ready to make this the year that you master JavaScript, I can help head over to go make things dot com where you can access tons of learning resources, including free lessons, books, courses, workshops, and my daily developer newsletter.
+
+I'll see you next time. Cheers.

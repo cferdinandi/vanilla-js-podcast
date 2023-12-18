@@ -1,0 +1,29 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm talking about how vanilla JavaScript doesn't scale, but just kidding, actually, it totally does. Let's dig in. So a few months ago, one of my students shared some Twitter nonsense where people were predictably complaining about how vanilla JavaScript doesn't scale that using it means you're just reinventing the wheel and so on.
+
+And today I wanted to unpack why that's just all. So, uh, first of all, how do you define scale? Some people mean the code is able to handle lots of requests at once. They think vanilla JavaScript is less capable at doing that than React is. There's literally a subset of people who think that React, because it uses a virtual DOM, is faster than the real DOM, and don't realize that React eventually has to touch the same real DOM, too.
+
+Or, maybe they don't realize that React is actually vanilla JavaScript under the hood, uh, as well. Other people mean that the library enforces patterns that make writing and maintaining code easier. And that, kind of, sort of, might be true, but Also, if you ask eight react developers, how to approach a problem, you're going to get eight different answers.
+
+Hell, the library itself has changed its mind at least three times on how to best manage code at scale. Most established code bases that use react have a tangled mess of patterns in them. And frankly, those patterns are really only as good as your developers commitment to reliably using them. I've worked on many projects where you can.
+
+Tell which developer wrote a specific piece of code because they have their own kind of norms and they just don't adhere to the project conventions. Uh, the idea that you'll have to reinvent some stuff. This, this comes up a lot too. Every single project, built with a library or not, involves writing custom code.
+
+There seems to be this big common misconception that vanilla JavaScript means I write the entire code base from scratch, which is frankly just absurd. I use libraries all the time. I'm selective about which ones and how they work. And for me, vanilla JavaScript means that I choose ones that don't require dependencies on other libraries.
+
+That's what makes them vanilla and have actually considered accessibility. Sometimes the right tool doesn't exist. And then I build it myself, but I failed to see how that's worse than grabbing some ready made component may not do the job excessively, or that does a bunch of stuff you don't need it to, or requires you to install another library to work.
+
+I'm not reinventing stuff. I'm choosing existing libraries that. are more sensible in their approach. The other thing I think a lot of folks miss is that every popular library was a pet project. People who think vanilla JavaScript is just reinventing the wheel kind of ignore that every single library they love was at one point Someone's pet vanilla JavaScript project at the beginning.
+
+Angular already existed when React was built. React already existed when Vue was built. Vue already existed when Preact and Solid were made. Next. js and Vue were around when Rich Harris made Svelte. And Svelte was already a thing when Astro was made. Once a library gets inertia The same people who deride platform native JavaScript seem to get really quiet about reinventing the wheel.
+
+The other thing too is like the web platform already does a lot of stuff. These types of responses typically come from folks who frankly have no idea how to actually use the web platform, browsers, or the native web. I meet a lot of developers who went through boot camps, Only learned react and have no idea how much of what they lean on react for can be done out of the box by the browser.
+
+This is an industry level failing as much as an individual one. Vulturous companies prey on folks who don't know better charge a ton of money with the promise of getting hired for a six figure job in six months time. And they teach them the quickest, laziest way possible because that's what makes bootcamp companies money.
+
+It's a bit like a trade school churning out carpenters and plumbers that never. Uh, actually learn build codes, uh, or building codes rather. But it can happen in our industry because we lack any sort of professional certification or regulation. So, yeah, my point here is that Vanilla JavaScript absolutely scales.
+
+It's not just reinventing the wheel and anyone who says otherwise has no idea what they're actually talking about. If you want to really learn all that the web platform has to offer, you should go check out the Lean Web Club over at leanwebclub. com. Dot com. Uh, you get, uh, for just $9 a month after a two week free trial.
+
+Uh, you get membership to the Lean Web Club where you can access hundreds of workshops, tutorials, projects, copy, paste, boilerplates and more. Uh, so head on over to lean web club.com and sign up today. I think you're really going to enjoy it. Uh, anyways, that's it for today and I will see you next time.
+
+Cheers.

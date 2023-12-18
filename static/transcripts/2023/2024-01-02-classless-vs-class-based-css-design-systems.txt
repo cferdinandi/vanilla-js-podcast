@@ -1,0 +1,25 @@
+Hello, hello, hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinandi. Thanks so much for joining me. Today, I'm talking about classless versus class based CSS design systems. Let's dig in. So. What is a classless design system? A classless CSS design system, as the name implies, does not use classes.
+
+Instead, it provides base styles for native HTML elements. One of the better known classless systems is WaterCSS, which I will drop a link to down in the show notes. And, uh, with a system like this, you just load the style sheet into your HTML file and start writing code. You can author all of your HTML elements, and they get a nice enhanced cohesive look.
+
+You don't need to add anything to them, just the raw HTML works. With a class based design system, almost no elements are styled by default, and everything requires a class. One of the most popular class based systems is Bootstrap. Generally, basic elements in this system don't need classes. But some systems take The need for classes further than others, for example, the U.
+
+S. Web design system are U. S. W. D. S. For United States government projects requires classes for lots of basic elements, including lists, forms and so on. So if you want to make, for example, an ordered list, pick up the styles of the U. S. W. D. S. design system, you need to add class equals USA list to it.
+
+Otherwise, it won't look right. Um, so which one is better, quote unquote. Um, both systems have their pros and their cons. Personally, I really don't like having to add classes to things like lists, forms, and buttons. I want those basic elements to be styled out of the box when I'm coding. And for that reason, I think classless systems have a lot of appeal.
+
+But, they can also get pretty limited in terms of what they can do. If you want to deviate from the base styles in any way, you're going to start building your own components and utility classes. That's not necessarily a bad thing, but they do come with fewer batteries included. Class based design systems give you a lot more flexibility and features out of the box.
+
+They often include lots of components that you'll typically use when you're building a website. Inline lists for navigation elements, different types of button styles, alerts, icons, and so on. But that also means they come with a lot of stuff that probably don't need. And depending on the system, authoring, even basic components can involve writing a lot of extra code.
+
+I'm currently using the U. S. Website design system for a project I'm working on for NASA. Uh, get that NASA. Um, and it's got great documentation and a big focus on accessibility. But the need to add classes to all sorts of basic elements that aren't really deviating from browser default all that much can get really tedious.
+
+Just as a quick aside, by the way, if you need help on your web projects, I actually offer consulting and development services. You can find more about that over at gomakethings. com slash consulting. I'd love to help you with your project. So that said, Uh, I think there's a nice middle ground, a hybrid approach between classless and class based design systems.
+
+My favorite frameworks and whatever, um, they include base styles for various HTML elements, some component styles for commonly used components like nav menus and things, and some utility classes for nudging and tweaking the UI. I don't know if you'd call them classless plus. or class based light or what, but they sit somewhere in the middle.
+
+My own CSS boilerplate Kraken, which I will drop a link to down in the show notes was designed to be a lightweight, more modular alternative to bootstrap. And it was inspired heavily by skeleton, which I will also drop a link to in the show notes. The aim with these types of systems is to provide a great starting point that can be easily customized for whatever you're trying to build in our next episode.
+
+I'm going to talk a little bit more about how I approach my own CSS architecture. Um, but, uh, that's it for today. I hope you enjoyed this episode. And, uh, if you're ready to make this year the year that you master CSS, JavaScript, front end web development, I can help. Head on over to GoMakeThings. com where you can access a ton of learning resources, including, uh, free projects and lessons, books, courses, workshops, and my daily developer tips newsletter.
+
+That's it for today. See you next time. Cheers.

@@ -1,0 +1,59 @@
+Hello. Hello. Hello. This is the Vanilla JavaScript Podcast. I'm Chris Ferdinand. Thanks so much for joining me.
+
+Today, I'm talking about PHP islands architecture. Let's dig in. In JavaScript, islands architecture refers to an approach to web development where you serve up mostly static or server rendered HTML with small little islands of JavaScript rendered functionality. And I'm going to drop a link in the show notes to a detailed article about what that is and how it works.
+
+This was until the end of last year, how the Lean Web Club was built. Most of the site HTML was generated with a static site generator, in my case, Hugo, and the interactive bits like the buttons to bookmark stuff were generated with and powered by JavaScript after the page loaded. But near the end of last year, I did a rebuild and I did something both awesome and terrible that I am calling PHP islands architecture. So let's dig in and talk about how it works.
+
+The TLDR is that the site is nearly entirely static, pre-rendered HTML. Rather than using JavaScript to render the interactive and dynamic bits, I use islands of server powered PHP. Static site generators rely on the fact that if you point a browser to a server directory that has an index dot HTML file in it, the browser will load that index dot HTML file without it needing to be in the URL path.
+
+For example, go make things dot com slash about, and go make things dot com slash about slash index dot HTML both point to the same file. But you can actually do the same thing with an index dot PHP file and send a file that runs PHP instead of just HTML. On some servers, you might need to configure that in an HT access file.
+
+Here's what mine looks like. So I have directory index space index dot PHP space index dot HTML. And so what that's saying is if there's an index dot PHP file, use that if not fall back to the index dot HTML file.
+
+And then I configured my static site generator Hugo to generate index dot PHP files instead of index dot HTML files. This lets me use the built in templating system, write content in markdown, and take advantage of how server file systems work to automatically handle routing without needing to configure dynamic routing like WordPress does.
+
+But it also means that I can add little islands of dynamic content that get rendered on the server instead of with JavaScript. As an example, in my files, I have some PHP at the very top of the page that checks if the user is logged in. If they aren't, and the page is for members, I redirect them to the homepage.
+
+If they are, and the content is only for logged out visitors, I redirect them to the logged in dashboard. Compiled index dot PHP file might look a little something like this. And I'm going to try to describe code. So just bear with me. But like, I will have, you know, question mark PHP, and then up at the top, require once and a path to some utilities dot PHP file.
+
+And then I might have some variables that are generated with the static site generator in front matter, like root URL, and is members only. And the rendered file will have fixed values for those. But those values will come from configurations in my static site generator. So I'm not hard coding those.
+
+They vary from page to page. And then I might have a PHP function from my utilities dot PHP file to check if the current user is logged in. And then I can do some conditional logic with PHP. So if is members only and is logged in as false, I'm going to set the header location to my root URL slash login.
+
+If the opposite is true, I'll set that header location to the root URL slash dashboard. And then otherwise, I can just display the HTML as normal. And within the HTML itself, I can also use PHP just for the parts where it's needed. So I might have a hard coded button that is used to bookmark the page.
+
+Inside that HTML, I can have a little question mark PHP closing question mark kind of bracketed section where I set a fave IDs variable using some PHP get user favorites function. And then I can check to see if the current ID of the page is inside that fave IDs array. If it is, I get a value of true, if not false.
+
+And I can use that to set, for example, the aria pressed attribute on that button so that you can tell that the item is favorited or not. That button in question, by the way, would get wrapped in a form that by default is going to submit to a PHP back end, which updates the user setting and then redirects them back to the page.
+
+And then for my setup, I'm using web components. And I'll drop a link in the show notes to an episode I did on why I love HTML web components. But when the JavaScript loads, it does the same thing but with Ajax and no page reload.
+
+And so why would you do this instead of a different tool or just using JavaScript? Am I abusing Hugo in a way that it wasn't intended? Absolutely.
+
+Could I do the same thing with Node.js and Express and write the whole thing in JavaScript? Also, yes. But honestly, PHP is better.
+
+It's available on pretty much every server. I don't have to restart it if the server reboots. I don't have to generate big chunks of HTML with JavaScript. Server rendered or not. I can just write HTML like HTML inside an HTML template or a markdown file. PHP is stable, well documented, has a huge community around it.
+
+And frankly, it just works. My app loads fast as fuck because I am not doing much with my PHP. But what I needed to do, it does supremely well. So where does the system not work quite so well? If you have to make API calls to third parties to render content, you're honestly better off doing that in advance and caching it on the server with a cron job or using JavaScript Island's architecture for that.
+
+API calls have to be done before you return any HTML. So it can create a lengthy white screen with nothing on it experience for users. Using JavaScript for those situations means that at least the user gets something quickly and then that gets updated properly with content when it's available.
+
+Doing this with Hugo, there are a few little quirks about making Hugo generate PHP. Again, I am abusing this tool in a way that it wasn't intended.
+
+And I figured I'd share them here just in case anyone else was interested. First, you have to define a custom output format and media type for PHP in your config.yml file. And I will drop a link in the show notes to my article on this that has those code snippets so you can copy paste them.
+
+You also need to tell Hugo to use PHP as the output format for everything it generates instead of HTML, which it would by default. You can override this on a page by page basis. So there are some files that I just want to generate a flat HTML file for instead, like they're available to everybody.
+
+They don't need any conditional logic and HTML would be faster. So you can do that. But by default, Hugo will treat PHP in partials. I'm sorry, by default, rather, I want PHP to generate my pH. I want Hugo to generate my PHP files.
+
+There we go. Got it. By default, Hugo will treat PHP in partials like weird, dangerous HTML as it should and encode it into a string. That's for safety reasons. It's a good thing.
+
+So to prevent that from happening, I need to override that behavior when using partials by using the HTML on escape and safe HTML functions. Inside a short code, I need to wrap the whole thing in a string and call safe HTML on it, which can make writing PHP in short codes kind of a pain.
+
+Surprisingly, it's actually easiest to do this inside markdown content files. I create a PHP short code that runs the safe HTML function on whatever content you pass into it. And then in my markdown files, I can just write my PHP as normal and wrap them in that short code. And it's it's literally easiest way to approach this.
+
+So should you do this? I don't know. It worked out really well for me and I plan to lean more heavily into it in the future. Your mileage may vary, but I would encourage you to try it. I think as long as you go in knowing the limitations, it's an incredibly powerful system that works really, really well.
+
+So anyways, that's it. If you want to learn more about web components, which I used in this setup, or you want to dig more deeply into a bunch of other ways to do things more simply and more progressively enhanced, you should check out the Lean Web Club over at leanwebclub.com. Membership is just $9 a month after a two week free trial and it gets you access to hundreds of courses, workshops, projects, tutorials, boilerplates, and more on a wide range of front end topics, including some of the stuff that we talked about today.
+
+Anyways, that's it for today and I will see you next time. Cheers.

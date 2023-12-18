@@ -1,0 +1,53 @@
+Hello, hello, hello. This is the vanilla JavaScript podcast. I'm Chris Ferdinandi. Thanks so much for joining me today. I'm talking about my obsidian setup. Let's dig in. So in the last episode, I talked about being a developer with ADHD and how to be productive and actually get stuff done. And in that episode, I mentioned that a really important part of this process is having a capture tool that you just dump it.
+
+Everything that comes into your brain into so that you don't forget it. And for me, that tool used to be Microsoft To Do, but I recently switched to a new tool called Obsidian. And today, I wanted to talk a bit about what that setup looks like. So, you can learn more about Obsidian over at obsidian dot, uh, dot md.
+
+I'll drop a link to that in the show notes. But, um, Obsidian is a GUI layer on top of Markdown files. And so what I really, really love about it is that the whole authoring experience is just basic Markdown, um, and you own those files. So they don't, um, I sync mine with iCloud, uh, they have a syncing service.
+
+You can use your own sort of thing if you prefer, but, um, it just, it's really nice because I just. The data portability and flexibility is extreme, and I love being able to write things in Markdown. Um, so, here's the thing. Obsidian can do a lot, and if you look online, you'll see some really fancy setups.
+
+Uh, I even, when I first wrote about and talked about this, I had a bunch of people message me about various plugins I might like, and these real Bust nuanced workflows and all sorts of like really complicated setups. And I don't do any of that. I don't want any of that. Um, I mostly treat Obsidian like a digital notebook.
+
+My setup is completely stock with the exception of the homepage plugin, which opens up this one specific file that I use for capturing my random thoughts. Throughout the day, more on that in just a little bit. Um, and the thing is like ADHD years have a tendency to get so into tricking out their productivity tools because it's fun and new that they never actually do the work and I deliberately avoid all that.
+
+So like I ever really well meaning no one was like trying to be like a jerk about it or anything, but I just like, I, I am not interested in exploring. Alternate setups, alternate kind of like productivity hacks or it's just, that's all a distraction for me. It's simple bulleted lists of stuff to do.
+
+That's the only thing that works reliably for me. And it's been working for me for years, so I'm sticking with it. So, um, I have what I call the core four, four main notes. That's it at the top level of my file system for obsidian inbox. This is the digital version of that piece of scrap paper that you use to jot down random ideas that come into your head.
+
+If I don't write things down, they often disappear forever. And so this is how I capture them. So I don't. Forget this is the file that, um, that homepage plugin opens automatically for me. So whenever I open obsidian, that is the file that pops up. It means that if I'm out and about and I have something, I just want to quickly jot down.
+
+I don't have to mess around trying to find the right file to put it in. It's just, it's the one that opens and I know I'll get it down before I forget it. Goals. Uh, this is three to five big things that I want to achieve this year. My list for 2023 included launching an updated. or new academy, which I did, uh, taking a big road trip, which I also did and organizing the house, which I definitely did not do.
+
+Uh, and I revisit this list throughout the year just to make sure that I'm keeping task with the really big things that are important to me for the year. Um, because just getting a bunch of stuff done and not actually like doing the things you want to do, that's not really cool either. Um, I have a file called all to dues.
+
+This is a page that automatically compiles. All of my to do's from various notes into one spot. I'll talk about that more in a bit. Um, that is for me, one of the most amazing features of obsidian is I can have a whole bunch of notes that have a combination of bulleted lists to do items and pros and code snippets, just all in one kind of file.
+
+And obsidian has some really cool features that will just compile a bunch of stuff in one spot for you automatically. And then finally, to do. These are the things that I want to get done today. Um, I pick one to three big items and a handful of smaller ones. Um, and for those four core files, I use emoji in the file names because it's fun and it makes me happy.
+
+Um, so like the inbox has a pencil icon. My goals has a, like a bullseye with a dart stuck in it. All to do's has a star. And my to do items has a, or my today view rather has a unicorn emoji because unicorn are awesome. Uh, so let's talk about folders and all the notes. Um, I have a handful of context specific folders, work, clients, home, travel.
+
+things like that. Uh, and these folders have collections of notes around specific topics in them. So within the clients folder, I have a separate like file or note for every one of my clients. They get their own dedicated file that includes to do's. Records of meetings we've had and things we've talked about stuff that they want to tackle in the future core business challenges.
+
+Um, useful code snippets if they have kind of a complex code base or some like recurring tasks that need to happen. Um, uh, inside my, um. my, my work folder. I have a note with a whole bunch of ideas for daily articles, a note on things I need to do for the lean web club, so on. And what I love about notes and obsidian is that I can intermix to do items, literal check boxes with a bulleted list of thoughts, code snippets, URLs, long form text, and more.
+
+Um, it's just like a really fluid, it's like having a real notebook. You can put a bunch of stuff on a page. And if I take notes during a client meeting, I can toss a few to do items up at the top and they'll automatically show up in my all to do's note where I know I won't forget them. I don't have to do anything to make sure I don't forget them.
+
+They just, they show up there. It's great. Um, it just, it really fits nicely with how my brain works. So where Obsidian really wins for me is with automations and the ability to embed specifically search queries in notes. I use these to pull all of my incomplete to do's into one spot. Display to do's flagged for today.
+
+Show me high priority items so I don't forget them and more. And I use tags to power almost all of this. For me, I like to use emoji for my tags because they stand out. They look fun, and they're easier to type. I tag important items with a star, things that I want to do today with a unicorn, and items that are pending someone or something, uh, with an hourglass.
+
+And for all of these, I use the line function, uh, so that's line, colon, and then parentheses, to find matching lines. rather than whole files. Um, so, I wasn't using these originally, and if I had a single item in a file marked as for today, all the contents of that file were getting pulled in, and I was really confused about why that was happening.
+
+So line is the trick to getting around that. Uh, and I'm going to drop an article into the show notes that includes all of these, uh, these little kind of setups, so that if you want to copy paste them into your own setup, you can do that more easily. Um, so, uh, for example, to display, uh, important incomplete to do's from all of my notes, excluding my today file, I use three back ticks like a, um, uh, like a code snippet, uh, and then where you would normally put like the language.
+
+I mean, markdown, I put query and then inside that block, I write line, colon, parentheses, and then to do, uh, like a string match, I have to quote lines with dash and then open square brackets. So like the to do. Um, syntax in Markdown and then, uh, hashtag star, which is my tag for important items. And then I want to exclude my today path.
+
+So I do dash path colon today unicorn emoji dot MD, which excludes the today Markdown file from that search. To display all to do's, I can do the same thing, but omit the, um, the pound star tag selector. Um, and on my today note. I display incomplete to dos, pending and completed to dos, in three separate chunks of stuff, each with their own heading.
+
+Um, and, you know, again, I'm just, I'm using straight up string matches against that checkbox syntax that you use in Markdown, either without the X or with the X if it's completed. Um, and I'm also looking for that tag emoji. Could I make this more sophisticated? Definitely. People have messaged me with plugins for tasks that add all this like really cool functionality and features and stuff.
+
+But by keeping things relatively simple, I have a fast, easy to maintain system that lets me offload my brain. And make sure I don't forget important stuff. So if that at all seems interesting, I'd recommend checking out Obsidian for yourself. I will make sure I include a link to that and my current setup in the show notes.
+
+Um, anyways, that's it for today. If you're ready to make this the year that you master JavaScript, I can help. Head on over to GoMakeThings. com to access a ton of learning resources, including free lessons, books, courses, workshops, and my daily developer newsletter. They are perfect for ADHD brains or people who just want to get more stuff done.
+
+That's it for today. I'll see you next time. Cheers.
