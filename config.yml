@@ -12,6 +12,8 @@ params:
   episodes: "https://api.soundcloud.com/users/422835952/tracks?client_id=9yZSvlXAK7Wmu4xhb0hdMtjP9D2z351X"
   itunes: "https://itunes.apple.com/us/podcast/the-vanilla-js-podcast/id1364574460"
   spotify: "https://open.spotify.com/show/2jfWVEgKGZMazgou1hXH1R?si=ZDcXluvvScWFMSfbaLgEwg"
+  overcast: https://overcast.fm/itunes1364574460/the-vanilla-js-podcast
+  pocketcasts: https://pca.st/0Pbj
   google: "https://podcasts.google.com/feed/aHR0cHM6Ly9nb21ha2V0aGluZ3MuY29tL3BvZGNhc3QvZmVlZC5yc3M"
   rssURL: "https://gomakethings.com/podcast/feed.rss"
   rssLimit: 7
